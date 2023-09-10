@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
+:root {
+  --dyellow: #FFB400;
+  --lblack: #2B2B2B;
+  --gray: #767676;
+  --bg: #E4E6EB;
+  --circle: 100px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: var(--bg); }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--lblack); }
+
+h3 {
+  font-weight: 700; }
+
+.bold {
+  font-weight: bold; }
+
+div.main-container {
+  display: flex;
+  justify-content: space-between; }
+
+section.presentation-board {
+  padding: 20px; }
+  section.presentation-board > div {
+    border-bottom: 1px solid rgba(125, 125, 125, 0.3);
+    margin-top: 20px;
+    padding-bottom: 20px;
+    width: 100%; }
+    section.presentation-board > div h3, section.presentation-board > div h4 {
+      margin-bottom: 15px;
+      font-weight: 500; }
+    section.presentation-board > div p {
+      font-weight: 300;
+      color: var(--gray); }
+      section.presentation-board > div p.percent {
+        display: flex;
+        justify-content: space-between; }
+    section.presentation-board > div span.jauge {
+      display: inline-block;
+      width: 100%;
+      height: 6px;
+      padding: 1px;
+      border: 1px solid var(--dyellow);
+      border-radius: 25px;
+      margin-top: 5px;
+      margin-bottom: 8px; }
+      section.presentation-board > div span.jauge span.interne {
+        display: block;
+        height: 2px;
+        background-color: var(--dyellow); }
+  section.presentation-board button.download-cv {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    padding: 8px 15px 8px 15px;
+    font-weight: bold;
+    width: 75%;
+    background-color: var(--dyellow); }
+
+@media screen and (min-width: 992px) {
+  section.presentation-board {
+    width: 305px;
+    height: fit-content;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    section.presentation-board div.me {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      section.presentation-board div.me figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        section.presentation-board div.me figure img.picture {
+          width: 150px;
+          height: 150px;
+          border-radius: var(--circle);
+          object-fit: cover; }
+        section.presentation-board div.me figure figcaption {
+          font-weight: bolder;
+          margin-top: 30px;
+          font-size: 20px; }
+    section.presentation-board div.social-network {
+      margin-top: 20px; }
+      section.presentation-board div.social-network h4.what-am-i {
+        font-weight: 400; }
+      section.presentation-board div.social-network ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px; }
+        section.presentation-board div.social-network ul li {
+          width: 24px;
+          height: 24px;
+          background-color: var(--dyellow);
+          color: var(--lblack);
+          border-radius: var(--circle); } }
