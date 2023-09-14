@@ -8,6 +8,7 @@ import Experiences from './mainSiteComponents/Experiences'
 import Portfolio from './mainSiteComponents/Portfolio'
 import Contacts from './mainSiteComponents/Contacts'
 import Map from './mainSiteComponents/Map'
+import Footer from './mainSiteComponents/Footer'
 
 function MainSite() {
   return (
@@ -23,7 +24,7 @@ function MainSite() {
         <Portfolio /> 
         <Contacts /> 
         <Map /> 
-        
+        <Footer />
       </main>
     </>
   )
