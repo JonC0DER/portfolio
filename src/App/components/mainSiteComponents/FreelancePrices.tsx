@@ -8,7 +8,7 @@ export default function FreelancePrices() {
         <h2>Freelance prix / jour</h2>
         <p></p>
         <div className="price-per-antity">
-          <h3></h3>
+          <h3>Associations</h3>
           <p>
             <span className="bold-price"></span>
             <p className="price-description"></p>
@@ -17,7 +17,7 @@ export default function FreelancePrices() {
           <button className="order"></button>
         </div>
         <div className="price-per-antity">
-          <h3></h3>
+          <h3>Petite/Moyenne Entreprise</h3>
           <p>
             <span className="bold-price"></span>
             <p className="price-description"></p>
@@ -26,7 +26,7 @@ export default function FreelancePrices() {
           <button className="order"></button>
         </div>
         <div className="price-per-antity">
-          <h3></h3>
+          <h3>Grande Entreprise / StartUp</h3>
           <p>
             <span className="bold-price"></span>
             <p className="price-description"></p>
