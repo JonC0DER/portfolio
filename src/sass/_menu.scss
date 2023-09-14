@@ -1,0 +1,51 @@
+section.menu, div.menu-option, span.burder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.menu {
+  min-width: 108px;
+  max-width: 170px; 
+  background-color: white;
+  padding: 30px 10px 30px 10px;
+  span.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: var(--gray);
+    border-radius: var(--circle);
+    background-color: var(--lgrey);
+    transition: 
+      transform 0.2s ease-in,
+      box-shadow, 0.2s ease,
+      background-color 0.2s ease;
+    &:hover{
+      transform: translate(-5px, -5px);
+      color: var(--lowblack);
+      background-color: var(--dyellow);
+      box-shadow: 4px 4px 3px var(--gray);
+    }
+  }
+}
+
+@media screen and (min-width:992px) {
+  section.menu{
+    width: 100%;
+    ul{
+      height: 420px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      li{
+        display: flex;
+        align-items: center;
+        span.circle{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

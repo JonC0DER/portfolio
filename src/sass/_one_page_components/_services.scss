@@ -1,0 +1,57 @@
+section.services{
+  &>p{
+    margin:30px auto 30px auto;
+    width: 430px;
+  }
+  div.services-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    div.service{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+      div.sprite {
+        width: var(--sprite-w);
+        height: var(--sprite-h);
+        background-image: url('../assets/illustration/illustration_sprites.png');
+        background-size: 284%;
+        &.web-dev{
+          background-position: -2px 1px;
+        }
+        &.web-design{
+          background-position: -124px 2px;
+        }
+        &.back-end{
+          background-position: -125px -95px;
+        }
+        &.dev-mobile{
+          background-position: -121px -198px;
+        }
+        &.game-dev{
+          background-position: -2px -95px;
+        }
+        background-repeat: no-repeat;
+        /* Utilisez filter pour changer la couleur de l'image en #FFB400 */
+        filter:var(--filter-dyellow);
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1024px){
+  section.services{
+    margin-top: 100px;
+    width:100%;
+    text-align: center;
+    div.services-container{
+      div.service{
+        width: 310px;
+        height: 225px;
+      }
+    }
+  }
+}
