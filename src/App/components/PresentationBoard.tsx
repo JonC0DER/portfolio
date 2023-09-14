@@ -40,13 +40,8 @@ export default function PresentationBoard() {
             Polyvalent et adaptable car venant du monde réseau informatique et étant un inconditionnel des systèmes Linux ,
             mes compétences en code serait un plus à votre entreprise tout en poursuivant mon évolution full-stack vers 
             M.E.R.N, React-Native et leur équivalent python.            
-            Je suis organisé, fiable et sans bugs !
           </p>
           <br />
-          <h4>Qualités humaine.</h4>
-          <p>
-            flexibilité, créativité, apprentissage rapide, esprit d'équipe.
-          </p>
         </div>
         <div className="my-languages">
           <h3>Languages</h3>
