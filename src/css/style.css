@@ -22,8 +22,18 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: var(--bg); }
+
+button,
+li,
+a,
+section.menu div.menu-options div.large-small > .burger,
+section.menu div.menu-options > div.themes {
+  cursor: pointer; }
 
 li {
   list-style: none; }
@@ -31,12 +41,22 @@ li {
 a {
   text-decoration: none; }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
   font-family: 'Montserrat', sans-serif;
   color: var(--lblack); }
 
 h3 {
   font-weight: 700; }
+
+.hidden {
+  display: none; }
 
 .bold {
   font-weight: bold; }
@@ -44,6 +64,14 @@ h3 {
 div.main-container {
   display: flex;
   justify-content: space-between; }
+
+main section h2 {
+  width: fit-content;
+  margin: 100px auto 40px auto; }
+
+main section p {
+  width: 60%;
+  margin: auto; }
 
 section.presentation-board {
   padding: 20px; }
@@ -125,7 +153,39 @@ section.presentation-board {
           color: var(--lblack);
           border-radius: var(--circle); } }
 
-section.menu, div.menu-option, span.burder {
+@keyframes burger_hover {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes cross_fade {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes cross_one {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 0%; }
+  100% {
+    transform: rotate(45deg);
+    transform-origin: 3%; } }
+
+@keyframes cross_three {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 0%; }
+  100% {
+    transform: rotate(-45deg);
+    transform-origin: 4%; } }
+
+section.menu,
+div.menu-option,
+span.burder {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -133,27 +193,74 @@ section.menu, div.menu-option, span.burder {
 section.menu {
   min-width: 108px;
   max-width: 170px;
-  background-color: white;
-  padding: 30px 10px 30px 10px; }
-  section.menu span.circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    color: var(--gray);
-    border-radius: var(--circle);
-    background-color: var(--lgrey);
-    transition: transform 0.2s ease-in, box-shadow, 0.2s ease, background-color 0.2s ease; }
-    section.menu span.circle:hover {
-      transform: translate(-5px, -5px);
-      color: var(--lowblack);
-      background-color: var(--dyellow);
-      box-shadow: 4px 4px 3px var(--gray); }
+  background-color: white; }
+  section.menu div.menu-fixed {
+    position: fixed;
+    padding: 30px 10px 30px 10px; }
+    section.menu div.menu-fixed div.menu-options {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      section.menu div.menu-fixed div.menu-options div.large-small {
+        width: 40px;
+        height: 40px; }
+        section.menu div.menu-fixed div.menu-options div.large-small div.burger {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around; }
+          section.menu div.menu-fixed div.menu-options div.large-small div.burger span.bar {
+            height: 4px;
+            width: 100%;
+            border-radius: 15px;
+            background-color: var(--gray); }
+          section.menu div.menu-fixed div.menu-options div.large-small div.burger:hover span.bar {
+            animation: burger_hover 0.3s ease; }
+            section.menu div.menu-fixed div.menu-options div.large-small div.burger:hover span.bar:nth-child(1) {
+              animation-delay: 0s; }
+            section.menu div.menu-fixed div.menu-options div.large-small div.burger:hover span.bar:nth-child(2) {
+              animation-delay: 0.1s; }
+            section.menu div.menu-fixed div.menu-options div.large-small div.burger:hover span.bar:nth-child(3) {
+              animation-delay: 0.2s; }
+          section.menu div.menu-fixed div.menu-options div.large-small div.burger.burger-clicked span.bar:nth-child(1) {
+            transform: rotate(45deg);
+            transform-origin: 3%;
+            animation: cross_one 0.3s ease; }
+          section.menu div.menu-fixed div.menu-options div.large-small div.burger.burger-clicked span.bar:nth-child(2) {
+            opacity: 0;
+            animation: cross_fade 0.3s ease; }
+          section.menu div.menu-fixed div.menu-options div.large-small div.burger.burger-clicked span.bar:nth-child(3) {
+            transform: rotate(-45deg);
+            transform-origin: 4%;
+            animation: cross_three 0.3s ease; }
+    section.menu div.menu-fixed div.themes {
+      width: 40px;
+      height: 40px; }
+    section.menu div.menu-fixed span.circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      color: var(--gray);
+      border-radius: var(--circle);
+      background-color: var(--lgrey);
+      transition: transform 0.2s ease-in, box-shadow, 0.2s ease, background-color 0.2s ease; }
+      section.menu div.menu-fixed span.circle:hover {
+        transform: translate(-5px, -5px);
+        color: var(--lowblack);
+        background-color: var(--dyellow);
+        box-shadow: 4px 4px 3px var(--gray); }
 
 @media screen and (min-width: 992px) {
   section.menu {
     width: 100%; }
+    section.menu .menu-fixed .menu-options {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 100px; }
     section.menu ul {
       height: 420px;
       display: flex;
@@ -162,12 +269,16 @@ section.menu {
       section.menu ul li {
         display: flex;
         align-items: center; }
-        section.menu ul li span.circle {
-          margin-right: 10px; } }
+        section.menu ul li a {
+          display: contents; }
+          section.menu ul li a span.circle {
+            margin-right: 10px; } }
 
 @media screen and (min-width: 1024px) {
   main {
-    width: 970px; } }
+    width: 970px; }
+    main section {
+      width: 100%; } }
 
 div.hero {
   padding: 50px 50px 0px 30px;
@@ -250,3 +361,55 @@ section.services div.services-container {
     section.services div.services-container div.service {
       width: 310px;
       height: 225px; } }
+
+section.freelance-prices div.price-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between; }
+  section.freelance-prices div.price-container div.price-per-antity {
+    padding: 20px;
+    width: 32%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    section.freelance-prices div.price-container div.price-per-antity h3 {
+      text-align: center; }
+    section.freelance-prices div.price-container div.price-per-antity div {
+      margin-top: 15px;
+      text-align: center; }
+      section.freelance-prices div.price-container div.price-per-antity div span.bold-price {
+        font-weight: bold;
+        font-size: 28px; }
+      section.freelance-prices div.price-container div.price-per-antity div p.price-description {
+        margin-top: 8px;
+        color: var(--gray); }
+      section.freelance-prices div.price-container div.price-per-antity div p.options .line-option {
+        display: flex;
+        align-items: center;
+        margin-top: 8px; }
+      section.freelance-prices div.price-container div.price-per-antity div p.options span.option-key {
+        margin-left: 15px; }
+      section.freelance-prices div.price-container div.price-per-antity div p.options .yellow {
+        color: var(--dyellow); }
+      section.freelance-prices div.price-container div.price-per-antity div p.options .gray {
+        color: var(--gray); }
+      section.freelance-prices div.price-container div.price-per-antity div p.options .lblack {
+        color: var(--lblack); }
+    section.freelance-prices div.price-container div.price-per-antity button.order {
+      margin: 20px auto 0px auto;
+      padding: 8px 25px 8px 25px;
+      vertical-align: baseline;
+      line-height: 20px;
+      font-size: 16px;
+      color: var(--lblack);
+      border: none;
+      border-radius: 25px;
+      box-shadow: 0px 0px 2px var(--gray);
+      background-color: white;
+      font-weight: bold;
+      transition: background-color 0.4s ease-in, color 0.4s ease-in, box-shadow 0.4s ease-in; }
+      section.freelance-prices div.price-container div.price-per-antity button.order:hover {
+        background-color: var(--dyellow);
+        box-shadow: 0px 0px 6px var(--gray);
+        color: var(--lowblack); }
