@@ -13,17 +13,19 @@ import Footer from './mainSiteComponents/Footer'
 function MainSite() {
   return (
     <>
-      {/* MAIN HOME  */}
+      {/* MAIN HOME  
+      
+    */}
       <main>
         <Hero />
         <Services />
         <FreelancePrices />
         <Recommandation />
         <Formation />
-        <Experiences /> 
-        <Portfolio /> 
-        <Contacts /> 
-        <Map /> 
+        <Experiences />
+        <Portfolio />
+        <Contacts />
+        <Map />
         <Footer />
       </main>
     </>

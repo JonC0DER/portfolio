@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 function Formation() {
   return (
     <>
       {/* formations  */}
-      <section className="formations">
+      <section id="formations" className="formations">
         <h2></h2>
         <p></p>
         <div className="formations-container">
@@ -61,7 +61,7 @@ function Formation() {
         </div>
       </section>
     </>
-  )
+  );
 }
 
-export default Formation
+export default Formation;

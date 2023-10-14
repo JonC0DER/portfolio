@@ -1,7 +1,11 @@
 @media screen and (min-width:1024px){ 
   main {
     width: 970px;
+    section{
+      width: 100%;
+    }
   }
 }
 @import './_one_page_components/hero';
 @import './_one_page_components/services';
+@import './_one_page_components/freelance';

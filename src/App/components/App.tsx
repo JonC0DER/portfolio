@@ -6,9 +6,9 @@ import Menu from './Menu';
 export default function App() {
   return (
     <div className="main-container">
-      <PresentationBoard />        
+      <PresentationBoard />
       <MainSite />
-      <Menu />      
+      <Menu />
     </div>
   );
 }

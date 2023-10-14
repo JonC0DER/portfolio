@@ -6,32 +6,67 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg);
 }
 
-li{
-  list-style:none;
+button,
+li,
+a,
+section.menu div.menu-options div.large-small>.burger,
+section.menu div.menu-options>div.themes {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
   font-family: 'Montserrat', sans-serif;
-  color:var(--lblack);
+  color: var(--lblack);
 }
 
 h3 {
   font-weight: 700;
 }
 
-.bold{
+.hidden {
+  display: none;
+}
+
+.bold {
   font-weight: bold;
 }
 
 div.main-container {
   display: flex;
   justify-content: space-between;
+}
+
+main section {
+  h2 {
+    width: fit-content;
+    margin: 100px auto 40px auto;
+  }
+
+  p {
+    width: 60%;
+    margin: auto;
+  }
 }

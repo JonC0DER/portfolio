@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 export default function Services() {
   return (
     <>
       {/* services  */}
-      <section className="services">
+      <section id="services" className="services">
         <h2>Mes Services</h2>
-        <p>Lorem ipsum sed cupiditate eum, veniam quod quasi totam eos corporis culpa. Nostrum tempore accusantium ducimus cupiditate!</p>
+        <p>
+          Lorem ipsum sed cupiditate eum, veniam quod quasi totam eos corporis
+          culpa. Nostrum tempore accusantium ducimus cupiditate!
+        </p>
         <div className="services-container">
           <div className="service">
             <div className="sprite web-dev"></div>
@@ -42,5 +45,5 @@ export default function Services() {
         </div>
       </section>
     </>
-  )
+  );
 }

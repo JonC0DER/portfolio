@@ -1,3 +1,82 @@
 section.freelance-prices {
-  
+
+  div.price-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    div.price-per-antity {
+      padding: 20px;
+      width: 32%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h3 {
+        text-align: center;
+      }
+
+      div {
+        margin-top: 15px;
+        text-align: center;
+
+        span.bold-price {
+          font-weight: bold;
+          font-size: 28px;
+        }
+
+        p.price-description {
+          margin-top: 8px;
+          color: var(--gray);
+        }
+
+        p.options {
+          .line-option {
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+          }
+
+          span.option-key {
+            margin-left: 15px;
+          }
+
+          .yellow {
+            color: var(--dyellow);
+          }
+
+          .gray {
+            color: var(--gray);
+          }
+
+          .lblack {
+            color: var(--lblack);
+          }
+        }
+      }
+      button.order{
+        margin: 20px auto 0px auto;
+        padding: 8px 25px 8px 25px;
+        vertical-align:baseline;
+        line-height: 20px;
+        font-size: 16px;
+        color: var(--lblack);
+        border:none;
+        border-radius: 25px;
+        box-shadow: 0px 0px 2px var(--gray);
+        background-color: white;
+        font-weight: bold;
+        transition: 
+          background-color 0.4s ease-in,
+          color 0.4s ease-in,
+          box-shadow 0.4s ease-in;
+        &:hover{
+          background-color: var(--dyellow);
+          box-shadow: 0px 0px 6px var(--gray);
+          color: var(--lowblack);
+        }
+      }
+    }
+  }
 }

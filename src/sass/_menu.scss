@@ -1,4 +1,54 @@
-section.menu, div.menu-option, span.burder{
+@keyframes burger_hover {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes cross_fade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cross_one {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 0%;
+  }
+
+  100% {
+    transform: rotate(45deg);
+    transform-origin: 3%;
+  }
+}
+
+@keyframes cross_three {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 0%;
+  }
+
+  100% {
+    transform: rotate(-45deg);
+    transform-origin: 4%;
+  }
+}
+
+section.menu,
+div.menu-option,
+span.burder {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,44 +56,133 @@ section.menu, div.menu-option, span.burder{
 
 section.menu {
   min-width: 108px;
-  max-width: 170px; 
+  max-width: 170px;
   background-color: white;
-  padding: 30px 10px 30px 10px;
-  span.circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    color: var(--gray);
-    border-radius: var(--circle);
-    background-color: var(--lgrey);
-    transition: 
-      transform 0.2s ease-in,
-      box-shadow, 0.2s ease,
-      background-color 0.2s ease;
-    &:hover{
-      transform: translate(-5px, -5px);
-      color: var(--lowblack);
-      background-color: var(--dyellow);
-      box-shadow: 4px 4px 3px var(--gray);
+
+  div.menu-fixed {
+    position: fixed;
+    padding: 30px 10px 30px 10px;
+
+    div.menu-options {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div.large-small {
+        width: 40px;
+        height: 40px;
+
+        div.burger {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          span.bar {
+            height: 4px;
+            width: 100%;
+            border-radius: 15px;
+            background-color: var(--gray);
+            // transform-origin: center;
+          }
+
+          &:hover {
+            span.bar {
+              animation: burger_hover 0.3s ease;
+
+              &:nth-child(1) {
+                animation-delay: 0s;
+              }
+
+              &:nth-child(2) {
+                animation-delay: 0.1s;
+              }
+
+              &:nth-child(3) {
+                animation-delay: 0.2s;
+              }
+            }
+          }
+
+          &.burger-clicked {
+            span.bar {
+              &:nth-child(1) {
+                transform: rotate(45deg);
+                transform-origin: 3%;
+                animation: cross_one 0.3s ease;
+              }
+
+              &:nth-child(2) {
+                opacity: 0;
+                animation: cross_fade 0.3s ease;
+              }
+
+              &:nth-child(3) {
+                transform: rotate(-45deg);
+                transform-origin: 4%;
+                animation: cross_three 0.3s ease;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    div.themes {
+      width: 40px;
+      height: 40px;
+    }
+
+    span.circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      color: var(--gray);
+      border-radius: var(--circle);
+      background-color: var(--lgrey);
+      transition:
+        transform 0.2s ease-in,
+        box-shadow, 0.2s ease,
+        background-color 0.2s ease;
+
+      &:hover {
+        transform: translate(-5px, -5px);
+        color: var(--lowblack);
+        background-color: var(--dyellow);
+        box-shadow: 4px 4px 3px var(--gray);
+      }
     }
   }
 }
 
 @media screen and (min-width:992px) {
-  section.menu{
+  section.menu {
     width: 100%;
-    ul{
+
+    .menu-fixed .menu-options {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 100px;
+    }
+
+    ul {
       height: 420px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      li{
+
+      li {
         display: flex;
         align-items: center;
-        span.circle{
-          margin-right: 10px;
+        a{
+          display: contents;  
+          span.circle {
+            margin-right: 10px;
+          }
         }
       }
     }

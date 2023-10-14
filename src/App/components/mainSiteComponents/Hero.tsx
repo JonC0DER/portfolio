@@ -5,7 +5,7 @@ function Hero() {
   return (
     <>
       {/* hero  */}
-      <div className="hero">
+      <div id="hero" className="hero">
         <div className="hero-text">
           <h1 className="i-am">
             Jonathan Jean-François <br />
@@ -14,10 +14,10 @@ function Hero() {
           <p className="presentation">
             Je suis organisé, fiable et sans bugs !
             <br />
-            flexibilité, créativité, esprit d'équipe.
+            flexibilité, créativité, esprit d&apos;équipe.
           </p>
           <button className="hire-me">
-            <span className="btn-hire-me">ENGAGEZ-MOI</span> 
+            <span className="btn-hire-me">ENGAGEZ-MOI</span>
             <span className="material-symbols-outlined">arrow_forward</span>
           </button>
         </div>
@@ -26,7 +26,7 @@ function Hero() {
         </figure>
       </div>
     </>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

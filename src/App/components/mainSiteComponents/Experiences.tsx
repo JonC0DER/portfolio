@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 export default function Experiences() {
   return (
     <>
       {/* experiences */}
-      <section className="experiences">
+      <section id="experiences" className="experiences">
         <h2>Expériences</h2>
         <p></p>
         <div className="experiences-container">
@@ -61,5 +61,5 @@ export default function Experiences() {
         </div>
       </section>
     </>
-  )
+  );
 }

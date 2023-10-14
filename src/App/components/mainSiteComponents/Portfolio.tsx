@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 export default function Portfolio() {
   return (
     <>
       {/* PORTFOLIO  */}
-      <section className="portfolio">
+      <section id="portfolio" className="portfolio">
         <h2>Portfolio</h2>
         <p></p>
         <ul className="portfolio-menu">
@@ -21,6 +21,6 @@ export default function Portfolio() {
           </figure>
         </div>
       </section>
-    </>  
-  )
+    </>
+  );
 }

@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 export default function Contacts() {
   return (
     <>
       {/* CONTACT  */}
-      <section className="contact">
+      <section id="contact" className="contact">
         <form action="" method="post"></form>
         <aside className="contact-infos">
           <div className="info email">
@@ -26,5 +26,5 @@ export default function Contacts() {
         </aside>
       </section>
     </>
-  )
+  );
 }
