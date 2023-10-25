@@ -12,8 +12,8 @@ function Recommandation() {
           plaisir de collaborer sur des projets tous aussi différents
           qu&apos;intéressants.
         </p>
-        <div className="recommandation-container">
-          <div className="recommander">
+        <div className="recommendation-container">
+          <div className="recommender">
             <p className="stars">
               <span className="material-symbols-outlined">star</span>
               <span className="material-symbols-outlined">star</span>
@@ -21,15 +21,20 @@ function Recommandation() {
               <span className="material-symbols-outlined">star</span>
               <span className="material-symbols-outlined">star</span>
             </p>
-            <h4 className="title"></h4>
-            <p className="comment"></p>
+            <h4 className="title">Title!</h4>
+            <p className="comment">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              nesciunt ipsum sunt quis! Nobis error accusantium cupiditate,
+              explicabo neque officiis.
+            </p>
             <div className="identity">
               <figure>
-                <img src="#" alt="#" />
+                {/*<img src="#" alt="#" />*/}
+                <span className="material-symbols-outlined">person</span>
               </figure>
               <p>
-                <span className="bold"></span>
-                <span className="low-gray"></span>
+                <span className="bold">John Doe</span>
+                <span className="low-gray">Back-end PHP</span>
               </p>
             </div>
           </div>
