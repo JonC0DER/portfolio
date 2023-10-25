@@ -65,7 +65,7 @@ main section {
     margin: 100px auto 40px auto;
   }
 
-  p {
+  & > p {
     width: 60%;
     margin: auto;
   }

@@ -1,0 +1,27 @@
+section.recommendations {
+  div.recommendation-container{
+    div.recommender{
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+      align-items:flex-start;
+      width: 32%;
+      height: 300px;
+      background-color: white;
+      p.stars{
+        color: var(--dyellow);
+      }
+      div.identity{
+        display: flex;
+        & p {
+          display: flex;
+          flex-direction: column;
+          & span {
+            width: max-content;
+          }
+        }
+      }
+    }
+  }
+}
