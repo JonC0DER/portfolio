@@ -22,6 +22,7 @@ section.menu div.menu-options>div.themes {
   cursor: pointer;
 }
 
+
 li {
   list-style: none;
 }
@@ -67,6 +68,7 @@ main section {
 
   & > p {
     width: 60%;
-    margin: auto;
+    // width: 430px;
+    margin:30px auto 30px auto;
   }
 }
