@@ -20,12 +20,12 @@ export default function Contacts() {
               <label htmlFor="subject">Sujet</label>
               <input type="text" id="subject" />
             </p>
-            <p>
+            <p className="textarea">
               <label htmlFor="yourmsg">Votre message</label>
               <textarea
                 id="yourmsg"
                 name="yourmsg"
-                rows={5}
+                rows={1}
                 cols={40}
               ></textarea>
             </p>
@@ -34,34 +34,47 @@ export default function Contacts() {
         </form>
         <aside className="contact-infos">
           <h2>Information</h2>
-          <div className="info email">
-            <span className="material-symbols-outlined">mail</span>
-            <p>
-              E-mail: <span>jeanfrancoisjonathan@gmail.com</span>
-            </p>
-          </div>
-          <div className="info tel">
-            <span className="material-symbols-outlined">call</span>
-            <p>
-              Tel: <span>+33 6 29 25 59 50</span>
-            </p>
-          </div>
-          <div className="info linkedin">
-            <span className="material-symbols-outlined">public</span>
-            <p>
-              Linkedin: <span>...</span>
-            </p>
-          </div>
-          <div className="info github">
-            <span className="material-symbols-outlined">code</span>
-            <p>
-              GitHub:
-              <span>
-                <a href="https://github.com/JonC0DER">
-                  https://github.com/JonC0DER
-                </a>
-              </span>
-            </p>
+          <div className="info-container">
+            <div className="info email">
+              <p className="icon">
+                <span className="material-symbols-outlined">mail</span>
+              </p>
+              <p className="content-text">
+                <span className="label-text"> E-mail: </span>
+                <span>jeanfrancoisjonathan@gmail.com</span>
+              </p>
+            </div>
+            <div className="info tel">
+              <p className="icon">
+                <span className="material-symbols-outlined">call</span>
+              </p>
+              <p className="content-text">
+                <span className="label-text">Tel:</span>
+                <span>+33 6 29 25 59 50</span>
+              </p>
+            </div>
+            <div className="info linkedin">
+              <p className="icon">
+                <span className="material-symbols-outlined">public</span>
+              </p>
+              <p className="content-text">
+                <span className="label-text"> Linkedin: </span>
+                <span>...</span>
+              </p>
+            </div>
+            <div className="info github">
+              <p className="icon">
+                <span className="material-symbols-outlined">code</span>
+              </p>
+              <p className="content-text">
+                <span className="label-text"> GitHub: </span>
+                <span>
+                  <a href="https://github.com/JonC0DER">
+                    https://github.com/JonC0DER
+                  </a>
+                </span>
+              </p>
+            </div>
           </div>
         </aside>
       </section>
