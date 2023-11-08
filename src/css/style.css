@@ -520,12 +520,14 @@ section.contact {
   section.contact form h2,
   section.contact aside h2 {
     margin-bottom: 40px; }
+  section.contact form div.form-container,
+  section.contact aside div.info-container {
+    height: 550px; }
   section.contact form div,
-  section.contact aside > div {
+  section.contact aside > div.info-container > div.info {
     background-color: white; }
   section.contact form {
-    width: 55%;
-    padding: 15px; }
+    width: 55%; }
     section.contact form h2 {
       color: var(--lblack); }
     section.contact form div.form-container {
@@ -542,16 +544,45 @@ section.contact {
           border: none;
           background-color: var(--lgrey);
           padding: 8px 15px 8px 15px; }
+      section.contact form div.form-container p.textarea {
+        height: 50%; }
+        section.contact form div.form-container p.textarea textarea {
+          height: 100%; }
       section.contact form div.form-container button {
         border: none;
         background-color: var(--dyellow);
         padding: 8px 10px 8px 10px; }
   section.contact aside {
-    padding-top: 15px;
     width: 40%; }
-    section.contact aside div > span {
-      background-color: var(--dyellow);
-      padding: 8px;
-      border-radius: 50px; }
-    section.contact aside div p span {
-      margin-left: 15px; }
+    section.contact aside div.info-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      section.contact aside div.info-container div.info {
+        padding: 20px; }
+        section.contact aside div.info-container div.info > p.icon {
+          text-align: center; }
+          section.contact aside div.info-container div.info > p.icon > span {
+            background-color: var(--dyellow);
+            padding: 8px;
+            border-radius: 50px;
+            margin-bottom: 25px; }
+        section.contact aside div.info-container div.info p.content-text {
+          display: flex;
+          justify-content: space-between; }
+          section.contact aside div.info-container div.info p.content-text > span,
+          section.contact aside div.info-container div.info p.content-text > span a {
+            color: var(--gray); }
+          section.contact aside div.info-container div.info p.content-text > span.label-text {
+            font-weight: bold;
+            color: var(--lowblack); }
+
+footer {
+  margin-top: 50px;
+  background-color: white; }
+  footer p {
+    text-align: center;
+    color: var(--lblack);
+    font-weight: bold;
+    font-style: italic;
+    padding: 15px; }
