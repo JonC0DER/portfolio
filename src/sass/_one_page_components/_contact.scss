@@ -5,13 +5,16 @@ section.contact{
   aside h2{
     margin-bottom: 40px;
   }  
+  form div.form-container,
+  aside div.info-container{
+    height: 550px;
+  }
   form div,
-  aside > div{
+  aside > div.info-container > div.info{
     background-color: white;
   }
   form{
     width: 55%;
-    padding: 15px;
     h2{
       color:var(--lblack);
     }
@@ -32,6 +35,12 @@ section.contact{
           padding: 8px 15px 8px 15px;
         }
       }
+      p.textarea{
+        height: 50%;
+        textarea{
+          height: 100%;
+        }
+      }
       button{
         border:none;
         background-color: var(--dyellow);
@@ -40,18 +49,36 @@ section.contact{
     }
   }
   aside{
-    padding-top: 15px;
     width: 40%;
-    div{
-      & > span {
-        background-color: var(--dyellow);
-        padding: 8px;
-        border-radius: 50px;
-      }
+    div.info-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      div.info{
+        padding: 20px;
+        & > p.icon{
+          text-align: center;
+          & > span {
+            background-color: var(--dyellow);
+            padding: 8px;
+            border-radius: 50px;
+            margin-bottom: 25px;
+          } 
+        }
 
-      p span {
-        margin-left: 15px;
-      }
-    } 
+        p.content-text {
+          display: flex;
+          justify-content: space-between;
+          & > span,
+          & > span a {
+            color: var(--gray);
+          }
+          & > span.label-text {
+            font-weight: bold;
+            color: var(--lowblack);
+          }
+        }
+      } // div.info END
+    } // div.info-container END
   }
 }
