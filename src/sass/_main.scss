@@ -11,17 +11,29 @@ html{
 }
 
 body {
-  background-color: var(--bg);
+  background-color: var(--lgrey);
 }
 
-button,
-li,
-a,
+button, li, a,
 section.menu div.menu-options div.large-small>.burger,
 section.menu div.menu-options>div.themes {
   cursor: pointer;
 }
 
+footer,
+section.menu,
+section.presentation-board,
+div#hero,
+section#services .services-container .service,
+section#freelance-prices .price-container .price-per-antity,
+section#recommendations .recommendation-container .recommender,
+section#formations .formations-container .formation,
+section#experiences .experiences-container .experience,
+section#contact form .form-container,
+section#contact aside.contact-infos .info-container .info{
+  // background: var(--lowblack) url('/src/assets/images/overlay.png');
+  background-color: white;
+}
 
 li {
   list-style: none;
@@ -31,14 +43,7 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
+h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'Montserrat', sans-serif;
   color: var(--lblack);
 }
@@ -70,5 +75,6 @@ main section {
     width: 60%;
     // width: 430px;
     margin:30px auto 30px auto;
+    color: var(--gray);
   }
 }

@@ -52,7 +52,6 @@ section.presentation-board {
   section.presentation-board {
     width: 305px;
     height:fit-content;
-    background:white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,10 +92,7 @@ section.presentation-board {
           color: var(--lblack);
           border-radius: var(--circle);
           a {
-            
-          }
-          i {
-            
+            text-decoration: none;
           }
         }
       }
