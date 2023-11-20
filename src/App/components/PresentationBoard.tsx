@@ -1,5 +1,5 @@
 import React from 'react';
-import MyPic from '../../assets/images/mag.png';
+import MyPic from '../../assets/images/portfolio_picture_id.jpg';
 
 export default function PresentationBoard() {
   const jaugeWidth = (width: number) => ({ width: `${width}%` });
