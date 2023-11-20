@@ -11,7 +11,7 @@
   --lblack: #2B2B2B;
   --lowblack: #3A3B3C;
   --gray: #767676;
-  --lgrey: #F0F0F6;
+  --lgrey: whitesmoke;
   --bg: #E4E6EB;
   --circle: 100px;
   --sprite-w: 70px;
@@ -26,14 +26,25 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: var(--bg); }
+  background-color: var(--lgrey); }
 
-button,
-li,
-a,
+button, li, a,
 section.menu div.menu-options div.large-small > .burger,
 section.menu div.menu-options > div.themes {
   cursor: pointer; }
+
+footer,
+section.menu,
+section.presentation-board,
+div#hero,
+section#services .services-container .service,
+section#freelance-prices .price-container .price-per-antity,
+section#recommendations .recommendation-container .recommender,
+section#formations .formations-container .formation,
+section#experiences .experiences-container .experience,
+section#contact form .form-container,
+section#contact aside.contact-infos .info-container .info {
+  background-color: white; }
 
 li {
   list-style: none; }
@@ -41,14 +52,7 @@ li {
 a {
   text-decoration: none; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
+h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'Montserrat', sans-serif;
   color: var(--lblack); }
 
@@ -71,7 +75,8 @@ main section h2 {
 
 main section > p {
   width: 60%;
-  margin: 30px auto 30px auto; }
+  margin: 30px auto 30px auto;
+  color: var(--gray); }
 
 section.presentation-board {
   padding: 20px; }
@@ -117,7 +122,6 @@ section.presentation-board {
   section.presentation-board {
     width: 305px;
     height: fit-content;
-    background: white;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -151,7 +155,9 @@ section.presentation-board {
           height: 24px;
           background-color: var(--dyellow);
           color: var(--lblack);
-          border-radius: var(--circle); } }
+          border-radius: var(--circle); }
+          section.presentation-board div.social-network ul li a {
+            text-decoration: none; } }
 
 @keyframes burger_hover {
   0% {
@@ -192,8 +198,7 @@ span.burder {
 
 section.menu {
   min-width: 108px;
-  max-width: 170px;
-  background-color: white; }
+  max-width: 170px; }
   section.menu div.menu-fixed {
     position: fixed;
     padding: 30px 10px 30px 10px; }
@@ -514,6 +519,13 @@ section.experiences div.experiences-container div.experience {
   section.experiences div.experiences-container div.experience aside {
     width: 55%; }
 
+section.portfolio ul.portfolio-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  font-weight: bold; }
+
 section.contact {
   display: flex;
   justify-content: space-between; }
@@ -578,8 +590,7 @@ section.contact {
             color: var(--lowblack); }
 
 footer {
-  margin-top: 50px;
-  background-color: white; }
+  margin-top: 50px; }
   footer p {
     text-align: center;
     color: var(--lblack);
