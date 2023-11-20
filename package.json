@@ -22,7 +22,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d docs",
     "start": "react-scripts start",
-    "build": "react-scripts docs",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sass:watch": "node-sass src/sass -o src/css --watch",
