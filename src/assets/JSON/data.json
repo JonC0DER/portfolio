@@ -1,0 +1,164 @@
+{
+  "presentation_board": {
+    "presentation": {
+      "profil": "Polyvalent et scalable, issu du monde des réseaux informatiques et passionné par les systèmes Linux. Mes compétences en codage seraient un atout pour votre entreprise. Je suis organisé, fiable et sans bugs !",
+      "human_quality": [
+        "Flexibilité",
+        "Créativité",
+        "Apprentissage rapide",
+        "Esprit d'équipe"
+      ],
+      "contact": {
+        "telephone": "06 29 25 59 50",
+        "email": "jeanfrancoisjonathan@gmail.com",
+        "lastname": "Jean-François",
+        "firstname": "Jonathan",
+        "GitHub": "JonC0D3R",
+        "portfolio": "https://jonc0der.github.io/portfolio/"
+      }
+    },
+    "skills": {
+      "systems": ["Linux", "Unix"],
+      "languages": {
+        "web": ["HTML5", "CSS3", "Bootstrap"],
+        "JavaScript": ["TypeScript", "REACT", "Redux", "Adonis"],
+        "SQL": ["MySQL", "PostgreSQL", "Oracle"],
+        "Python": ["Flask", "JupiterLAB"],
+        "versioning": ["Git", "GitHub"],
+        "notions": ["PHP", "bash"],
+        "serveurs": ["Apache", "Nginx"],
+        "maquettage": ["Figma", "GIMP", "PhotoShop"]
+      },
+      "linguistiques": ["Français", "Anglais"]
+    }
+  },
+  "formations": [
+    {
+      "date": "2021-2023",
+      "school": "OpenClassRooms école de formation",
+      "diploma": "Bac+3/4 Développeur d'application Javascript/React"
+    },
+    {
+      "date": "2020",
+      "school": "LaPicsine école de formation",
+      "diploma": "Bac+2 Développeur web et web mobile"
+    },
+    {
+      "date": "2015",
+      "school": "Parcours MOOC openclassrooms",
+      "diploma": "Certification intégrateur Web"
+    },
+    {
+      "date": "2007-2009",
+      "diploma": "BTS technicien Réseau"
+    },
+    {
+      "date": "2005-2007",
+      "diploma": "BAC Pro Micro-Informatique"
+    },
+    {
+      "date": "2003-2005",
+      "diploma": "Réseau BEP génie électronique"
+    }
+  ],
+  "experiences": [
+    {
+      "date": "2023",
+      "entreprise": "Jan Billed-App",
+      "project": "Outil de remboursement de factures",
+      "description": "Création des tests unitaires, Débogage de l’application",
+      "technologies": ["JavaScript", "Jtest"]
+    },
+    {
+      "date": "2022 Nov - Déc",
+      "entreprise": "HRnet",
+      "project": "Outils Tableur RH",
+      "description": "Outil JQuery refactorisé en React. Création et publication sur NPM d’un tableur sous forme de plugin avec fonctions de tri, de pagination, de champ de recherche. Page d’accueil avec formulaire d’enregistrement utilisant le localStorage.",
+      "technologies": ["JavaScript", "React", "REDUX", "PropTypes", "LocalStorage", "HTML5 / CSS3"]
+    },
+    {
+      "date": "2022 Nov",
+      "entreprise": "ArgentBank",
+      "project": "Application Bancaire",
+      "description": "Création de formulaires d’enregistrement et de connexion des utilisateurs à leur compte bancaire.",
+      "technologies": ["JavaScript", "React", "REDUX", "PropTypes", "HTML5 / CSS3"]
+    },
+    {
+      "date": "2022 Oct",
+      "entreprise": "SportSee",
+      "project": "Application de Sport",
+      "description": "Utilisation de la bibliothèque D3.js pour afficher la progression des utilisateurs sous forme graphique.",
+      "technologies": ["JavaScript D3", "React", "HTML5 / CSS3"]
+    },
+    {
+      "date": "2022 Aout - Sept",
+      "entreprise": "Kasa",
+      "project": "Réservation d‘appartement de particuliers",
+      "description": "Développement à partir de maquette Figma et données JSON fournies.",
+      "technologies": ["JavaScript", "React", "HTML5 / CSS3"]
+    },
+    {
+      "date": "2022 Juillet",
+      "entreprise": "Learn@Home",
+      "project": "soutien scolaire",
+      "description": "Conception d'une maquette pour une application de soutien scolaire Mobile et Desktop incluant Use-Cases, User-Story et Algorithme de fonctionnement.",
+      "technologies": ["Figma"]
+    },
+    {
+      "date": "2022 Mai - Juin",
+      "entreprise": "Les petits plats",
+      "project": "Moteur de recherche",
+      "description": "Développement de deux modèles de moteur de recherche pour des recettes de cuisine : 1 - boucle native, 2 - binaire.",
+      "technologies": ["Pattern Factory JavaScript", "HTML5 / CSS3"]
+    },
+    {
+      "date": "2022 Mars - Avr",
+      "entreprise": "FishEye",
+      "project": "Galeries photos",
+      "description": "Développement d'un site présentant des photographes avec leur galerie de photos, navigable au clavier et via un lecteur d'écran (ORCA).",
+      "technologies": ["Pattern Factory JavaScript", "HTML5 / CSS3"]
+    },
+    {
+      "date": "2022 Jan - Fev",
+      "entreprise": "GameOn Website",
+      "project": "Formulaire compétition Gaming",
+      "description": "Création des filtres JavaScript nécessaires à la validation sécurisée du formulaire.",
+      "technologies": ["JavaScript"]
+    },
+    {
+      "date": "2022 Jan",
+      "entreprise": "OhMyFood",
+      "project": "Site de restauration",
+      "description": "Porter une maquette mobile-first vers tablette et desktop avec animation CSS3.",
+      "technologies": ["HTML5 / CSS3"]
+    },
+    {
+      "date": "2021 Déc",
+      "entreprise": "Booking",
+      "project": "Site de réservation de chambre hôtelière",
+      "description": "Transformation d'une maquette en site web.",
+      "technologies": ["HTML/CSS3"]
+    },
+    {
+      "date": "2020",
+      "entreprise": "SoundSystem",
+      "project": "Chercher, écouter et créer votre playlist",
+      "description": "Configuration et développement sur VPS: linux Débian 9, Server : Apache. Utilisation de Python, FLASK et JavaScript.",
+      "technologies": ["Python", "FLASK", "Javascript"]
+    },
+    {
+      "date": "2018-2020",
+      "entreprise": "Meyzon",
+      "project": "Site e-commerce de maison et jardin",
+      "description": "Configuration et développement sur VPS: linux Débian 9, CMS: PHP Magento 2.1.3.",
+      "technologies": ["PHP", "Magento 2.1.3"]
+    },
+    {
+      "date": "2016-2017",
+      "entreprise": "WineDoors",
+      "project": "Association vignoble – BDX",
+      "description": "Développement en PHP, JavaScript, HTML5 / CSS3 avec serveur Apache et Base de Données MySQL.",
+      "technologies": ["PHP", "JavaScript", "HTML5 / CSS3", "MySQL"]
+    }
+  ]
+}
