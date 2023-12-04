@@ -1,9 +1,13 @@
 import React from 'react';
+import { MiniaturePortfolioType } from '../../interfacesTypes';
 
-export default function Portfolio() {
+interface MiniaturesProps {
+  miniatures: MiniaturePortfolioType[];
+}
+
+const Portfolio: React.FC<MiniaturesProps> = ({ miniatures }) => {
   return (
     <>
-      {/* PORTFOLIO  */}
       <section id="portfolio" className="portfolio">
         <h2>Portfolio</h2>
         <p>
@@ -27,4 +31,6 @@ export default function Portfolio() {
       </section>
     </>
   );
-}
+};
+
+export default Portfolio;

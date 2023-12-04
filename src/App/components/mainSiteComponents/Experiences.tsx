@@ -1,6 +1,10 @@
 import React from 'react';
+import { ExperienceType } from '../../interfacesTypes';
 
-export default function Experiences() {
+interface ExperiencesProps {
+  experiences: ExperienceType[];
+}
+const Experiences: React.FC<ExperiencesProps> = ({ experiences }) => {
   return (
     <>
       {/* experiences */}
@@ -33,4 +37,6 @@ export default function Experiences() {
       </section>
     </>
   );
-}
+};
+
+export default Experiences;

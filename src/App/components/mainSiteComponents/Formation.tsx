@@ -1,6 +1,11 @@
 import React from 'react';
+import { FormationType } from '../../interfacesTypes';
 
-function Formation() {
+interface FormationProps {
+  formations: FormationType[];
+}
+
+const Formation: React.FC<FormationProps> = ({ formations }) => {
   return (
     <>
       {/* formations  */}
@@ -25,6 +30,6 @@ function Formation() {
       </section>
     </>
   );
-}
+};
 
 export default Formation;
