@@ -9,27 +9,28 @@ import Portfolio from './mainSiteComponents/Portfolio';
 import Contacts from './mainSiteComponents/Contacts';
 import Map from './mainSiteComponents/Map';
 import Footer from './mainSiteComponents/Footer';
+import { DataJsonType } from '../interfacesTypes';
 
-function MainSite() {
-  return (
-    <>
-      {/* MAIN HOME  
-      
-    */}
-      <main>
-        <Hero />
-        <Services />
-        <FreelancePrices />
-        <Recommandation />
-        <Formation />
-        <Experiences />
-        <Portfolio />
-        <Contacts />
-        <Map />
-        <Footer />
-      </main>
-    </>
-  );
+interface MainDataProps {
+  data: DataJsonType;
 }
+
+const MainSite: React.FC<MainDataProps> = ({ data }) => {
+  const [formations, experiences, miniatures_portfolio] = data;
+  return (
+    <main>
+      <Hero />
+      <Services />
+      <FreelancePrices />
+      <Recommandation />
+      <Formation />
+      <Experiences />
+      <Portfolio />
+      <Contacts />
+      <Map />
+      <Footer />
+    </main>
+  );
+};
 
 export default MainSite;
