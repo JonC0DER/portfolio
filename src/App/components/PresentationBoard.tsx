@@ -1,12 +1,19 @@
 import React from 'react';
 import MyPic from '../../assets/images/portfolio_picture_id.jpg';
+import { PresentationType } from '../interfacesTypes';
 
-export default function PresentationBoard() {
+interface PresentationBoardProps {
+  presentationData: PresentationType;
+}
+
+const PresentationBoard: React.FC<PresentationBoardProps> = ({
+  presentationData,
+}) => {
   const jaugeWidth = (width: number) => ({ width: `${width}%` });
+  const presentationDatas = { ...presentationData };
 
   return (
     <>
-      {/* presentation board */}
       <section className="presentation-board">
         <div className="me">
           <figure>
@@ -139,4 +146,6 @@ export default function PresentationBoard() {
       </section>
     </>
   );
-}
+};
+
+export default PresentationBoard;
