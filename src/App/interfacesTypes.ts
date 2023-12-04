@@ -9,26 +9,25 @@ export type DevPrices = {
   options: DevOptions;
 };
 
+export type PresentationT = {
+  profil: string;
+  human_quality: string[];
+  contact: {
+    [key: string]: string;
+  };
+};
+
+export type Skills = {
+  systems: (string[] | { percentage: number })[];
+  languages: {
+    [key: string]: (string[] | { percentage: number })[];
+  };
+  linguistiques: { [key: string]: number };
+};
+
 export type PresentationType = {
-  presentation: {
-    profil: string;
-    human_quality: string[];
-    contact: {
-      telephone: string;
-      email: string;
-      lastname: string;
-      firstname: string;
-      GitHub: string;
-      portfolio: string;
-    };
-  };
-  skills: {
-    systems: string[];
-    languages: {
-      [key: string]: string[];
-    };
-    linguistiques: string[];
-  };
+  presentation: PresentationT;
+  skills: Skills;
 };
 
 export type FormationType = {
