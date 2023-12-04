@@ -6,6 +6,31 @@ section.presentation-board {
     margin-top: 20px;
     padding-bottom: 20px;
     width: 100%;
+    div.social-network{
+      margin-top: 20px;
+      h4.what-am-i {
+        font-weight: 400;
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        li {
+          width: 24px;
+          height: 24px;
+          padding: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--dyellow);
+          color: var(--lblack);
+          border-radius: var(--circle);
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
     h3, h4{
       margin-bottom: 15px;
       font-weight: 500;
@@ -13,7 +38,9 @@ section.presentation-board {
     p {
       font-weight: 300;
       color: var(--gray);
-      &.percent {
+    }
+    div.languages-container{
+      p.percent {
         display: flex;
         justify-content: space-between;
       }
@@ -32,7 +59,7 @@ section.presentation-board {
         height:2px;
         background-color: var(--dyellow);
       }
-    }
+    } 
   }
   button.download-cv{
     margin-top: 20px;
@@ -76,26 +103,6 @@ section.presentation-board {
         }
       }
     }
-    div.social-network{
-      margin-top: 20px;
-      h4.what-am-i {
-        font-weight: 400;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-        li {
-          width: 24px;
-          height: 24px;
-          background-color: var(--dyellow);
-          color: var(--lblack);
-          border-radius: var(--circle);
-          a {
-            text-decoration: none;
-          }
-        }
-      }
-    }
+
   }
 }
