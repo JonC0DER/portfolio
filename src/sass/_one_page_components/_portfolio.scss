@@ -1,4 +1,5 @@
 section.portfolio {
+  background-color: pink;
   ul.portfolio-menu {
     display: flex;
     justify-content: space-around;
@@ -6,4 +7,32 @@ section.portfolio {
     margin: auto;
     font-weight: bold;
   } 
+  div.portfolio-container{
+    width: 100%;
+    margin-top: 30px;
+    background-color: green;
+    figure{
+      position: relative;
+      cursor: pointer;
+      width: 30%;
+      height: 300px;
+      background-color: brown;
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
+      &:hover::before{
+        content: '+';
+        font-size: 4em;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: yellow;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
