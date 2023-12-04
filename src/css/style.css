@@ -85,15 +85,35 @@ section.presentation-board {
     margin-top: 20px;
     padding-bottom: 20px;
     width: 100%; }
+    section.presentation-board > div div.social-network {
+      margin-top: 20px; }
+      section.presentation-board > div div.social-network h4.what-am-i {
+        font-weight: 400; }
+      section.presentation-board > div div.social-network ul {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px; }
+        section.presentation-board > div div.social-network ul li {
+          width: 24px;
+          height: 24px;
+          padding: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--dyellow);
+          color: var(--lblack);
+          border-radius: var(--circle); }
+          section.presentation-board > div div.social-network ul li a {
+            text-decoration: none; }
     section.presentation-board > div h3, section.presentation-board > div h4 {
       margin-bottom: 15px;
       font-weight: 500; }
     section.presentation-board > div p {
       font-weight: 300;
       color: var(--gray); }
-      section.presentation-board > div p.percent {
-        display: flex;
-        justify-content: space-between; }
+    section.presentation-board > div div.languages-container p.percent {
+      display: flex;
+      justify-content: space-between; }
     section.presentation-board > div span.jauge {
       display: inline-block;
       width: 100%;
@@ -141,23 +161,7 @@ section.presentation-board {
         section.presentation-board div.me figure figcaption {
           font-weight: bolder;
           margin-top: 30px;
-          font-size: 20px; }
-    section.presentation-board div.social-network {
-      margin-top: 20px; }
-      section.presentation-board div.social-network h4.what-am-i {
-        font-weight: 400; }
-      section.presentation-board div.social-network ul {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px; }
-        section.presentation-board div.social-network ul li {
-          width: 24px;
-          height: 24px;
-          background-color: var(--dyellow);
-          color: var(--lblack);
-          border-radius: var(--circle); }
-          section.presentation-board div.social-network ul li a {
-            text-decoration: none; } }
+          font-size: 20px; } }
 
 @keyframes burger_hover {
   0% {
