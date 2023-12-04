@@ -12,20 +12,21 @@ import Footer from './mainSiteComponents/Footer';
 import { DataJsonType } from '../interfacesTypes';
 
 interface MainDataProps {
-  data: DataJsonType;
+  mainData: DataJsonType;
 }
 
-const MainSite: React.FC<MainDataProps> = ({ data }) => {
-  const [formations, experiences, miniatures_portfolio] = data;
+const MainSite: React.FC<MainDataProps> = ({ mainData }) => {
+  const [formations, experiences, miniatures_portfolio] = mainData;
+
   return (
     <main>
       <Hero />
       <Services />
       <FreelancePrices />
       <Recommandation />
-      <Formation />
-      <Experiences />
-      <Portfolio />
+      <Formation formations={formations} />
+      <Experiences experiences={experiences} />
+      <Portfolio miniatures={miniatures_portfolio} />
       <Contacts />
       <Map />
       <Footer />

@@ -5,17 +5,13 @@ import Menu from './Menu';
 import jonData from '../../assets/JSON/data.json';
 
 export default function App() {
-  const presentationBoard = jonData.presentation_board;
-  const mainData = [
-    ...jonData.experiences,
-    ...jonData.formations,
-    ...jonData.miniatures_portfolio,
-  ];
+  const { presentation_board, formations, experiences, miniatures_portfolio } =
+    jonData;
 
   return (
     <div className="main-container">
-      <PresentationBoard presentationData={presentationBoard} />
-      <MainSite data={...mainData} />
+      <PresentationBoard presentationData={presentation_board} />
+      <MainSite mainData={[formations, experiences, miniatures_portfolio]} />
       <Menu />
     </div>
   );
