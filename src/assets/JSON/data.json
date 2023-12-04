@@ -50,14 +50,17 @@
     },
     {
       "date": "2007-2009",
+      "school": "I.P.I école informatique fu groupe I.G.S",
       "diploma": "BTS technicien Réseau"
     },
     {
       "date": "2005-2007",
+      "school": "L.P.P de Blanchet Gourbeyre",
       "diploma": "BAC Pro Micro-Informatique"
     },
     {
       "date": "2003-2005",
+      "school": "L.P.P de Blanchet Gourbeyre",
       "diploma": "Réseau BEP génie électronique"
     }
   ],
@@ -159,6 +162,28 @@
       "project": "Association vignoble – BDX",
       "description": "Développement en PHP, JavaScript, HTML5 / CSS3 avec serveur Apache et Base de Données MySQL.",
       "technologies": ["PHP", "JavaScript", "HTML5 / CSS3", "MySQL"]
+    }
+  ],
+  "miniatures_portfolio": [
+    {
+      "image": "assets/images/miniatures_portfolio/fisheye.png",
+      "link": "https://jonc0der.github.io/Front-End-Fisheye/"
+    },
+    {
+      "image": "assets/images/miniatures_portfolio/gameon.png",
+      "link": "https://jonc0der.github.io/GameOn-website-FR/"
+    },
+    {
+      "image": "assets/images/miniatures_portfolio/kasa.png",
+      "link": "https://jonc0der.github.io/kasa-react/"
+    },
+    {
+      "image": "assets/images/miniatures_portfolio/les_petits_plats.png",
+      "link": "https://jonc0der.github.io/Les-petits-plats/"
+    },
+    {
+      "image": "assets/images/miniatures_portfolio/ohmyfood.png",
+      "link": "https://jonc0der.github.io/ohmyfood/"
     }
   ]
 }
