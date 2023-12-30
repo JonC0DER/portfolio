@@ -7,28 +7,27 @@ interface FormationProps {
 
 const Formation: React.FC<FormationProps> = ({ formations }) => {
   return (
-    <>
-      {/* formations  */}
-      <section id="formations" className="formations">
-        <h2>Mes Formations</h2>
-        <p>Ci-dessous mes différentes certifications et diplomes.</p>
-        <div className="formations-container">
-          <div className="formation">
+    <section id="formations" className="formations">
+      <h2>Mes Formations</h2>
+      <p>Ci-dessous mes différentes certifications et diplomes.</p>
+      <div className="formations-container">
+        {formations.map((formation, key) => (
+          <div key={key} className="formation">
             <div className="degre-date">
-              <h3>Bac + x</h3>
+              <h3>{formation.diploma}</h3>
               <p>
-                Mission
-                <span className="date">Jan 2021 - Mars 2022</span>
+                Etudiant
+                <span className="date">{formation.date}</span>
               </p>
             </div>
             <aside>
-              <h3>OpenClassrooms</h3>
-              <p>Réalisation de ... avec ... etc.</p>
+              <h3>{formation.school}</h3>
+              <p>{formation.content}</p>
             </aside>
           </div>
-        </div>
-      </section>
-    </>
+        ))}
+      </div>
+    </section>
   );
 };
 
