@@ -34,6 +34,7 @@ export type FormationType = {
   date: string;
   school: string;
   diploma?: string;
+  content?: string;
 };
 
 export type ExperienceType = {
@@ -54,3 +55,14 @@ export type DataJsonType = [
   experiences: ExperienceType[],
   miniatures_portfolio: MiniaturePortfolioType[],
 ];
+
+export type JaugeString = string[];
+
+export type JaugeNumber = {
+  percentage: number;
+};
+
+export type JaugeAdds = {
+  jaugeStr: JaugeString;
+  percentage: JaugeNumber;
+}[];
