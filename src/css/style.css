@@ -111,7 +111,8 @@ section.presentation-board {
     section.presentation-board > div p {
       font-weight: 300;
       color: var(--gray); }
-    section.presentation-board > div div.languages-container p.percent {
+    section.presentation-board > div div.languages-container p.percent,
+    section.presentation-board > div div.skill p.percent {
       display: flex;
       justify-content: space-between; }
     section.presentation-board > div span.jauge {
