@@ -118,37 +118,43 @@
     {
       "date": "2021-2023",
       "school": "OpenClassRooms école de formation",
-      "diploma": "Bac+3/4 Développeur d'application Javascript/React"
+      "diploma": "Bac+3/4 Développeur d'application",
+      "content": "Réalisation d'application web avec Vanilla Javascript, POO, Factory pattern, React, Redux-toolkit, typeScript"
     },
     {
       "date": "2020",
       "school": "LaPicsine école de formation",
-      "diploma": "Bac+2 Développeur web et web mobile"
+      "diploma": "Bac+2 Développeur web et web mobile",
+      "content": "Le développement web avec python et ses librairies, savoir utiliser python pour l'affichage de graphs et nettoyage de données"
     },
     {
       "date": "2015",
       "school": "Parcours MOOC openclassrooms",
-      "diploma": "Certification intégrateur Web"
+      "diploma": "Certification intégrateur Web",
+      "content": "Apprentisage de l'HTML, CSS, Javascript sur plusieurs MOOCs"
     },
     {
       "date": "2007-2009",
       "school": "I.P.I école informatique fu groupe I.G.S",
-      "diploma": "BTS technicien Réseau"
+      "diploma": "BTS technicien Réseau",
+      "content": "Configuration et administration de réseaux et serveurs (apache, LDAP, Active Directory, Domino, DHCP, DNS, Partage SAMBA etc...)"
     },
     {
       "date": "2005-2007",
       "school": "L.P.P de Blanchet Gourbeyre",
-      "diploma": "BAC Pro Micro-Informatique"
+      "diploma": "BAC Pro Micro-Informatique",
+      "content": "Installation & configuration de réseaux avec routeur, switch ainsi que dépanage"
     },
     {
       "date": "2003-2005",
       "school": "L.P.P de Blanchet Gourbeyre",
-      "diploma": "Réseau BEP génie électronique"
+      "diploma": "Réseau BEP génie électronique",
+      "content": "calcul, conception et compréhension de circuit imprimé ainsi que réalisation d'un circuit à destination de couveuse pour nouveau nés"
     }
   ],
   "experiences": [
     {
-      "date": "2023",
+      "date": "2023 Jan",
       "entreprise": "Jan Billed-App",
       "project": "Outil de remboursement de factures",
       "description": "Création des tests unitaires, Débogage de l’application",
@@ -280,7 +286,7 @@
       "description": "Configuration et développement sur VPS: linux Débian 9, CMS: PHP Magento 2.1.3.",
       "technologies": [
         "PHP",
-        "Magento 2.1.3"
+        "Magento"
       ]
     },
     {
