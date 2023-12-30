@@ -39,7 +39,8 @@ section.presentation-board {
       font-weight: 300;
       color: var(--gray);
     }
-    div.languages-container{
+    div.languages-container,
+    div.skill{
       p.percent {
         display: flex;
         justify-content: space-between;
