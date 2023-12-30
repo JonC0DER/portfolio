@@ -1,6 +1,6 @@
 import React from 'react';
 import MyPic from '../../assets/images/portfolio_picture_id.jpg';
-import { PresentationType } from '../interfacesTypes';
+import { JaugeAdds, PresentationType } from '../interfacesTypes';
 
 interface PresentationBoardProps {
   presentationData: PresentationType;
@@ -18,7 +18,26 @@ const PresentationBoard: React.FC<PresentationBoardProps> = ({
 
   const skills = data.skills;
   const { systems, languages, linguistiques } = skills;
-  console.log(languages);
+  const linguistiquesFormat = Object.entries(linguistiques);
+  const codeLanguages = Object.entries(languages);
+
+  const Jauge = ({ jaugeAdds }: { jaugeAdds: JaugeAdds }) => {
+    const [items, percent] = jaugeAdds;
+    const itemStr = Array.isArray(items) ? items.join(' / ') : 'Str error';
+    const percentage = Number(percent.percentage);
+
+    return (
+      <div className="skill">
+        <p className="percent">
+          <span className="bold">{itemStr}</span>
+          <span>{percentage}%</span>
+        </p>
+        <span className="jauge">
+          <span className="interne" style={jaugeWidth(percentage)}></span>
+        </span>
+      </div>
+    );
+  };
 
   return (
     <section className="presentation-board">
@@ -52,7 +71,7 @@ const PresentationBoard: React.FC<PresentationBoardProps> = ({
       </div>
       <div className="my-languages">
         <h3>Langues</h3>
-        {Object.entries(linguistiques).map(([key, val]) => (
+        {linguistiquesFormat.map(([key, val]) => (
           <div className="languages-container" key={key}>
             <p className="percent">
               <span> {key} </span>
@@ -66,30 +85,8 @@ const PresentationBoard: React.FC<PresentationBoardProps> = ({
       </div>
       <div className="skills">
         <h3>Compétences</h3>
-        {Object.entries(languages).map(([language, value]) => (
-          <div key={language} className="skill">
-            {Object.entries(value).map(([key, val]) => (
-              <div key={key}>
-                {val instanceof Array ? (
-                  <p>
-                    <span className="bold">{val.join(' / ')}</span>
-                  </p>
-                ) : val instanceof Object ? (
-                  <span className="jauge">
-                    {Object.entries(val).map(([percentage, valNum]) => (
-                      <span
-                        key={percentage}
-                        className="interne"
-                        style={jaugeWidth(valNum)}
-                      ></span>
-                    ))}
-                  </span>
-                ) : (
-                  <span>Not an Array or Object</span>
-                )}
-              </div>
-            ))}
-          </div>
+        {codeLanguages.map(([key, value]) => (
+          <Jauge key={key} jaugeAdds={value as []} />
         ))}
       </div>
       <button className="download-cv">
