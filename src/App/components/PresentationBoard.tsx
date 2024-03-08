@@ -1,3 +1,4 @@
+import { spawn } from 'child_process';
 import React from 'react';
 import MyPic from '../../assets/images/portfolio_picture_id.jpg';
 import { JaugeAdds, PresentationType } from '../interfacesTypes';
@@ -82,6 +83,10 @@ const PresentationBoard: React.FC<PresentationBoardProps> = ({
             </span>
           </div>
         ))}
+      </div>
+      <div className="systems">
+        <h3>Sysèmes</h3>
+        <Jauge jaugeAdds={systems as []} />
       </div>
       <div className="skills">
         <h3>Compétences</h3>
