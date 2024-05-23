@@ -55,8 +55,12 @@ span.burder {
 }
 
 section.menu {
-  min-width: 108px;
-  max-width: 170px;
+  width: 200px;
+  transition: width .1s ease-in;
+  &.less{
+    width:80px;
+  }
+
   div.menu-fixed {
     position: fixed;
     padding: 30px 10px 30px 10px;
@@ -157,7 +161,7 @@ section.menu {
 
 @media screen and (min-width:992px) {
   section.menu {
-    width: 100%;
+    // width: 100%;
 
     .menu-fixed .menu-options {
       height: 100px;

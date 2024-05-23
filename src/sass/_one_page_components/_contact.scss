@@ -49,11 +49,18 @@ section.contact{
     }
   }
   aside{
-    width: 40%;
+    // width: 40%;
+    margin: auto;
     div.info-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between;
+
+      display: grid;
+      grid-template-columns: auto auto; /* Deux colonnes égales */
+      grid-template-rows: auto auto; /* Deux lignes égales */
+      gap: 20px; /* Espacement entre les éléments */
+      
       div.info{
         padding: 20px;
         & > p.icon{

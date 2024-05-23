@@ -13,7 +13,8 @@ section.services{
       div.sprite {
         width: var(--sprite-w);
         height: var(--sprite-h);
-        background-image: url('../assets/illustration/illustration_sprites.png');
+        background-image: url('../../assets/illustration/illustration_sprites.png');
+        // background-image: url('illustration/illustration_sprites.png');
         background-size: 284%;
         &.web-dev{
           background-position: -2px 1px;
@@ -28,6 +29,9 @@ section.services{
           background-position: -121px -198px;
         }
         &.game-dev{
+          background-position: -2px -95px;
+        }
+        &.autre{
           background-position: -2px -95px;
         }
         background-repeat: no-repeat;
