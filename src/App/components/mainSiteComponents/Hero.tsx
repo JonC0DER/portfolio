@@ -1,10 +1,9 @@
 import React from 'react';
-import HeroImg from '../../../assets/images/portfolio_picture.png';
 
 function Hero() {
+  const heroImg = 'assets/images/portfolio_picture.png';
   return (
     <>
-      {/* hero  */}
       <div id="hero" className="hero">
         <div className="hero-text">
           <h1 className="i-am">
@@ -22,7 +21,7 @@ function Hero() {
           </button>
         </div>
         <figure>
-          <img src={HeroImg} alt="john!" />
+          <img src={require(`../../../${heroImg}`)} alt="john!" />
         </figure>
       </div>
     </>

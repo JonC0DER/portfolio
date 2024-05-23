@@ -1,11 +1,14 @@
 import React from 'react';
 
 export default function Contacts() {
+  const sendMsg = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+  };
+
   return (
     <>
-      {/* CONTACT  */}
       <section id="contact" className="contact">
-        <form action="" method="post">
+        {/* <form action="" method="post">
           <h2>Laissez moi un message</h2>
           <div className="form-container">
             <p>
@@ -29,9 +32,11 @@ export default function Contacts() {
                 cols={40}
               ></textarea>
             </p>
-            <button className="send-message">Envoyez</button>
+            <button className="send-message" onClick={sendMsg}>
+              Envoyez
+            </button>
           </div>
-        </form>
+        </form> */}
         <aside className="contact-infos">
           <h2>Information</h2>
           <div className="info-container">
@@ -59,7 +64,11 @@ export default function Contacts() {
               </p>
               <p className="content-text">
                 <span className="label-text"> Linkedin: </span>
-                <span>...</span>
+                <span>
+                  <a href="https://www.linkedin.com/in/jonathan-jean-francois-03659bb8/">
+                    https://linkedin/jean-francois/
+                  </a>
+                </span>
               </p>
             </div>
             <div className="info github">

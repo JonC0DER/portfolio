@@ -46,6 +46,7 @@ export type ExperienceType = {
 };
 
 export type MiniaturePortfolioType = {
+  img: string;
   image: string;
   link: string;
 };

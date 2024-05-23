@@ -7,8 +7,10 @@ export default function Services() {
       <section id="services" className="services">
         <h2>Mes Services</h2>
         <p>
-          Lorem ipsum sed cupiditate eum, veniam quod quasi totam eos corporis
-          culpa. Nostrum tempore accusantium ducimus cupiditate!
+          Bienvenue dans mon univers numérique ! Ou je donne vie à vos idées.
+          Que vous souhaitiez créer une application web comme mobile, un blog
+          dynamique ou une boutique en ligne, je suis là pour vous accompagner à
+          chaque étape du processus.
         </p>
         <div className="services-container">
           <div className="service">
@@ -37,10 +39,9 @@ export default function Services() {
             <p className="description">JavaScript / TypeScript PhaserJS</p>
           </div>
           <div className="service">
+            <div className="sprite autre"></div>
             <h3 className="title">Autres</h3>
-            <p className="description">
-              <br />
-            </p>
+            <p className="description">En discuter ne nous fera pas de mal !</p>
           </div>
         </div>
       </section>

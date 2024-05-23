@@ -1,8 +1,10 @@
 import React from 'react';
 
 export default function Menu() {
+  const sectionMenu = document.querySelector('section.menu');
   const spansMenuWord = document.querySelectorAll('span.menu-word');
 
+  console.log(spansMenuWord);
   const toggleSpansWord = () => {
     spansMenuWord.forEach((span) => {
       span.classList.toggle('hidden');
@@ -10,14 +12,14 @@ export default function Menu() {
   };
 
   const burgerClicked = (event: React.MouseEvent<HTMLDivElement>) => {
+    toggleSpansWord();
+    sectionMenu?.classList.toggle('less');
     const burgerClasses = event.currentTarget.classList;
     burgerClasses.toggle('burger-clicked');
-    toggleSpansWord();
   };
 
   return (
     <>
-      {/* MENU  */}
       <section className="menu">
         <div className="menu-fixed">
           <div className="menu-options">

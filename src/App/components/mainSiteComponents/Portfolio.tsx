@@ -6,6 +6,7 @@ interface MiniaturesProps {
 }
 
 const Portfolio: React.FC<MiniaturesProps> = ({ miniatures }) => {
+  console.log(miniatures);
   return (
     <>
       <section id="portfolio" className="portfolio">
@@ -23,10 +24,17 @@ const Portfolio: React.FC<MiniaturesProps> = ({ miniatures }) => {
           <li>Scripting</li>
         </ul>
         <div className="portfolio-container">
-          <figure>
-            <img src="" alt="" />
-            <video src=""></video>
-          </figure>
+          {miniatures.map((item, index) => (
+            <a href={item.link} target="_blank" rel="noreferrer" key={index}>
+              <figure key={index}>
+                <img
+                  src={require(`../../../${item.image}`)}
+                  alt="miniature"
+                  key={index}
+                />
+              </figure>
+            </a>
+          ))}
         </div>
       </section>
     </>

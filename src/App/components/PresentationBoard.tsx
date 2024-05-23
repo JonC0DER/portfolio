@@ -1,7 +1,7 @@
 import { spawn } from 'child_process';
 import React from 'react';
-import MyPic from '../../assets/images/portfolio_picture_id.jpg';
 import { JaugeAdds, PresentationType } from '../interfacesTypes';
+// import myPicId from '../../assets'
 
 interface PresentationBoardProps {
   presentationData: PresentationType;
@@ -10,6 +10,7 @@ interface PresentationBoardProps {
 const PresentationBoard: React.FC<PresentationBoardProps> = ({
   presentationData,
 }) => {
+  const myPic = 'assets/images/portfolio_picture_id.jpg';
   const jaugeWidth = (width: number) => ({ width: `${width}%` });
   const data = { ...presentationData };
 
@@ -44,7 +45,11 @@ const PresentationBoard: React.FC<PresentationBoardProps> = ({
     <section className="presentation-board">
       <div className="me">
         <figure>
-          <img src={MyPic} alt="Somthing" className="picture" />
+          <img
+            src={require(`../../${myPic}`)}
+            alt="Somthing"
+            className="picture"
+          />
           <figcaption>{fullName}</figcaption>
         </figure>
         <div className="social-network">
