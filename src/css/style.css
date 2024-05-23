@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
 :root {
   --dyellow: #FFB400;
@@ -202,8 +203,10 @@ span.burder {
   align-items: center; }
 
 section.menu {
-  min-width: 108px;
-  max-width: 170px; }
+  width: 200px;
+  transition: width .1s ease-in; }
+  section.menu.less {
+    width: 80px; }
   section.menu div.menu-fixed {
     position: fixed;
     padding: 30px 10px 30px 10px; }
@@ -263,26 +266,24 @@ section.menu {
         box-shadow: 4px 4px 3px var(--gray); }
 
 @media screen and (min-width: 992px) {
-  section.menu {
-    width: 100%; }
-    section.menu .menu-fixed .menu-options {
-      height: 100px;
+  section.menu .menu-fixed .menu-options {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px; }
+  section.menu ul {
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    section.menu ul li {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin-bottom: 100px; }
-    section.menu ul {
-      height: 420px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      section.menu ul li {
-        display: flex;
-        align-items: center; }
-        section.menu ul li a {
-          display: contents; }
-          section.menu ul li a span.circle {
-            margin-right: 10px; } }
+      align-items: center; }
+      section.menu ul li a {
+        display: contents; }
+        section.menu ul li a span.circle {
+          margin-right: 10px; } }
 
 @media screen and (min-width: 1024px) {
   main {
@@ -343,7 +344,7 @@ section.services div.services-container {
     section.services div.services-container div.service div.sprite {
       width: var(--sprite-w);
       height: var(--sprite-h);
-      background-image: url("../assets/illustration/illustration_sprites.png");
+      background-image: url("../../assets/illustration/illustration_sprites.png");
       background-size: 284%;
       background-repeat: no-repeat;
       /* Utilisez filter pour changer la couleur de l'image en #FFB400 */
@@ -357,6 +358,8 @@ section.services div.services-container {
       section.services div.services-container div.service div.sprite.dev-mobile {
         background-position: -121px -198px; }
       section.services div.services-container div.service div.sprite.game-dev {
+        background-position: -2px -95px; }
+      section.services div.services-container div.service div.sprite.autre {
         background-position: -2px -95px; }
 
 @media screen and (min-width: 1024px) {
@@ -493,27 +496,44 @@ section.experiences div.experiences-container div.experience {
   section.experiences div.experiences-container div.experience div.degre-date,
   section.experiences div.experiences-container div.experience div.experience-date {
     width: 25%; }
-    section.formations div.formations-container div.formation div.degre-date p span.date,
-    section.formations div.formations-container div.formation div.experience-date p span.date,
-    section.formations div.formations-container div.experience div.degre-date p span.date,
-    section.formations div.formations-container div.experience div.experience-date p span.date,
-    section.formations div.experiences-container div.formation div.degre-date p span.date,
-    section.formations div.experiences-container div.formation div.experience-date p span.date,
-    section.formations div.experiences-container div.experience div.degre-date p span.date,
-    section.formations div.experiences-container div.experience div.experience-date p span.date,
-    section.experiences div.formations-container div.formation div.degre-date p span.date,
-    section.experiences div.formations-container div.formation div.experience-date p span.date,
-    section.experiences div.formations-container div.experience div.degre-date p span.date,
-    section.experiences div.formations-container div.experience div.experience-date p span.date,
-    section.experiences div.experiences-container div.formation div.degre-date p span.date,
-    section.experiences div.experiences-container div.formation div.experience-date p span.date,
-    section.experiences div.experiences-container div.experience div.degre-date p span.date,
-    section.experiences div.experiences-container div.experience div.experience-date p span.date {
-      margin-left: 25px;
-      font-size: 12px;
-      color: white;
-      background-color: var(--dyellow);
-      padding: 4px 8px 4px 8px; }
+    section.formations div.formations-container div.formation div.degre-date p,
+    section.formations div.formations-container div.formation div.experience-date p,
+    section.formations div.formations-container div.experience div.degre-date p,
+    section.formations div.formations-container div.experience div.experience-date p,
+    section.formations div.experiences-container div.formation div.degre-date p,
+    section.formations div.experiences-container div.formation div.experience-date p,
+    section.formations div.experiences-container div.experience div.degre-date p,
+    section.formations div.experiences-container div.experience div.experience-date p,
+    section.experiences div.formations-container div.formation div.degre-date p,
+    section.experiences div.formations-container div.formation div.experience-date p,
+    section.experiences div.formations-container div.experience div.degre-date p,
+    section.experiences div.formations-container div.experience div.experience-date p,
+    section.experiences div.experiences-container div.formation div.degre-date p,
+    section.experiences div.experiences-container div.formation div.experience-date p,
+    section.experiences div.experiences-container div.experience div.degre-date p,
+    section.experiences div.experiences-container div.experience div.experience-date p {
+      line-height: 25px; }
+      section.formations div.formations-container div.formation div.degre-date p span.date,
+      section.formations div.formations-container div.formation div.experience-date p span.date,
+      section.formations div.formations-container div.experience div.degre-date p span.date,
+      section.formations div.formations-container div.experience div.experience-date p span.date,
+      section.formations div.experiences-container div.formation div.degre-date p span.date,
+      section.formations div.experiences-container div.formation div.experience-date p span.date,
+      section.formations div.experiences-container div.experience div.degre-date p span.date,
+      section.formations div.experiences-container div.experience div.experience-date p span.date,
+      section.experiences div.formations-container div.formation div.degre-date p span.date,
+      section.experiences div.formations-container div.formation div.experience-date p span.date,
+      section.experiences div.formations-container div.experience div.degre-date p span.date,
+      section.experiences div.formations-container div.experience div.experience-date p span.date,
+      section.experiences div.experiences-container div.formation div.degre-date p span.date,
+      section.experiences div.experiences-container div.formation div.experience-date p span.date,
+      section.experiences div.experiences-container div.experience div.degre-date p span.date,
+      section.experiences div.experiences-container div.experience div.experience-date p span.date {
+        margin-left: 25px;
+        font-size: 12px;
+        color: white;
+        background-color: var(--dyellow);
+        padding: 4px 8px 4px 8px; }
   section.formations div.formations-container div.formation aside,
   section.formations div.formations-container div.experience aside,
   section.formations div.experiences-container div.formation aside,
@@ -525,25 +545,33 @@ section.experiences div.experiences-container div.experience {
     width: 55%; }
 
 section.portfolio {
-  background-color: pink; }
+  background-color: white; }
   section.portfolio ul.portfolio-menu {
     display: flex;
     justify-content: space-around;
     width: 80%;
     margin: auto;
     font-weight: bold; }
+    section.portfolio ul.portfolio-menu li {
+      color: var(--lblack);
+      transition: color 0.4s ease; }
+      section.portfolio ul.portfolio-menu li:hover {
+        color: var(--dyellow); }
   section.portfolio div.portfolio-container {
     width: 100%;
     margin-top: 30px;
-    background-color: green; }
+    background-color: var(--lgrey);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 3%; }
     section.portfolio div.portfolio-container figure {
       position: relative;
       cursor: pointer;
-      width: 30%;
       height: 300px;
       background-color: brown; }
       section.portfolio div.portfolio-container figure img {
         width: 100%;
+        height: 100%;
         object-fit: cover; }
       section.portfolio div.portfolio-container figure:hover::before {
         content: '+';
@@ -553,7 +581,8 @@ section.portfolio {
         justify-content: center;
         align-items: center;
         position: absolute;
-        background-color: yellow;
+        background-color: var(--dyellow);
+        opacity: .8;
         width: 100%;
         height: 100%; }
 
@@ -596,11 +625,15 @@ section.contact {
         background-color: var(--dyellow);
         padding: 8px 10px 8px 10px; }
   section.contact aside {
-    width: 40%; }
+    margin: auto; }
     section.contact aside div.info-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
+      display: grid;
+      grid-template-columns: auto auto;
+      /* Deux colonnes égales */
+      grid-template-rows: auto auto;
+      /* Deux lignes égales */
+      gap: 20px;
+      /* Espacement entre les éléments */ }
       section.contact aside div.info-container div.info {
         padding: 20px; }
         section.contact aside div.info-container div.info > p.icon {
