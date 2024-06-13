@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from './mainSiteComponents/Hero';
 import Services from './mainSiteComponents/Services';
 import FreelancePrices from './mainSiteComponents/FreelancePrices';
-import Recommandation from './mainSiteComponents/Recommandation';
+// import Recommandation from './mainSiteComponents/Recommandation';
 import Formation from './mainSiteComponents/Formation';
 import Experiences from './mainSiteComponents/Experiences';
 import Portfolio from './mainSiteComponents/Portfolio';
@@ -23,7 +23,7 @@ const MainSite: React.FC<MainDataProps> = ({ mainData }) => {
       <Hero />
       <Services />
       <FreelancePrices />
-      <Recommandation />
+      {/* <Recommandation /> */}
       <Formation formations={formations} />
       <Experiences experiences={experiences} />
       <Portfolio miniatures={miniatures_portfolio} />

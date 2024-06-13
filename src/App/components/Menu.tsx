@@ -1,40 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Menu() {
-  const sectionMenu = document.querySelector('section.menu');
-  const spansMenuWord = document.querySelectorAll('span.menu-word');
+  const [isToggle, setIsToggle] = useState(false);
 
-  console.log(spansMenuWord);
-  const toggleSpansWord = () => {
-    spansMenuWord.forEach((span) => {
-      span.classList.toggle('hidden');
-    });
-  };
-
-  const burgerClicked = (event: React.MouseEvent<HTMLDivElement>) => {
-    toggleSpansWord();
-    sectionMenu?.classList.toggle('less');
-    const burgerClasses = event.currentTarget.classList;
-    burgerClasses.toggle('burger-clicked');
+  const toggleClicked = () => {
+    setIsToggle(!isToggle);
   };
 
   return (
     <>
-      <section className="menu">
+      <section className={`menu ${isToggle ? 'less' : ''}`}>
         <div className="menu-fixed">
           <div className="menu-options">
             <div className="large-small">
-              <div className="burger" onClick={burgerClicked}>
+              <div
+                className={`burger ${isToggle ? 'burger-clicked' : ''}`}
+                onClick={toggleClicked}
+              >
                 <span className="bar"></span>
                 <span className="bar"></span>
                 <span className="bar"></span>
               </div>
             </div>
-            <div className="themes">
+            {/* <div className="themes">
               <span className="circle">
                 <span className="material-symbols-outlined">dark_mode</span>
               </span>
-            </div>
+            </div> */}
           </div>
           <ul>
             <li className="roll">
@@ -42,7 +34,9 @@ export default function Menu() {
                 <span className="circle">
                   <span className="material-symbols-outlined">home</span>
                 </span>
-                <span className="menu-word">Home</span>
+                <span className={`menu-word ${isToggle ? 'hidden' : ''}`}>
+                  Home
+                </span>
               </a>
             </li>
             <li className="roll">
@@ -52,7 +46,9 @@ export default function Menu() {
                     developer_mode_tv
                   </span>
                 </span>
-                <span className="menu-word">Services</span>
+                <span className={`menu-word ${isToggle ? 'hidden' : ''}`}>
+                  Services
+                </span>
               </a>
             </li>
             <li className="roll">
@@ -60,7 +56,9 @@ export default function Menu() {
                 <span className="circle">
                   <span className="material-symbols-outlined">payments</span>
                 </span>
-                <span className="menu-word">Prices</span>
+                <span className={`menu-word ${isToggle ? 'hidden' : ''}`}>
+                  Prices
+                </span>
               </a>
             </li>
             <li className="roll">
@@ -68,7 +66,9 @@ export default function Menu() {
                 <span className="circle">
                   <span className="material-symbols-outlined">recommend</span>
                 </span>
-                <span className="menu-word">Partners</span>
+                <span className={`menu-word ${isToggle ? 'hidden' : ''}`}>
+                  Partners
+                </span>
               </a>
             </li>
             <li className="roll">
@@ -76,7 +76,9 @@ export default function Menu() {
                 <span className="circle">
                   <span className="material-symbols-outlined">school</span>
                 </span>
-                <span className="menu-word">Formations</span>
+                <span className={`menu-word ${isToggle ? 'hidden' : ''}`}>
+                  Formations
+                </span>
               </a>
             </li>
             <li className="roll">
@@ -86,7 +88,9 @@ export default function Menu() {
                     work_history
                   </span>
                 </span>
-                <span className="menu-word">Experiences</span>
+                <span className={`menu-word ${isToggle ? 'hidden' : ''}`}>
+                  Experiences
+                </span>
               </a>
             </li>
             <li className="roll">
@@ -96,7 +100,9 @@ export default function Menu() {
                     construction
                   </span>
                 </span>
-                <span className="menu-word">Portfolio</span>
+                <span className={`menu-word ${isToggle ? 'hidden' : ''}`}>
+                  Portfolio
+                </span>
               </a>
             </li>
             <li className="roll">
@@ -106,7 +112,9 @@ export default function Menu() {
                     contact_mail
                   </span>
                 </span>
-                <span className="menu-word">Contacts</span>
+                <span className={`menu-word ${isToggle ? 'hidden' : ''}`}>
+                  Contacts
+                </span>
               </a>
             </li>
           </ul>

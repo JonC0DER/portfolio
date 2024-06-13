@@ -2,36 +2,51 @@ import React from 'react';
 import { DevOptions, DevPrices } from '../../interfacesTypes';
 
 export default function FreelancePrices() {
-  const devOptions: DevOptions = {
+  const simpleOptions: DevOptions = {
     Maquettage: true,
+    'Web ou Mobile': true,
+    'Base de données': true,
+  };
+
+  const middleOptions: DevOptions = {
+    WordPress: true,
     'HTML/CSS': true,
     'JavaScript/TypeScript': true,
-    React: true,
-    Redux: true,
-    'React-Native': false,
-    SQL: false,
-    Python: false,
-    PHP: false,
+    'Python ou PHP': true,
+  };
+
+  const devOptions: DevOptions = {
+    'React, Redux-toolkit': true,
+    'React-Native': true,
+    'SQL + MySQL PostgreSQL': true,
   };
 
   const prices: DevPrices[] = [
     {
       title: 'Associations',
       price: '150',
-      desc: 'Lorem ipsum dolor. Culpa reiciendis laudantium praesentium quisqua',
-      options: devOptions,
+      desc: "Je m'adapte pour fournir des résultats exceptionnels aux associations, malgré leurs ressources limitées.",
+      options: {
+        ...simpleOptions,
+      },
     },
     {
       title: 'P.M.E',
       price: '300',
-      desc: 'Lorem ipsum dolor. Culpa reiciendis laudantium praesentium quisqua',
-      options: devOptions,
+      desc: '',
+      options: {
+        ...simpleOptions,
+        ...middleOptions,
+      },
     },
     {
       title: 'Grande Entreprise',
       price: '450',
-      desc: 'Lorem ipsum dolor. Culpa reiciendis laudantium praesentium quisqua',
-      options: devOptions,
+      desc: '',
+      options: {
+        ...middleOptions,
+        ...devOptions,
+      },
     },
   ];
 
@@ -71,7 +86,7 @@ export default function FreelancePrices() {
                   ))}
                 </p>
               </div>
-              <button className="order">VOTRE CHOIX</button>
+              {/* <button className="order">VOTRE CHOIX</button> */}
             </div>
           ))}
         </div>
