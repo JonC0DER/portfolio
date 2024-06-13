@@ -75,10 +75,14 @@ section.contact{
 
         p.content-text {
           display: flex;
-          justify-content: space-between;
+          flex-direction: column;
+          align-content:space-around ;
+          // justify-content: space-between;
           & > span,
           & > span a {
             color: var(--gray);
+            margin-top: 15px;
+            margin-bottom: 15px;
           }
           & > span.label-text {
             font-weight: bold;

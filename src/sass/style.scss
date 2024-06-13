@@ -2,4 +2,10 @@
 @import './main';
 @import './presentation_board';
 @import './menu';
+section.services div.services-container{
+  div.service div.sprite {
+    background-image: url('../assets/illustration/illustration_sprites.png');
+  }
+}
+
 @import './one_page';

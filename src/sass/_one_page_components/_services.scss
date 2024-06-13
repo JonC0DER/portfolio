@@ -1,7 +1,6 @@
 section.services{
   div.services-container{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     div.service{
         background-color: white;
@@ -13,8 +12,7 @@ section.services{
       div.sprite {
         width: var(--sprite-w);
         height: var(--sprite-h);
-        background-image: url('../../assets/illustration/illustration_sprites.png');
-        // background-image: url('illustration/illustration_sprites.png');
+        // background-image: url('../../../assets/illustration/illustration_sprites.png');
         background-size: 284%;
         &.web-dev{
           background-position: -2px 1px;
@@ -42,16 +40,18 @@ section.services{
   }
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1440px){ 
   section.services{
-    margin-top: 100px;
-    width:100%;
-    text-align: center;
     div.services-container{
-      div.service{
-        width: 310px;
-        height: 225px;
-      }
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (min-width:1300px) and (max-width:1440px){
+  section.services{
+    div.services-container{
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
