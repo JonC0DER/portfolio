@@ -12,6 +12,7 @@
   --lblack: #2B2B2B;
   --lowblack: #3A3B3C;
   --gray: #767676;
+  --mgrey: #F0F0F6;
   --lgrey: whitesmoke;
   --bg: #E4E6EB;
   --circle: 100px;
@@ -136,31 +137,6 @@ section.presentation-board {
     width: 75%;
     background-color: var(--dyellow); }
 
-@media screen and (min-width: 992px) {
-  section.presentation-board {
-    width: 305px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    section.presentation-board div.me {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      section.presentation-board div.me figure {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        section.presentation-board div.me figure img.picture {
-          width: 150px;
-          height: 150px;
-          border-radius: var(--circle);
-          object-fit: cover; }
-        section.presentation-board div.me figure figcaption {
-          font-weight: bolder;
-          margin-top: 30px;
-          font-size: 20px; } }
-
 @keyframes burger_hover {
   0% {
     transform: scale(1); }
@@ -261,46 +237,8 @@ section.menu {
         background-color: var(--dyellow);
         box-shadow: 4px 4px 3px var(--gray); }
 
-@media screen and (min-width: 992px) {
-  section.menu .menu-fixed .menu-options {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 100px; }
-  section.menu ul {
-    height: 420px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-    section.menu ul li {
-      display: flex;
-      align-items: center; }
-      section.menu ul li a {
-        display: contents; }
-        section.menu ul li a span.circle {
-          margin-right: 10px; } }
-
 section.services div.services-container div.service div.sprite {
   background-image: url("../assets/illustration/illustration_sprites.png"); }
-
-@media screen and (min-width: 1440px) {
-  main {
-    width: 970px; }
-    main section {
-      width: 100%; } }
-
-@media screen and (min-width: 1300px) and (max-width: 1490px) {
-  main {
-    width: 780px; }
-    main section {
-      width: 100%; } }
-
-@media screen and (min-width: 1100px) and (max-width: 1300px) {
-  main {
-    width: 640px; }
-    main section {
-      width: 100%; } }
 
 div.hero {
   padding: 50px 50px 0px 30px;
@@ -336,11 +274,6 @@ div.hero {
     div.hero figure img {
       height: 95%; }
 
-@media screen and (min-width: 1024px) {
-  div.hero {
-    width: 100%;
-    height: 100%; } }
-
 section.services div.services-container {
   display: grid;
   grid-gap: 20px; }
@@ -370,14 +303,6 @@ section.services div.services-container {
         background-position: -2px -95px; }
       section.services div.services-container div.service div.sprite.autre {
         background-position: -2px -95px; }
-
-@media screen and (min-width: 1440px) {
-  section.services div.services-container {
-    grid-template-columns: 1fr 1fr 1fr; } }
-
-@media screen and (min-width: 1300px) and (max-width: 1440px) {
-  section.services div.services-container {
-    grid-template-columns: 1fr 1fr; } }
 
 section.freelance-prices div.price-container {
   margin-top: 40px;
@@ -593,25 +518,6 @@ section.portfolio {
         width: 100%;
         height: 100%; }
 
-@media screen and (min-width: 1440px) {
-  section.portfolio div.portfolio-container {
-    grid-template-columns: 1fr 1fr 1fr; } }
-
-@media screen and (min-width: 1300px) and (max-width: 1440px) {
-  section.portfolio div.portfolio-container {
-    grid-template-columns: 1fr 1fr; } }
-
-@media screen and (min-width: 1100px) and (max-width: 1300px) {
-  section.portfolio {
-    margin-top: 100px;
-    width: 100%;
-    text-align: center; }
-    section.portfolio div.portfolio-container {
-      grid-template-columns: 1fr; }
-      section.portfolio div.portfolio-container figure {
-        width: 310px;
-        height: 325px; } }
-
 section.contact {
   display: flex;
   justify-content: space-between; }
@@ -696,9 +602,219 @@ footer {
     display: flex;
     justify-content: space-between; } }
 
-@media screen and (min-width: 320px) and (max-width: 375px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   #root {
-    width: fit-content; }
+    width: fit-content;
+    --fz:25px; }
+  div.main-container {
+    display: flex;
+    flex-direction: column; }
+  section.presentation-board {
+    font-size: var(--fz);
+    width: 98%;
+    padding: 1%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5%;
+    align-items: center; }
+    section.presentation-board > div {
+      border-bottom: none; }
+    section.presentation-board div.me {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      section.presentation-board div.me figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        section.presentation-board div.me figure img.picture {
+          width: 100%;
+          border-radius: 50%;
+          object-fit: cover; }
+        section.presentation-board div.me figure figcaption {
+          font-weight: bolder;
+          margin-top: 30px; }
+      section.presentation-board div.me div.social-network ul {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      section.presentation-board div.me div.social-network li {
+        transform: scale(2);
+        font-size: 22px; }
+    section.presentation-board div.my-languages, section.presentation-board div.systems, section.presentation-board div.skills {
+      font-size: 34px; }
+    section.presentation-board div.skills {
+      border-top: 1px solid var(--mgrey);
+      border-bottom: 1px solid var(--mgrey); }
+    section.presentation-board button.download-cv {
+      width: 100%;
+      font-size: larger;
+      border-radius: 5px; }
+      section.presentation-board button.download-cv span {
+        font-size: larger; }
+    section.presentation-board div.skills, section.presentation-board button.download-cv {
+      grid-column-start: 1;
+      grid-column-end: span 2; }
+  main {
+    width: 100%; }
+    main section {
+      font-size: var(--fz); }
+      main section > p {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: fit-content;
+        text-align: justify;
+        letter-spacing: 3px;
+        word-spacing: none; }
+    main div.hero {
+      display: none; }
+    main section.services {
+      margin-top: 100px;
+      width: 100%;
+      text-align: center; }
+      main section.services div.services-container {
+        grid-template-columns: 1fr 1fr; }
+        main section.services div.services-container div.service {
+          height: 400px; }
+          main section.services div.services-container div.service div.sprite {
+            transform: scale(2); }
+    main section.freelance-prices div.price-container {
+      font-size: var(--fz);
+      width: auto;
+      flex-direction: column; }
+      main section.freelance-prices div.price-container div.price-per-antity {
+        width: inherit; }
+        main section.freelance-prices div.price-container div.price-per-antity div span.bold-price {
+          font-size: var(--fz); }
+        main section.freelance-prices div.price-container div.price-per-antity div p.options {
+          margin: auto;
+          width: max-content; }
+          main section.freelance-prices div.price-container div.price-per-antity div p.options span.line-option {
+            width: max-content; }
+    main section.formations div.formations-container div.formation,
+    main section.formations div.formations-container div.experience,
+    main section.formations div.experiences-container div.formation,
+    main section.formations div.experiences-container div.experience,
+    main section.experiences div.formations-container div.formation,
+    main section.experiences div.formations-container div.experience,
+    main section.experiences div.experiences-container div.formation,
+    main section.experiences div.experiences-container div.experience {
+      flex-direction: column; }
+      main section.formations div.formations-container div.formation div.degre-date span.date,
+      main section.formations div.formations-container div.formation div.experience-date span.date,
+      main section.formations div.formations-container div.experience div.degre-date span.date,
+      main section.formations div.formations-container div.experience div.experience-date span.date,
+      main section.formations div.experiences-container div.formation div.degre-date span.date,
+      main section.formations div.experiences-container div.formation div.experience-date span.date,
+      main section.formations div.experiences-container div.experience div.degre-date span.date,
+      main section.formations div.experiences-container div.experience div.experience-date span.date,
+      main section.experiences div.formations-container div.formation div.degre-date span.date,
+      main section.experiences div.formations-container div.formation div.experience-date span.date,
+      main section.experiences div.formations-container div.experience div.degre-date span.date,
+      main section.experiences div.formations-container div.experience div.experience-date span.date,
+      main section.experiences div.experiences-container div.formation div.degre-date span.date,
+      main section.experiences div.experiences-container div.formation div.experience-date span.date,
+      main section.experiences div.experiences-container div.experience div.degre-date span.date,
+      main section.experiences div.experiences-container div.experience div.experience-date span.date {
+        font-size: var(--fz); }
+      main section.formations div.formations-container div.formation div.degre-date p, main section.formations div.formations-container div.formation div.degre-date span.technos,
+      main section.formations div.formations-container div.formation div.experience-date p,
+      main section.formations div.formations-container div.formation div.experience-date span.technos,
+      main section.formations div.formations-container div.experience div.degre-date p,
+      main section.formations div.formations-container div.experience div.degre-date span.technos,
+      main section.formations div.formations-container div.experience div.experience-date p,
+      main section.formations div.formations-container div.experience div.experience-date span.technos,
+      main section.formations div.experiences-container div.formation div.degre-date p,
+      main section.formations div.experiences-container div.formation div.degre-date span.technos,
+      main section.formations div.experiences-container div.formation div.experience-date p,
+      main section.formations div.experiences-container div.formation div.experience-date span.technos,
+      main section.formations div.experiences-container div.experience div.degre-date p,
+      main section.formations div.experiences-container div.experience div.degre-date span.technos,
+      main section.formations div.experiences-container div.experience div.experience-date p,
+      main section.formations div.experiences-container div.experience div.experience-date span.technos,
+      main section.experiences div.formations-container div.formation div.degre-date p,
+      main section.experiences div.formations-container div.formation div.degre-date span.technos,
+      main section.experiences div.formations-container div.formation div.experience-date p,
+      main section.experiences div.formations-container div.formation div.experience-date span.technos,
+      main section.experiences div.formations-container div.experience div.degre-date p,
+      main section.experiences div.formations-container div.experience div.degre-date span.technos,
+      main section.experiences div.formations-container div.experience div.experience-date p,
+      main section.experiences div.formations-container div.experience div.experience-date span.technos,
+      main section.experiences div.experiences-container div.formation div.degre-date p,
+      main section.experiences div.experiences-container div.formation div.degre-date span.technos,
+      main section.experiences div.experiences-container div.formation div.experience-date p,
+      main section.experiences div.experiences-container div.formation div.experience-date span.technos,
+      main section.experiences div.experiences-container div.experience div.degre-date p,
+      main section.experiences div.experiences-container div.experience div.degre-date span.technos,
+      main section.experiences div.experiences-container div.experience div.experience-date p,
+      main section.experiences div.experiences-container div.experience div.experience-date span.technos {
+        line-height: 60px; }
+      main section.formations div.formations-container div.formation div.degre-date,
+      main section.formations div.formations-container div.formation div.experience-date,
+      main section.formations div.formations-container div.formation aside,
+      main section.formations div.formations-container div.experience div.degre-date,
+      main section.formations div.formations-container div.experience div.experience-date,
+      main section.formations div.formations-container div.experience aside,
+      main section.formations div.experiences-container div.formation div.degre-date,
+      main section.formations div.experiences-container div.formation div.experience-date,
+      main section.formations div.experiences-container div.formation aside,
+      main section.formations div.experiences-container div.experience div.degre-date,
+      main section.formations div.experiences-container div.experience div.experience-date,
+      main section.formations div.experiences-container div.experience aside,
+      main section.experiences div.formations-container div.formation div.degre-date,
+      main section.experiences div.formations-container div.formation div.experience-date,
+      main section.experiences div.formations-container div.formation aside,
+      main section.experiences div.formations-container div.experience div.degre-date,
+      main section.experiences div.formations-container div.experience div.experience-date,
+      main section.experiences div.formations-container div.experience aside,
+      main section.experiences div.experiences-container div.formation div.degre-date,
+      main section.experiences div.experiences-container div.formation div.experience-date,
+      main section.experiences div.experiences-container div.formation aside,
+      main section.experiences div.experiences-container div.experience div.degre-date,
+      main section.experiences div.experiences-container div.experience div.experience-date,
+      main section.experiences div.experiences-container div.experience aside {
+        font-size: var(--fz);
+        width: auto; }
+      main section.formations div.formations-container div.formation aside,
+      main section.formations div.formations-container div.experience aside,
+      main section.formations div.experiences-container div.formation aside,
+      main section.formations div.experiences-container div.experience aside,
+      main section.experiences div.formations-container div.formation aside,
+      main section.experiences div.formations-container div.experience aside,
+      main section.experiences div.experiences-container div.formation aside,
+      main section.experiences div.experiences-container div.experience aside {
+        margin-top: 20px; }
+        main section.formations div.formations-container div.formation aside h3,
+        main section.formations div.formations-container div.experience aside h3,
+        main section.formations div.experiences-container div.formation aside h3,
+        main section.formations div.experiences-container div.experience aside h3,
+        main section.experiences div.formations-container div.formation aside h3,
+        main section.experiences div.formations-container div.experience aside h3,
+        main section.experiences div.experiences-container div.formation aside h3,
+        main section.experiences div.experiences-container div.experience aside h3 {
+          display: none; }
+    main section.portfolio {
+      margin-top: 100px;
+      width: 100%;
+      text-align: center; }
+      main section.portfolio div.portfolio-container {
+        flex: 1 1 auto;
+        overflow-y: auto;
+        grid-template-columns: 1fr 1fr; }
+        main section.portfolio div.portfolio-container figure {
+          height: 250px; }
+    main section.contact div.info-container {
+      grid-template-columns: auto auto;
+      height: 485px; }
+      main section.contact div.info-container div.info {
+        width: 45%; } }
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  #root {
+    width: fit-content;
+    --fz:45px; }
   div.main-container {
     display: flex;
     flex-direction: column; }
@@ -769,10 +885,13 @@ footer {
           main section.services div.services-container div.service div.sprite {
             transform: scale(2.7); }
     main section.freelance-prices div.price-container {
+      font-size: var(--fz);
       width: auto;
       flex-direction: column; }
       main section.freelance-prices div.price-container div.price-per-antity {
         width: inherit; }
+        main section.freelance-prices div.price-container div.price-per-antity div span.bold-price {
+          font-size: var(--fz); }
         main section.freelance-prices div.price-container div.price-per-antity div p.options {
           margin: auto;
           width: max-content; }
@@ -787,6 +906,55 @@ footer {
     main section.experiences div.experiences-container div.formation,
     main section.experiences div.experiences-container div.experience {
       flex-direction: column; }
+      main section.formations div.formations-container div.formation div.degre-date span.date,
+      main section.formations div.formations-container div.formation div.experience-date span.date,
+      main section.formations div.formations-container div.experience div.degre-date span.date,
+      main section.formations div.formations-container div.experience div.experience-date span.date,
+      main section.formations div.experiences-container div.formation div.degre-date span.date,
+      main section.formations div.experiences-container div.formation div.experience-date span.date,
+      main section.formations div.experiences-container div.experience div.degre-date span.date,
+      main section.formations div.experiences-container div.experience div.experience-date span.date,
+      main section.experiences div.formations-container div.formation div.degre-date span.date,
+      main section.experiences div.formations-container div.formation div.experience-date span.date,
+      main section.experiences div.formations-container div.experience div.degre-date span.date,
+      main section.experiences div.formations-container div.experience div.experience-date span.date,
+      main section.experiences div.experiences-container div.formation div.degre-date span.date,
+      main section.experiences div.experiences-container div.formation div.experience-date span.date,
+      main section.experiences div.experiences-container div.experience div.degre-date span.date,
+      main section.experiences div.experiences-container div.experience div.experience-date span.date {
+        font-size: var(--fz); }
+      main section.formations div.formations-container div.formation div.degre-date p, main section.formations div.formations-container div.formation div.degre-date span.technos,
+      main section.formations div.formations-container div.formation div.experience-date p,
+      main section.formations div.formations-container div.formation div.experience-date span.technos,
+      main section.formations div.formations-container div.experience div.degre-date p,
+      main section.formations div.formations-container div.experience div.degre-date span.technos,
+      main section.formations div.formations-container div.experience div.experience-date p,
+      main section.formations div.formations-container div.experience div.experience-date span.technos,
+      main section.formations div.experiences-container div.formation div.degre-date p,
+      main section.formations div.experiences-container div.formation div.degre-date span.technos,
+      main section.formations div.experiences-container div.formation div.experience-date p,
+      main section.formations div.experiences-container div.formation div.experience-date span.technos,
+      main section.formations div.experiences-container div.experience div.degre-date p,
+      main section.formations div.experiences-container div.experience div.degre-date span.technos,
+      main section.formations div.experiences-container div.experience div.experience-date p,
+      main section.formations div.experiences-container div.experience div.experience-date span.technos,
+      main section.experiences div.formations-container div.formation div.degre-date p,
+      main section.experiences div.formations-container div.formation div.degre-date span.technos,
+      main section.experiences div.formations-container div.formation div.experience-date p,
+      main section.experiences div.formations-container div.formation div.experience-date span.technos,
+      main section.experiences div.formations-container div.experience div.degre-date p,
+      main section.experiences div.formations-container div.experience div.degre-date span.technos,
+      main section.experiences div.formations-container div.experience div.experience-date p,
+      main section.experiences div.formations-container div.experience div.experience-date span.technos,
+      main section.experiences div.experiences-container div.formation div.degre-date p,
+      main section.experiences div.experiences-container div.formation div.degre-date span.technos,
+      main section.experiences div.experiences-container div.formation div.experience-date p,
+      main section.experiences div.experiences-container div.formation div.experience-date span.technos,
+      main section.experiences div.experiences-container div.experience div.degre-date p,
+      main section.experiences div.experiences-container div.experience div.degre-date span.technos,
+      main section.experiences div.experiences-container div.experience div.experience-date p,
+      main section.experiences div.experiences-container div.experience div.experience-date span.technos {
+        line-height: 60px; }
       main section.formations div.formations-container div.formation div.degre-date,
       main section.formations div.formations-container div.formation div.experience-date,
       main section.formations div.formations-container div.formation aside,
@@ -811,33 +979,8 @@ footer {
       main section.experiences div.experiences-container div.experience div.degre-date,
       main section.experiences div.experiences-container div.experience div.experience-date,
       main section.experiences div.experiences-container div.experience aside {
-        width: auto;
-        font-size: 25px; }
-        main section.formations div.formations-container div.formation div.degre-date h3,
-        main section.formations div.formations-container div.formation div.experience-date h3,
-        main section.formations div.formations-container div.formation aside h3,
-        main section.formations div.formations-container div.experience div.degre-date h3,
-        main section.formations div.formations-container div.experience div.experience-date h3,
-        main section.formations div.formations-container div.experience aside h3,
-        main section.formations div.experiences-container div.formation div.degre-date h3,
-        main section.formations div.experiences-container div.formation div.experience-date h3,
-        main section.formations div.experiences-container div.formation aside h3,
-        main section.formations div.experiences-container div.experience div.degre-date h3,
-        main section.formations div.experiences-container div.experience div.experience-date h3,
-        main section.formations div.experiences-container div.experience aside h3,
-        main section.experiences div.formations-container div.formation div.degre-date h3,
-        main section.experiences div.formations-container div.formation div.experience-date h3,
-        main section.experiences div.formations-container div.formation aside h3,
-        main section.experiences div.formations-container div.experience div.degre-date h3,
-        main section.experiences div.formations-container div.experience div.experience-date h3,
-        main section.experiences div.formations-container div.experience aside h3,
-        main section.experiences div.experiences-container div.formation div.degre-date h3,
-        main section.experiences div.experiences-container div.formation div.experience-date h3,
-        main section.experiences div.experiences-container div.formation aside h3,
-        main section.experiences div.experiences-container div.experience div.degre-date h3,
-        main section.experiences div.experiences-container div.experience div.experience-date h3,
-        main section.experiences div.experiences-container div.experience aside h3 {
-          font-size: 30px; }
+        font-size: var(--fz);
+        width: auto; }
       main section.formations div.formations-container div.formation aside,
       main section.formations div.formations-container div.experience aside,
       main section.formations div.experiences-container div.formation aside,
@@ -855,13 +998,217 @@ footer {
         main section.experiences div.formations-container div.experience aside h3,
         main section.experiences div.experiences-container div.formation aside h3,
         main section.experiences div.experiences-container div.experience aside h3 {
-          font-size: 20px; }
+          display: none; }
     main section.portfolio {
       margin-top: 100px;
       width: 100%;
       text-align: center; }
       main section.portfolio div.portfolio-container {
+        flex: 1 1 auto;
+        overflow-y: auto;
         grid-template-columns: 1fr; }
         main section.portfolio div.portfolio-container figure {
-          width: 310px;
-          height: 325px; } }
+          height: 450px; }
+    main section.contact div.info-container {
+      grid-template-columns: auto; } }
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  #root {
+    width: fit-content;
+    --fz:45px; }
+  div.main-container {
+    display: flex;
+    flex-direction: column; }
+  section.presentation-board {
+    font-size: 45px;
+    width: 98%;
+    padding: 1%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    section.presentation-board div.me {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      section.presentation-board div.me figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        section.presentation-board div.me figure img.picture {
+          width: 100%;
+          border-radius: var(--circle);
+          object-fit: cover; }
+        section.presentation-board div.me figure figcaption {
+          font-weight: bolder;
+          margin-top: 30px; }
+      section.presentation-board div.me div.social-network h4.what-am-i {
+        margin-top: 40px; }
+      section.presentation-board div.me div.social-network ul {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 100px; }
+      section.presentation-board div.me div.social-network li {
+        transform: scale(5);
+        font-size: 22px; }
+    section.presentation-board div.my-languages, section.presentation-board div.systems, section.presentation-board div.skills {
+      font-size: 34px; }
+    section.presentation-board button.download-cv {
+      width: 90%;
+      font-size: larger;
+      border-radius: 5px; }
+      section.presentation-board button.download-cv span {
+        font-size: larger; }
+  main {
+    width: 100%; }
+    main section {
+      font-size: 35px; }
+      main section > p {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: fit-content;
+        text-align: justify;
+        letter-spacing: 3px;
+        word-spacing: none; }
+    main div.hero {
+      display: none; }
+    main section.services {
+      margin-top: 100px;
+      width: 100%;
+      text-align: center; }
+      main section.services div.services-container {
+        grid-template-columns: 1fr; }
+        main section.services div.services-container div.service {
+          width: 100%;
+          height: 500px; }
+          main section.services div.services-container div.service div.sprite {
+            transform: scale(2.7); }
+    main section.freelance-prices div.price-container {
+      font-size: var(--fz);
+      width: auto;
+      flex-direction: column; }
+      main section.freelance-prices div.price-container div.price-per-antity {
+        width: inherit; }
+        main section.freelance-prices div.price-container div.price-per-antity div span.bold-price {
+          font-size: var(--fz); }
+        main section.freelance-prices div.price-container div.price-per-antity div p.options {
+          margin: auto;
+          width: max-content; }
+          main section.freelance-prices div.price-container div.price-per-antity div p.options span.line-option {
+            width: max-content; }
+    main section.formations div.formations-container div.formation,
+    main section.formations div.formations-container div.experience,
+    main section.formations div.experiences-container div.formation,
+    main section.formations div.experiences-container div.experience,
+    main section.experiences div.formations-container div.formation,
+    main section.experiences div.formations-container div.experience,
+    main section.experiences div.experiences-container div.formation,
+    main section.experiences div.experiences-container div.experience {
+      flex-direction: column; }
+      main section.formations div.formations-container div.formation div.degre-date span.date,
+      main section.formations div.formations-container div.formation div.experience-date span.date,
+      main section.formations div.formations-container div.experience div.degre-date span.date,
+      main section.formations div.formations-container div.experience div.experience-date span.date,
+      main section.formations div.experiences-container div.formation div.degre-date span.date,
+      main section.formations div.experiences-container div.formation div.experience-date span.date,
+      main section.formations div.experiences-container div.experience div.degre-date span.date,
+      main section.formations div.experiences-container div.experience div.experience-date span.date,
+      main section.experiences div.formations-container div.formation div.degre-date span.date,
+      main section.experiences div.formations-container div.formation div.experience-date span.date,
+      main section.experiences div.formations-container div.experience div.degre-date span.date,
+      main section.experiences div.formations-container div.experience div.experience-date span.date,
+      main section.experiences div.experiences-container div.formation div.degre-date span.date,
+      main section.experiences div.experiences-container div.formation div.experience-date span.date,
+      main section.experiences div.experiences-container div.experience div.degre-date span.date,
+      main section.experiences div.experiences-container div.experience div.experience-date span.date {
+        font-size: var(--fz); }
+      main section.formations div.formations-container div.formation div.degre-date p, main section.formations div.formations-container div.formation div.degre-date span.technos,
+      main section.formations div.formations-container div.formation div.experience-date p,
+      main section.formations div.formations-container div.formation div.experience-date span.technos,
+      main section.formations div.formations-container div.experience div.degre-date p,
+      main section.formations div.formations-container div.experience div.degre-date span.technos,
+      main section.formations div.formations-container div.experience div.experience-date p,
+      main section.formations div.formations-container div.experience div.experience-date span.technos,
+      main section.formations div.experiences-container div.formation div.degre-date p,
+      main section.formations div.experiences-container div.formation div.degre-date span.technos,
+      main section.formations div.experiences-container div.formation div.experience-date p,
+      main section.formations div.experiences-container div.formation div.experience-date span.technos,
+      main section.formations div.experiences-container div.experience div.degre-date p,
+      main section.formations div.experiences-container div.experience div.degre-date span.technos,
+      main section.formations div.experiences-container div.experience div.experience-date p,
+      main section.formations div.experiences-container div.experience div.experience-date span.technos,
+      main section.experiences div.formations-container div.formation div.degre-date p,
+      main section.experiences div.formations-container div.formation div.degre-date span.technos,
+      main section.experiences div.formations-container div.formation div.experience-date p,
+      main section.experiences div.formations-container div.formation div.experience-date span.technos,
+      main section.experiences div.formations-container div.experience div.degre-date p,
+      main section.experiences div.formations-container div.experience div.degre-date span.technos,
+      main section.experiences div.formations-container div.experience div.experience-date p,
+      main section.experiences div.formations-container div.experience div.experience-date span.technos,
+      main section.experiences div.experiences-container div.formation div.degre-date p,
+      main section.experiences div.experiences-container div.formation div.degre-date span.technos,
+      main section.experiences div.experiences-container div.formation div.experience-date p,
+      main section.experiences div.experiences-container div.formation div.experience-date span.technos,
+      main section.experiences div.experiences-container div.experience div.degre-date p,
+      main section.experiences div.experiences-container div.experience div.degre-date span.technos,
+      main section.experiences div.experiences-container div.experience div.experience-date p,
+      main section.experiences div.experiences-container div.experience div.experience-date span.technos {
+        line-height: 60px; }
+      main section.formations div.formations-container div.formation div.degre-date,
+      main section.formations div.formations-container div.formation div.experience-date,
+      main section.formations div.formations-container div.formation aside,
+      main section.formations div.formations-container div.experience div.degre-date,
+      main section.formations div.formations-container div.experience div.experience-date,
+      main section.formations div.formations-container div.experience aside,
+      main section.formations div.experiences-container div.formation div.degre-date,
+      main section.formations div.experiences-container div.formation div.experience-date,
+      main section.formations div.experiences-container div.formation aside,
+      main section.formations div.experiences-container div.experience div.degre-date,
+      main section.formations div.experiences-container div.experience div.experience-date,
+      main section.formations div.experiences-container div.experience aside,
+      main section.experiences div.formations-container div.formation div.degre-date,
+      main section.experiences div.formations-container div.formation div.experience-date,
+      main section.experiences div.formations-container div.formation aside,
+      main section.experiences div.formations-container div.experience div.degre-date,
+      main section.experiences div.formations-container div.experience div.experience-date,
+      main section.experiences div.formations-container div.experience aside,
+      main section.experiences div.experiences-container div.formation div.degre-date,
+      main section.experiences div.experiences-container div.formation div.experience-date,
+      main section.experiences div.experiences-container div.formation aside,
+      main section.experiences div.experiences-container div.experience div.degre-date,
+      main section.experiences div.experiences-container div.experience div.experience-date,
+      main section.experiences div.experiences-container div.experience aside {
+        font-size: var(--fz);
+        width: auto; }
+      main section.formations div.formations-container div.formation aside,
+      main section.formations div.formations-container div.experience aside,
+      main section.formations div.experiences-container div.formation aside,
+      main section.formations div.experiences-container div.experience aside,
+      main section.experiences div.formations-container div.formation aside,
+      main section.experiences div.formations-container div.experience aside,
+      main section.experiences div.experiences-container div.formation aside,
+      main section.experiences div.experiences-container div.experience aside {
+        margin-top: 20px; }
+        main section.formations div.formations-container div.formation aside h3,
+        main section.formations div.formations-container div.experience aside h3,
+        main section.formations div.experiences-container div.formation aside h3,
+        main section.formations div.experiences-container div.experience aside h3,
+        main section.experiences div.formations-container div.formation aside h3,
+        main section.experiences div.formations-container div.experience aside h3,
+        main section.experiences div.experiences-container div.formation aside h3,
+        main section.experiences div.experiences-container div.experience aside h3 {
+          display: none; }
+    main section.portfolio {
+      margin-top: 100px;
+      width: 100%;
+      text-align: center; }
+      main section.portfolio div.portfolio-container {
+        flex: 1 1 auto;
+        overflow-y: auto;
+        grid-template-columns: 1fr; }
+        main section.portfolio div.portfolio-container figure {
+          height: 450px; }
+    main section.contact div.info-container {
+      grid-template-columns: auto; } }

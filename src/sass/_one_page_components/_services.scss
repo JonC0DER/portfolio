@@ -39,19 +39,3 @@ section.services{
     }
   }
 }
-
-@media screen and (min-width:1440px){ 
-  section.services{
-    div.services-container{
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-}
-
-@media screen and (min-width:1300px) and (max-width:1440px){
-  section.services{
-    div.services-container{
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-}
