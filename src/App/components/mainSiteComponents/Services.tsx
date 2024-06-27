@@ -7,7 +7,8 @@ export default function Services() {
       <section id="services" className="services">
         <h2>Mes Services</h2>
         <p>
-          Bienvenue dans mon univers numérique ! Ou je donne vie à vos idées.
+          Bienvenue dans mon univers numérique ! <br /> Ici, je donne vie à vos
+          idées. <br />
           Que vous souhaitiez créer une application web comme mobile, un blog
           dynamique ou une boutique en ligne, je suis là pour vous accompagner à
           chaque étape du processus.
