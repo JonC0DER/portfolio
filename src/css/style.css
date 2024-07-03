@@ -30,6 +30,21 @@ html {
 body {
   background-color: var(--lgrey); }
 
+html, body {
+  height: fit-content;
+  margin: 0; }
+
+body, #root {
+  display: flex;
+  flex-direction: column; }
+
+#root {
+  flex: 1; }
+
+.main-container > section,
+.main-container > main {
+  width: 100vw; }
+
 button, li, a,
 section.menu div.menu-options div.large-small > .burger,
 section.menu div.menu-options > div.themes {
@@ -76,66 +91,65 @@ main section > p {
   margin: 30px auto 30px auto;
   color: var(--gray); }
 
-section.presentation-board {
-  padding: 20px; }
-  section.presentation-board > div {
-    border-bottom: 1px solid rgba(125, 125, 125, 0.3);
-    margin-top: 20px;
-    padding-bottom: 20px;
-    width: 100%; }
-    section.presentation-board > div div.social-network {
-      margin-top: 20px; }
-      section.presentation-board > div div.social-network h4.what-am-i {
-        font-weight: 400; }
-      section.presentation-board > div div.social-network ul {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px; }
-        section.presentation-board > div div.social-network ul li {
-          width: 24px;
-          height: 24px;
-          padding: 15px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: var(--dyellow);
-          color: var(--lblack);
-          border-radius: var(--circle); }
-          section.presentation-board > div div.social-network ul li a {
-            text-decoration: none; }
-    section.presentation-board > div h3, section.presentation-board > div h4 {
-      margin-bottom: 15px;
-      font-weight: 500; }
-    section.presentation-board > div p {
-      font-weight: 300;
-      color: var(--gray); }
-    section.presentation-board > div div.languages-container p.percent,
-    section.presentation-board > div div.skill p.percent {
+section.presentation-board > div {
+  border-bottom: 1px solid rgba(125, 125, 125, 0.3);
+  margin-top: 20px;
+  padding-bottom: 20px;
+  width: 100%; }
+  section.presentation-board > div div.social-network {
+    margin-top: 20px; }
+    section.presentation-board > div div.social-network h4.what-am-i {
+      font-weight: 400; }
+    section.presentation-board > div div.social-network ul {
       display: flex;
-      justify-content: space-between; }
-    section.presentation-board > div span.jauge {
-      display: inline-block;
-      width: 100%;
-      height: 6px;
-      padding: 1px;
-      border: 1px solid var(--dyellow);
-      border-radius: 25px;
-      margin-top: 5px;
-      margin-bottom: 8px; }
-      section.presentation-board > div span.jauge span.interne {
-        display: block;
-        height: 2px;
-        background-color: var(--dyellow); }
-  section.presentation-board button.download-cv {
-    margin-top: 20px;
+      justify-content: space-around;
+      margin-top: 20px; }
+      section.presentation-board > div div.social-network ul li {
+        width: 24px;
+        height: 24px;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--dyellow);
+        color: var(--lblack);
+        border-radius: var(--circle); }
+        section.presentation-board > div div.social-network ul li a {
+          text-decoration: none; }
+  section.presentation-board > div h3, section.presentation-board > div h4 {
+    margin-bottom: 15px;
+    font-weight: 500; }
+  section.presentation-board > div p {
+    font-weight: 300;
+    color: var(--gray); }
+  section.presentation-board > div div.languages-container p.percent,
+  section.presentation-board > div div.skill p.percent {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: none;
-    padding: 8px 15px 8px 15px;
-    font-weight: bold;
-    width: 75%;
-    background-color: var(--dyellow); }
+    justify-content: space-between; }
+  section.presentation-board > div span.jauge {
+    display: inline-block;
+    width: 100%;
+    height: 6px;
+    padding: 1px;
+    border: 1px solid var(--dyellow);
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-bottom: 8px; }
+    section.presentation-board > div span.jauge span.interne {
+      display: block;
+      height: 2px;
+      background-color: var(--dyellow); }
+
+section.presentation-board button.download-cv {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  padding: 8px 15px 8px 15px;
+  font-weight: bold;
+  width: 75%;
+  background-color: var(--dyellow); }
 
 @keyframes burger_hover {
   0% {
@@ -500,7 +514,7 @@ section.portfolio {
       position: relative;
       cursor: pointer;
       height: 300px;
-      background-color: brown; }
+      background-color: var(--lgrey); }
       section.portfolio div.portfolio-container figure img {
         width: 100%;
         height: 100%;
@@ -526,7 +540,7 @@ section.contact {
     margin-bottom: 40px; }
   section.contact form div.form-container,
   section.contact aside div.info-container {
-    height: 550px; }
+    height: fit-content; }
   section.contact form div,
   section.contact aside > div.info-container > div.info {
     background-color: white; }
@@ -604,7 +618,6 @@ footer {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #root {
-    width: fit-content;
     --fz:25px; }
   div.main-container {
     display: flex;
@@ -813,15 +826,12 @@ footer {
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
   #root {
-    width: fit-content;
-    --fz:45px; }
+    --fz:25px; }
   div.main-container {
     display: flex;
     flex-direction: column; }
   section.presentation-board {
-    font-size: 45px;
-    width: 98%;
-    padding: 1%;
+    font-size: var(--fz);
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -835,25 +845,26 @@ footer {
         flex-direction: column;
         align-items: center; }
         section.presentation-board div.me figure img.picture {
-          width: 100%;
+          width: 90%;
+          margin: auto;
           border-radius: var(--circle);
           object-fit: cover; }
         section.presentation-board div.me figure figcaption {
           font-weight: bolder;
           margin-top: 30px; }
       section.presentation-board div.me div.social-network h4.what-am-i {
-        margin-top: 40px; }
+        margin-top: 20px; }
       section.presentation-board div.me div.social-network ul {
         display: flex;
         align-items: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         height: 100px; }
       section.presentation-board div.me div.social-network li {
-        transform: scale(5);
+        transform: scale(2.5);
         font-size: 22px; }
     section.presentation-board div.my-languages, section.presentation-board div.systems, section.presentation-board div.skills {
-      font-size: 34px; }
+      font-size: var(--fz); }
     section.presentation-board button.download-cv {
       width: 90%;
       font-size: larger;
@@ -862,15 +873,13 @@ footer {
         font-size: larger; }
   main {
     width: 100%; }
-    main section {
-      font-size: 35px; }
-      main section > p {
-        margin-left: 10px;
-        margin-right: 10px;
-        width: fit-content;
-        text-align: justify;
-        letter-spacing: 3px;
-        word-spacing: none; }
+    main section > p {
+      margin-left: 10px;
+      margin-right: 10px;
+      width: fit-content;
+      text-align: justify;
+      letter-spacing: 3px;
+      word-spacing: none; }
     main div.hero {
       display: none; }
     main section.services {
@@ -881,7 +890,7 @@ footer {
         grid-template-columns: 1fr; }
         main section.services div.services-container div.service {
           width: 100%;
-          height: 500px; }
+          height: 420px; }
           main section.services div.services-container div.service div.sprite {
             transform: scale(2.7); }
     main section.freelance-prices div.price-container {
@@ -1007,14 +1016,27 @@ footer {
         flex: 1 1 auto;
         overflow-y: auto;
         grid-template-columns: 1fr; }
-        main section.portfolio div.portfolio-container figure {
-          height: 450px; }
+        main section.portfolio div.portfolio-container a {
+          width: 95%;
+          margin: auto;
+          display: flex;
+          justify-content: center; }
+          main section.portfolio div.portfolio-container a figure {
+            height: fit-content; }
     main section.contact div.info-container {
-      grid-template-columns: auto; } }
+      grid-template-columns: auto; }
+  section.menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100px;
+    height: fit-content;
+    border: 1px solid red; } }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
   #root {
-    width: fit-content;
     --fz:45px; }
   div.main-container {
     display: flex;
@@ -1211,4 +1233,9 @@ footer {
         main section.portfolio div.portfolio-container figure {
           height: 450px; }
     main section.contact div.info-container {
-      grid-template-columns: auto; } }
+      grid-template-columns: auto; }
+      main section.contact div.info-container div.info p.content-text > span:nth-of-type(2) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 70%; } }
