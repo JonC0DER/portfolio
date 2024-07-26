@@ -42,7 +42,7 @@ const PresentationBoard: React.FC<PresentationBoardProps> = ({
   };
 
   return (
-    <section className="presentation-board">
+    <section id="presentation-board" className="presentation-board">
       <div className="me">
         <figure>
           <img
