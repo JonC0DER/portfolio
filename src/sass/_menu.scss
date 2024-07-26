@@ -110,7 +110,8 @@ section.menu {
             span.bar {
               &:nth-child(1) {
                 transform: rotate(45deg);
-                transform-origin: 3%;
+                transform-origin: 9%;
+                margin-left: 4px;
                 animation: cross_one 0.3s ease;
               }
 
@@ -121,7 +122,8 @@ section.menu {
 
               &:nth-child(3) {
                 transform: rotate(-45deg);
-                transform-origin: 4%;
+                margin-left: 4px;
+                transform-origin: -2%;
                 animation: cross_three 0.3s ease;
               }
             }
@@ -158,35 +160,3 @@ section.menu {
     }
   }
 }
-
-// @media screen and (min-width:992px) {
-//   section.menu {
-//     // width: 100%;
-
-//     .menu-fixed .menu-options {
-//       height: 100px;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-between;
-//       margin-bottom: 100px;
-//     }
-
-//     ul {
-//       height: 420px;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-between;
-
-//       li {
-//         display: flex;
-//         align-items: center;
-//         a{
-//           display: contents;  
-//           span.circle {
-//             margin-right: 10px;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }

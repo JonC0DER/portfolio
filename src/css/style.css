@@ -2,12 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
 :root {
   --dyellow: #FFB400;
-  --filter-dyellow: 
-    invert(70%) 
-    sepia(86%) 
-    saturate(1787%) 
-    hue-rotate(359deg) 
-    brightness(101%) 
+  --filter-dyellow:
+    invert(70%)
+    sepia(86%)
+    saturate(1787%)
+    hue-rotate(359deg)
+    brightness(101%)
     contrast(105%);
   --lblack: #2B2B2B;
   --lowblack: #3A3B3C;
@@ -17,38 +17,47 @@
   --bg: #E4E6EB;
   --circle: 100px;
   --sprite-w: 70px;
-  --sprite-h: 70px; }
+  --sprite-h: 70px;
+}
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 body {
-  background-color: var(--lgrey); }
+  background-color: var(--lgrey);
+}
 
 html, body {
   height: fit-content;
-  margin: 0; }
+  margin: 0;
+}
 
 body, #root {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 #root {
-  flex: 1; }
+  flex: 1;
+}
 
 .main-container > section,
 .main-container > main {
-  width: 100vw; }
+  width: 100vw;
+}
 
 button, li, a,
 section.menu div.menu-options div.large-small > .burger,
 section.menu div.menu-options > div.themes {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 footer,
 section.menu,
@@ -61,85 +70,103 @@ section#formations .formations-container .formation,
 section#experiences .experiences-container .experience,
 section#contact form .form-container,
 section#contact aside.contact-infos .info-container .info {
-  background-color: white; }
+  background-color: white;
+}
 
 li {
-  list-style: none; }
+  list-style: none;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 h1, h2, h3, h4, h5, h6, p, a {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--lblack); }
+  font-family: "Montserrat", sans-serif;
+  color: var(--lblack);
+}
 
 h3 {
-  font-weight: 700; }
+  font-weight: 700;
+}
 
-.hidden {
-  display: none; }
+.hidden, .smartphone {
+  display: none;
+}
 
 .bold {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 main section h2 {
   width: fit-content;
-  margin: 100px auto 40px auto; }
-
+  margin: 100px auto 40px auto;
+}
 main section > p {
   width: 60%;
   margin: 30px auto 30px auto;
-  color: var(--gray); }
+  color: var(--gray);
+}
 
 section.presentation-board > div {
   border-bottom: 1px solid rgba(125, 125, 125, 0.3);
   margin-top: 20px;
   padding-bottom: 20px;
-  width: 100%; }
-  section.presentation-board > div div.social-network {
-    margin-top: 20px; }
-    section.presentation-board > div div.social-network h4.what-am-i {
-      font-weight: 400; }
-    section.presentation-board > div div.social-network ul {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 20px; }
-      section.presentation-board > div div.social-network ul li {
-        width: 24px;
-        height: 24px;
-        padding: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--dyellow);
-        color: var(--lblack);
-        border-radius: var(--circle); }
-        section.presentation-board > div div.social-network ul li a {
-          text-decoration: none; }
-  section.presentation-board > div h3, section.presentation-board > div h4 {
-    margin-bottom: 15px;
-    font-weight: 500; }
-  section.presentation-board > div p {
-    font-weight: 300;
-    color: var(--gray); }
-  section.presentation-board > div div.languages-container p.percent,
-  section.presentation-board > div div.skill p.percent {
-    display: flex;
-    justify-content: space-between; }
-  section.presentation-board > div span.jauge {
-    display: inline-block;
-    width: 100%;
-    height: 6px;
-    padding: 1px;
-    border: 1px solid var(--dyellow);
-    border-radius: 25px;
-    margin-top: 5px;
-    margin-bottom: 8px; }
-    section.presentation-board > div span.jauge span.interne {
-      display: block;
-      height: 2px;
-      background-color: var(--dyellow); }
-
+  width: 100%;
+}
+section.presentation-board > div div.social-network {
+  margin-top: 20px;
+}
+section.presentation-board > div div.social-network h4.what-am-i {
+  font-weight: 400;
+}
+section.presentation-board > div div.social-network ul {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+section.presentation-board > div div.social-network ul li {
+  width: 24px;
+  height: 24px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dyellow);
+  color: var(--lblack);
+  border-radius: var(--circle);
+}
+section.presentation-board > div div.social-network ul li a {
+  text-decoration: none;
+}
+section.presentation-board > div h3, section.presentation-board > div h4 {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+section.presentation-board > div p {
+  font-weight: 300;
+  color: var(--gray);
+}
+section.presentation-board > div div.languages-container p.percent,
+section.presentation-board > div div.skill p.percent {
+  display: flex;
+  justify-content: space-between;
+}
+section.presentation-board > div span.jauge {
+  display: inline-block;
+  width: 100%;
+  height: 6px;
+  padding: 1px;
+  border: 1px solid var(--dyellow);
+  border-radius: 25px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+section.presentation-board > div span.jauge span.interne {
+  display: block;
+  height: 2px;
+  background-color: var(--dyellow);
+}
 section.presentation-board button.download-cv {
   margin-top: 20px;
   display: flex;
@@ -149,110 +176,141 @@ section.presentation-board button.download-cv {
   padding: 8px 15px 8px 15px;
   font-weight: bold;
   width: 75%;
-  background-color: var(--dyellow); }
+  background-color: var(--dyellow);
+}
 
 @keyframes burger_hover {
   0% {
-    transform: scale(1); }
+    transform: scale(1);
+  }
   50% {
-    transform: scale(1.2); }
+    transform: scale(1.2);
+  }
   100% {
-    transform: scale(1); } }
-
+    transform: scale(1);
+  }
+}
 @keyframes cross_fade {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
-    opacity: 0; } }
-
+    opacity: 0;
+  }
+}
 @keyframes cross_one {
   0% {
     transform: rotate(0deg);
-    transform-origin: 0%; }
+    transform-origin: 0%;
+  }
   100% {
     transform: rotate(45deg);
-    transform-origin: 3%; } }
-
+    transform-origin: 3%;
+  }
+}
 @keyframes cross_three {
   0% {
     transform: rotate(0deg);
-    transform-origin: 0%; }
+    transform-origin: 0%;
+  }
   100% {
     transform: rotate(-45deg);
-    transform-origin: 4%; } }
-
+    transform-origin: 4%;
+  }
+}
 section.menu,
 div.menu-option,
 span.burder {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 
 section.menu {
   width: 200px;
-  transition: width .1s ease-in; }
-  section.menu.less {
-    width: 80px; }
-  section.menu div.menu-fixed {
-    position: fixed;
-    padding: 30px 10px 30px 10px; }
-    section.menu div.menu-fixed div.menu-options {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      section.menu div.menu-fixed div.menu-options div.large-small {
-        width: 40px;
-        height: 40px; }
-        section.menu div.menu-fixed div.menu-options div.large-small div.burger {
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around; }
-          section.menu div.menu-fixed div.menu-options div.large-small div.burger span.bar {
-            height: 4px;
-            width: 100%;
-            border-radius: 15px;
-            background-color: var(--gray); }
-          section.menu div.menu-fixed div.menu-options div.large-small div.burger:hover span.bar {
-            animation: burger_hover 0.3s ease; }
-            section.menu div.menu-fixed div.menu-options div.large-small div.burger:hover span.bar:nth-child(1) {
-              animation-delay: 0s; }
-            section.menu div.menu-fixed div.menu-options div.large-small div.burger:hover span.bar:nth-child(2) {
-              animation-delay: 0.1s; }
-            section.menu div.menu-fixed div.menu-options div.large-small div.burger:hover span.bar:nth-child(3) {
-              animation-delay: 0.2s; }
-          section.menu div.menu-fixed div.menu-options div.large-small div.burger.burger-clicked span.bar:nth-child(1) {
-            transform: rotate(45deg);
-            transform-origin: 3%;
-            animation: cross_one 0.3s ease; }
-          section.menu div.menu-fixed div.menu-options div.large-small div.burger.burger-clicked span.bar:nth-child(2) {
-            opacity: 0;
-            animation: cross_fade 0.3s ease; }
-          section.menu div.menu-fixed div.menu-options div.large-small div.burger.burger-clicked span.bar:nth-child(3) {
-            transform: rotate(-45deg);
-            transform-origin: 4%;
-            animation: cross_three 0.3s ease; }
-    section.menu div.menu-fixed div.themes {
-      width: 40px;
-      height: 40px; }
-    section.menu div.menu-fixed span.circle {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      color: var(--gray);
-      border-radius: var(--circle);
-      background-color: var(--lgrey);
-      transition: transform 0.2s ease-in, box-shadow, 0.2s ease, background-color 0.2s ease; }
-      section.menu div.menu-fixed span.circle:hover {
-        transform: translate(-5px, -5px);
-        color: var(--lowblack);
-        background-color: var(--dyellow);
-        box-shadow: 4px 4px 3px var(--gray); }
+  transition: width 0.1s ease-in;
+}
+section.menu.less {
+  width: 80px;
+}
+section.menu div.menu-fixed {
+  position: fixed;
+  padding: 30px 10px 30px 10px;
+}
+section.menu div.menu-fixed div.menu-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.menu div.menu-fixed div.menu-options div.large-small {
+  width: 40px;
+  height: 40px;
+}
+section.menu div.menu-fixed div.menu-options div.large-small div.burger {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+section.menu div.menu-fixed div.menu-options div.large-small div.burger span.bar {
+  height: 4px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: var(--gray);
+}
+section.menu div.menu-fixed div.menu-options div.large-small div.burger:hover span.bar {
+  animation: burger_hover 0.3s ease;
+}
+section.menu div.menu-fixed div.menu-options div.large-small div.burger:hover span.bar:nth-child(1) {
+  animation-delay: 0s;
+}
+section.menu div.menu-fixed div.menu-options div.large-small div.burger:hover span.bar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+section.menu div.menu-fixed div.menu-options div.large-small div.burger:hover span.bar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+section.menu div.menu-fixed div.menu-options div.large-small div.burger.burger-clicked span.bar:nth-child(1) {
+  transform: rotate(45deg);
+  transform-origin: 9%;
+  margin-left: 4px;
+  animation: cross_one 0.3s ease;
+}
+section.menu div.menu-fixed div.menu-options div.large-small div.burger.burger-clicked span.bar:nth-child(2) {
+  opacity: 0;
+  animation: cross_fade 0.3s ease;
+}
+section.menu div.menu-fixed div.menu-options div.large-small div.burger.burger-clicked span.bar:nth-child(3) {
+  transform: rotate(-45deg);
+  margin-left: 4px;
+  transform-origin: -2%;
+  animation: cross_three 0.3s ease;
+}
+section.menu div.menu-fixed div.themes {
+  width: 40px;
+  height: 40px;
+}
+section.menu div.menu-fixed span.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: var(--gray);
+  border-radius: var(--circle);
+  background-color: var(--lgrey);
+  transition: transform 0.2s ease-in, box-shadow, 0.2s ease, background-color 0.2s ease;
+}
+section.menu div.menu-fixed span.circle:hover {
+  transform: translate(-5px, -5px);
+  color: var(--lowblack);
+  background-color: var(--dyellow);
+  box-shadow: 4px 4px 3px var(--gray);
+}
 
 section.services div.services-container div.service div.sprite {
-  background-image: url("../assets/illustration/illustration_sprites.png"); }
+  background-image: url("../assets/illustration/illustration_sprites.png");
+}
 
 div.hero {
   padding: 50px 50px 0px 30px;
@@ -260,115 +318,144 @@ div.hero {
   max-height: 470px;
   background-color: white;
   display: flex;
-  justify-content: space-between; }
-  div.hero div.hero-text {
-    margin: 50px 0px 60px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: flex-start; }
-    div.hero div.hero-text h1.i-am span.front-end {
-      color: var(--dyellow);
-      background-color: aquamarine; }
-    div.hero div.hero-text button.hire-me {
-      width: 170px;
-      background-color: var(--dyellow);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px 10px 20px;
-      border-radius: 5px;
-      border: none; }
-      div.hero div.hero-text button.hire-me span.material-symbols-outlined {
-        font-weight: 400; }
-  div.hero figure {
-    height: 100%;
-    display: flex;
-    align-items: flex-end; }
-    div.hero figure img {
-      height: 95%; }
+  justify-content: space-between;
+}
+div.hero div.hero-text {
+  margin: 50px 0px 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+div.hero div.hero-text h1.i-am span.front-end {
+  color: var(--dyellow);
+  background-color: aquamarine;
+}
+div.hero div.hero-text button.hire-me {
+  width: 170px;
+  background-color: var(--dyellow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+div.hero div.hero-text button.hire-me span.material-symbols-outlined {
+  font-weight: 400;
+}
+div.hero figure {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+div.hero figure img {
+  height: 95%;
+}
 
 section.services div.services-container {
   display: grid;
-  grid-gap: 20px; }
-  section.services div.services-container div.service {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px; }
-    section.services div.services-container div.service div.sprite {
-      width: var(--sprite-w);
-      height: var(--sprite-h);
-      background-size: 284%;
-      background-repeat: no-repeat;
-      /* Utilisez filter pour changer la couleur de l'image en #FFB400 */
-      filter: var(--filter-dyellow); }
-      section.services div.services-container div.service div.sprite.web-dev {
-        background-position: -2px 1px; }
-      section.services div.services-container div.service div.sprite.web-design {
-        background-position: -124px 2px; }
-      section.services div.services-container div.service div.sprite.back-end {
-        background-position: -125px -95px; }
-      section.services div.services-container div.service div.sprite.dev-mobile {
-        background-position: -121px -198px; }
-      section.services div.services-container div.service div.sprite.game-dev {
-        background-position: -2px -95px; }
-      section.services div.services-container div.service div.sprite.autre {
-        background-position: -2px -95px; }
+  grid-gap: 20px;
+}
+section.services div.services-container div.service {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+section.services div.services-container div.service div.sprite {
+  width: var(--sprite-w);
+  height: var(--sprite-h);
+  background-size: 284%;
+  background-repeat: no-repeat;
+  /* Utilisez filter pour changer la couleur de l'image en #FFB400 */
+  filter: var(--filter-dyellow);
+}
+section.services div.services-container div.service div.sprite.web-dev {
+  background-position: -2px 1px;
+}
+section.services div.services-container div.service div.sprite.web-design {
+  background-position: -124px 2px;
+}
+section.services div.services-container div.service div.sprite.back-end {
+  background-position: -125px -95px;
+}
+section.services div.services-container div.service div.sprite.dev-mobile {
+  background-position: -121px -198px;
+}
+section.services div.services-container div.service div.sprite.game-dev {
+  background-position: -2px -95px;
+}
+section.services div.services-container div.service div.sprite.autre {
+  background-position: -2px -95px;
+}
 
 section.freelance-prices div.price-container {
   margin-top: 40px;
   display: flex;
-  justify-content: space-between; }
-  section.freelance-prices div.price-container div.price-per-antity {
-    padding: 20px;
-    width: 32%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    section.freelance-prices div.price-container div.price-per-antity h3 {
-      text-align: center; }
-    section.freelance-prices div.price-container div.price-per-antity div {
-      margin-top: 15px;
-      text-align: center; }
-      section.freelance-prices div.price-container div.price-per-antity div span.bold-price {
-        font-weight: bold;
-        font-size: 28px; }
-      section.freelance-prices div.price-container div.price-per-antity div p.price-description {
-        margin-top: 8px;
-        color: var(--gray); }
-      section.freelance-prices div.price-container div.price-per-antity div p.options .line-option {
-        display: flex;
-        align-items: center;
-        margin-top: 8px; }
-      section.freelance-prices div.price-container div.price-per-antity div p.options span.option-key {
-        margin-left: 15px; }
-      section.freelance-prices div.price-container div.price-per-antity div p.options .yellow {
-        color: var(--dyellow); }
-      section.freelance-prices div.price-container div.price-per-antity div p.options .gray {
-        color: var(--gray); }
-      section.freelance-prices div.price-container div.price-per-antity div p.options .lblack {
-        color: var(--lblack); }
-    section.freelance-prices div.price-container div.price-per-antity button.order {
-      margin: 20px auto 0px auto;
-      padding: 8px 25px 8px 25px;
-      vertical-align: baseline;
-      line-height: 20px;
-      font-size: 16px;
-      color: var(--lblack);
-      border: none;
-      border-radius: 25px;
-      box-shadow: 0px 0px 2px var(--gray);
-      background-color: white;
-      font-weight: bold;
-      transition: background-color 0.4s ease-in, color 0.4s ease-in, box-shadow 0.4s ease-in; }
-      section.freelance-prices div.price-container div.price-per-antity button.order:hover {
-        background-color: var(--dyellow);
-        box-shadow: 0px 0px 6px var(--gray);
-        color: var(--lowblack); }
+  justify-content: space-between;
+}
+section.freelance-prices div.price-container div.price-per-antity {
+  padding: 20px;
+  width: 32%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.freelance-prices div.price-container div.price-per-antity h3 {
+  text-align: center;
+}
+section.freelance-prices div.price-container div.price-per-antity div {
+  margin-top: 15px;
+  text-align: center;
+}
+section.freelance-prices div.price-container div.price-per-antity div span.bold-price {
+  font-weight: bold;
+  font-size: 28px;
+}
+section.freelance-prices div.price-container div.price-per-antity div p.price-description {
+  margin-top: 8px;
+  color: var(--gray);
+}
+section.freelance-prices div.price-container div.price-per-antity div p.options .line-option {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+section.freelance-prices div.price-container div.price-per-antity div p.options span.option-key {
+  margin-left: 15px;
+}
+section.freelance-prices div.price-container div.price-per-antity div p.options .yellow {
+  color: var(--dyellow);
+}
+section.freelance-prices div.price-container div.price-per-antity div p.options .gray {
+  color: var(--gray);
+}
+section.freelance-prices div.price-container div.price-per-antity div p.options .lblack {
+  color: var(--lblack);
+}
+section.freelance-prices div.price-container div.price-per-antity button.order {
+  margin: 20px auto 0px auto;
+  padding: 8px 25px 8px 25px;
+  vertical-align: baseline;
+  line-height: 20px;
+  font-size: 16px;
+  color: var(--lblack);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 0px 2px var(--gray);
+  background-color: white;
+  font-weight: bold;
+  transition: background-color 0.4s ease-in, color 0.4s ease-in, box-shadow 0.4s ease-in;
+}
+section.freelance-prices div.price-container div.price-per-antity button.order:hover {
+  background-color: var(--dyellow);
+  box-shadow: 0px 0px 6px var(--gray);
+  color: var(--lowblack);
+}
 
 section.recommendations div.recommendation-container div.recommender {
   padding: 20px;
@@ -378,16 +465,21 @@ section.recommendations div.recommendation-container div.recommender {
   align-items: flex-start;
   width: 32%;
   height: 300px;
-  background-color: white; }
-  section.recommendations div.recommendation-container div.recommender p.stars {
-    color: var(--dyellow); }
-  section.recommendations div.recommendation-container div.recommender div.identity {
-    display: flex; }
-    section.recommendations div.recommendation-container div.recommender div.identity p {
-      display: flex;
-      flex-direction: column; }
-      section.recommendations div.recommendation-container div.recommender div.identity p span {
-        width: max-content; }
+  background-color: white;
+}
+section.recommendations div.recommendation-container div.recommender p.stars {
+  color: var(--dyellow);
+}
+section.recommendations div.recommendation-container div.recommender div.identity {
+  display: flex;
+}
+section.recommendations div.recommendation-container div.recommender div.identity p {
+  display: flex;
+  flex-direction: column;
+}
+section.recommendations div.recommendation-container div.recommender div.identity p span {
+  width: max-content;
+}
 
 section.formations div.formations-container div.formation,
 section.formations div.formations-container div.experience,
@@ -400,228 +492,330 @@ section.experiences div.experiences-container div.experience {
   display: flex;
   justify-content: space-between;
   padding: 25px;
-  background-color: white; }
-  section.formations div.formations-container div.formation div.experience-date h3,
-  section.formations div.formations-container div.formation div.degre-date h3,
-  section.formations div.formations-container div.formation aside h3,
-  section.formations div.formations-container div.experience div.experience-date h3,
-  section.formations div.formations-container div.experience div.degre-date h3,
-  section.formations div.formations-container div.experience aside h3,
-  section.formations div.experiences-container div.formation div.experience-date h3,
-  section.formations div.experiences-container div.formation div.degre-date h3,
-  section.formations div.experiences-container div.formation aside h3,
-  section.formations div.experiences-container div.experience div.experience-date h3,
-  section.formations div.experiences-container div.experience div.degre-date h3,
-  section.formations div.experiences-container div.experience aside h3,
-  section.experiences div.formations-container div.formation div.experience-date h3,
-  section.experiences div.formations-container div.formation div.degre-date h3,
-  section.experiences div.formations-container div.formation aside h3,
-  section.experiences div.formations-container div.experience div.experience-date h3,
-  section.experiences div.formations-container div.experience div.degre-date h3,
-  section.experiences div.formations-container div.experience aside h3,
-  section.experiences div.experiences-container div.formation div.experience-date h3,
-  section.experiences div.experiences-container div.formation div.degre-date h3,
-  section.experiences div.experiences-container div.formation aside h3,
-  section.experiences div.experiences-container div.experience div.experience-date h3,
-  section.experiences div.experiences-container div.experience div.degre-date h3,
-  section.experiences div.experiences-container div.experience aside h3 {
-    margin-bottom: 30px; }
-  section.formations div.formations-container div.formation div.degre-date,
-  section.formations div.formations-container div.formation div.experience-date,
-  section.formations div.formations-container div.experience div.degre-date,
-  section.formations div.formations-container div.experience div.experience-date,
-  section.formations div.experiences-container div.formation div.degre-date,
-  section.formations div.experiences-container div.formation div.experience-date,
-  section.formations div.experiences-container div.experience div.degre-date,
-  section.formations div.experiences-container div.experience div.experience-date,
-  section.experiences div.formations-container div.formation div.degre-date,
-  section.experiences div.formations-container div.formation div.experience-date,
-  section.experiences div.formations-container div.experience div.degre-date,
-  section.experiences div.formations-container div.experience div.experience-date,
-  section.experiences div.experiences-container div.formation div.degre-date,
-  section.experiences div.experiences-container div.formation div.experience-date,
-  section.experiences div.experiences-container div.experience div.degre-date,
-  section.experiences div.experiences-container div.experience div.experience-date {
-    width: 25%; }
-    section.formations div.formations-container div.formation div.degre-date p,
-    section.formations div.formations-container div.formation div.experience-date p,
-    section.formations div.formations-container div.experience div.degre-date p,
-    section.formations div.formations-container div.experience div.experience-date p,
-    section.formations div.experiences-container div.formation div.degre-date p,
-    section.formations div.experiences-container div.formation div.experience-date p,
-    section.formations div.experiences-container div.experience div.degre-date p,
-    section.formations div.experiences-container div.experience div.experience-date p,
-    section.experiences div.formations-container div.formation div.degre-date p,
-    section.experiences div.formations-container div.formation div.experience-date p,
-    section.experiences div.formations-container div.experience div.degre-date p,
-    section.experiences div.formations-container div.experience div.experience-date p,
-    section.experiences div.experiences-container div.formation div.degre-date p,
-    section.experiences div.experiences-container div.formation div.experience-date p,
-    section.experiences div.experiences-container div.experience div.degre-date p,
-    section.experiences div.experiences-container div.experience div.experience-date p {
-      line-height: 25px; }
-      section.formations div.formations-container div.formation div.degre-date p span.date,
-      section.formations div.formations-container div.formation div.experience-date p span.date,
-      section.formations div.formations-container div.experience div.degre-date p span.date,
-      section.formations div.formations-container div.experience div.experience-date p span.date,
-      section.formations div.experiences-container div.formation div.degre-date p span.date,
-      section.formations div.experiences-container div.formation div.experience-date p span.date,
-      section.formations div.experiences-container div.experience div.degre-date p span.date,
-      section.formations div.experiences-container div.experience div.experience-date p span.date,
-      section.experiences div.formations-container div.formation div.degre-date p span.date,
-      section.experiences div.formations-container div.formation div.experience-date p span.date,
-      section.experiences div.formations-container div.experience div.degre-date p span.date,
-      section.experiences div.formations-container div.experience div.experience-date p span.date,
-      section.experiences div.experiences-container div.formation div.degre-date p span.date,
-      section.experiences div.experiences-container div.formation div.experience-date p span.date,
-      section.experiences div.experiences-container div.experience div.degre-date p span.date,
-      section.experiences div.experiences-container div.experience div.experience-date p span.date {
-        margin-left: 25px;
-        font-size: 12px;
-        color: white;
-        background-color: var(--dyellow);
-        padding: 4px 8px 4px 8px; }
-  section.formations div.formations-container div.formation aside,
-  section.formations div.formations-container div.experience aside,
-  section.formations div.experiences-container div.formation aside,
-  section.formations div.experiences-container div.experience aside,
-  section.experiences div.formations-container div.formation aside,
-  section.experiences div.formations-container div.experience aside,
-  section.experiences div.experiences-container div.formation aside,
-  section.experiences div.experiences-container div.experience aside {
-    width: 55%; }
+  background-color: white;
+}
+section.formations div.formations-container div.formation div.experience-date h3,
+section.formations div.formations-container div.formation div.degre-date h3,
+section.formations div.formations-container div.formation aside h3,
+section.formations div.formations-container div.experience div.experience-date h3,
+section.formations div.formations-container div.experience div.degre-date h3,
+section.formations div.formations-container div.experience aside h3,
+section.formations div.experiences-container div.formation div.experience-date h3,
+section.formations div.experiences-container div.formation div.degre-date h3,
+section.formations div.experiences-container div.formation aside h3,
+section.formations div.experiences-container div.experience div.experience-date h3,
+section.formations div.experiences-container div.experience div.degre-date h3,
+section.formations div.experiences-container div.experience aside h3,
+section.experiences div.formations-container div.formation div.experience-date h3,
+section.experiences div.formations-container div.formation div.degre-date h3,
+section.experiences div.formations-container div.formation aside h3,
+section.experiences div.formations-container div.experience div.experience-date h3,
+section.experiences div.formations-container div.experience div.degre-date h3,
+section.experiences div.formations-container div.experience aside h3,
+section.experiences div.experiences-container div.formation div.experience-date h3,
+section.experiences div.experiences-container div.formation div.degre-date h3,
+section.experiences div.experiences-container div.formation aside h3,
+section.experiences div.experiences-container div.experience div.experience-date h3,
+section.experiences div.experiences-container div.experience div.degre-date h3,
+section.experiences div.experiences-container div.experience aside h3 {
+  margin-bottom: 30px;
+}
+section.formations div.formations-container div.formation div.degre-date,
+section.formations div.formations-container div.formation div.experience-date,
+section.formations div.formations-container div.experience div.degre-date,
+section.formations div.formations-container div.experience div.experience-date,
+section.formations div.experiences-container div.formation div.degre-date,
+section.formations div.experiences-container div.formation div.experience-date,
+section.formations div.experiences-container div.experience div.degre-date,
+section.formations div.experiences-container div.experience div.experience-date,
+section.experiences div.formations-container div.formation div.degre-date,
+section.experiences div.formations-container div.formation div.experience-date,
+section.experiences div.formations-container div.experience div.degre-date,
+section.experiences div.formations-container div.experience div.experience-date,
+section.experiences div.experiences-container div.formation div.degre-date,
+section.experiences div.experiences-container div.formation div.experience-date,
+section.experiences div.experiences-container div.experience div.degre-date,
+section.experiences div.experiences-container div.experience div.experience-date {
+  width: 25%;
+}
+section.formations div.formations-container div.formation div.degre-date p,
+section.formations div.formations-container div.formation div.experience-date p,
+section.formations div.formations-container div.experience div.degre-date p,
+section.formations div.formations-container div.experience div.experience-date p,
+section.formations div.experiences-container div.formation div.degre-date p,
+section.formations div.experiences-container div.formation div.experience-date p,
+section.formations div.experiences-container div.experience div.degre-date p,
+section.formations div.experiences-container div.experience div.experience-date p,
+section.experiences div.formations-container div.formation div.degre-date p,
+section.experiences div.formations-container div.formation div.experience-date p,
+section.experiences div.formations-container div.experience div.degre-date p,
+section.experiences div.formations-container div.experience div.experience-date p,
+section.experiences div.experiences-container div.formation div.degre-date p,
+section.experiences div.experiences-container div.formation div.experience-date p,
+section.experiences div.experiences-container div.experience div.degre-date p,
+section.experiences div.experiences-container div.experience div.experience-date p {
+  line-height: 25px;
+}
+section.formations div.formations-container div.formation div.degre-date p span.date,
+section.formations div.formations-container div.formation div.experience-date p span.date,
+section.formations div.formations-container div.experience div.degre-date p span.date,
+section.formations div.formations-container div.experience div.experience-date p span.date,
+section.formations div.experiences-container div.formation div.degre-date p span.date,
+section.formations div.experiences-container div.formation div.experience-date p span.date,
+section.formations div.experiences-container div.experience div.degre-date p span.date,
+section.formations div.experiences-container div.experience div.experience-date p span.date,
+section.experiences div.formations-container div.formation div.degre-date p span.date,
+section.experiences div.formations-container div.formation div.experience-date p span.date,
+section.experiences div.formations-container div.experience div.degre-date p span.date,
+section.experiences div.formations-container div.experience div.experience-date p span.date,
+section.experiences div.experiences-container div.formation div.degre-date p span.date,
+section.experiences div.experiences-container div.formation div.experience-date p span.date,
+section.experiences div.experiences-container div.experience div.degre-date p span.date,
+section.experiences div.experiences-container div.experience div.experience-date p span.date {
+  margin-left: 25px;
+  font-size: 12px;
+  color: white;
+  background-color: var(--dyellow);
+  padding: 4px 8px 4px 8px;
+}
+section.formations div.formations-container div.formation aside,
+section.formations div.formations-container div.experience aside,
+section.formations div.experiences-container div.formation aside,
+section.formations div.experiences-container div.experience aside,
+section.experiences div.formations-container div.formation aside,
+section.experiences div.formations-container div.experience aside,
+section.experiences div.experiences-container div.formation aside,
+section.experiences div.experiences-container div.experience aside {
+  width: 55%;
+}
 
 section.portfolio {
-  background-color: white; }
-  section.portfolio ul.portfolio-menu {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin: auto;
-    font-weight: bold; }
-    section.portfolio ul.portfolio-menu li {
-      color: var(--lblack);
-      transition: color 0.4s ease; }
-      section.portfolio ul.portfolio-menu li:hover {
-        color: var(--dyellow); }
-  section.portfolio div.portfolio-container {
-    width: 100%;
-    margin-top: 30px;
-    background-color: var(--lgrey);
-    display: grid;
-    grid-gap: 3%; }
-    section.portfolio div.portfolio-container figure {
-      position: relative;
-      cursor: pointer;
-      height: 300px;
-      background-color: var(--lgrey); }
-      section.portfolio div.portfolio-container figure img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-      section.portfolio div.portfolio-container figure:hover::before {
-        content: '+';
-        font-size: 4em;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        background-color: var(--dyellow);
-        opacity: .8;
-        width: 100%;
-        height: 100%; }
+  background-color: white;
+}
+section.portfolio ul.portfolio-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  font-weight: bold;
+}
+section.portfolio ul.portfolio-menu li {
+  color: var(--lblack);
+  transition: color 0.4s ease;
+}
+section.portfolio ul.portfolio-menu li:hover {
+  color: var(--dyellow);
+}
+section.portfolio div.portfolio-container {
+  width: 100%;
+  margin-top: 30px;
+  background-color: var(--lgrey);
+  display: grid;
+  grid-gap: 3%;
+}
+section.portfolio div.portfolio-container figure {
+  position: relative;
+  cursor: pointer;
+  height: 300px;
+  background-color: var(--lgrey);
+}
+section.portfolio div.portfolio-container figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.portfolio div.portfolio-container figure:hover::before {
+  content: "+";
+  font-size: 4em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: var(--dyellow);
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+}
 
 section.contact {
   display: flex;
-  justify-content: space-between; }
-  section.contact form h2,
-  section.contact aside h2 {
-    margin-bottom: 40px; }
-  section.contact form div.form-container,
-  section.contact aside div.info-container {
-    height: fit-content; }
-  section.contact form div,
-  section.contact aside > div.info-container > div.info {
-    background-color: white; }
-  section.contact form {
-    width: 55%; }
-    section.contact form h2 {
-      color: var(--lblack); }
-    section.contact form div.form-container {
-      padding: 15px; }
-      section.contact form div.form-container p {
-        display: flex;
-        flex-direction: column; }
-        section.contact form div.form-container p label {
-          color: var(--lowblack);
-          margin-bottom: 6px; }
-        section.contact form div.form-container p input,
-        section.contact form div.form-container p textarea {
-          margin-bottom: 20px;
-          border: none;
-          background-color: var(--lgrey);
-          padding: 8px 15px 8px 15px; }
-      section.contact form div.form-container p.textarea {
-        height: 50%; }
-        section.contact form div.form-container p.textarea textarea {
-          height: 100%; }
-      section.contact form div.form-container button {
-        border: none;
-        background-color: var(--dyellow);
-        padding: 8px 10px 8px 10px; }
-  section.contact aside {
-    margin: auto; }
-    section.contact aside div.info-container {
-      display: grid;
-      grid-template-columns: auto auto;
-      /* Deux colonnes égales */
-      grid-template-rows: auto auto;
-      /* Deux lignes égales */
-      gap: 20px;
-      /* Espacement entre les éléments */ }
-      section.contact aside div.info-container div.info {
-        padding: 20px; }
-        section.contact aside div.info-container div.info > p.icon {
-          text-align: center; }
-          section.contact aside div.info-container div.info > p.icon > span {
-            background-color: var(--dyellow);
-            padding: 8px;
-            border-radius: 50px;
-            margin-bottom: 25px; }
-        section.contact aside div.info-container div.info p.content-text {
-          display: flex;
-          flex-direction: column;
-          align-content: space-around; }
-          section.contact aside div.info-container div.info p.content-text > span,
-          section.contact aside div.info-container div.info p.content-text > span a {
-            color: var(--gray);
-            margin-top: 15px;
-            margin-bottom: 15px; }
-          section.contact aside div.info-container div.info p.content-text > span.label-text {
-            font-weight: bold;
-            color: var(--lowblack); }
+  justify-content: space-between;
+}
+section.contact form h2,
+section.contact aside h2 {
+  margin-bottom: 40px;
+}
+section.contact form div.form-container,
+section.contact aside div.info-container {
+  height: fit-content;
+}
+section.contact form div,
+section.contact aside > div.info-container > div.info {
+  background-color: white;
+}
+section.contact form {
+  width: 55%;
+}
+section.contact form h2 {
+  color: var(--lblack);
+}
+section.contact form div.form-container {
+  padding: 15px;
+}
+section.contact form div.form-container p {
+  display: flex;
+  flex-direction: column;
+}
+section.contact form div.form-container p label {
+  color: var(--lowblack);
+  margin-bottom: 6px;
+}
+section.contact form div.form-container p input,
+section.contact form div.form-container p textarea {
+  margin-bottom: 20px;
+  border: none;
+  background-color: var(--lgrey);
+  padding: 8px 15px 8px 15px;
+}
+section.contact form div.form-container p.textarea {
+  height: 50%;
+}
+section.contact form div.form-container p.textarea textarea {
+  height: 100%;
+}
+section.contact form div.form-container button {
+  border: none;
+  background-color: var(--dyellow);
+  padding: 8px 10px 8px 10px;
+}
+section.contact aside {
+  margin: auto;
+}
+section.contact aside div.info-container {
+  display: grid;
+  grid-template-columns: auto auto; /* Deux colonnes égales */
+  grid-template-rows: auto auto; /* Deux lignes égales */
+  gap: 20px; /* Espacement entre les éléments */
+}
+section.contact aside div.info-container div.info {
+  padding: 20px;
+}
+section.contact aside div.info-container div.info > p.icon {
+  text-align: center;
+}
+section.contact aside div.info-container div.info > p.icon > span {
+  background-color: var(--dyellow);
+  padding: 8px;
+  border-radius: 50px;
+  margin-bottom: 25px;
+}
+section.contact aside div.info-container div.info p.content-text {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+section.contact aside div.info-container div.info p.content-text > span, section.contact aside div.info-container div.info p.content-text > span a {
+  color: var(--gray);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+section.contact aside div.info-container div.info p.content-text > span.label-text {
+  font-weight: bold;
+  color: var(--lowblack);
+}
 
 footer {
-  margin-top: 50px; }
-  footer p {
-    text-align: center;
-    color: var(--lblack);
-    font-weight: bold;
-    font-style: italic;
-    padding: 15px; }
+  margin-top: 50px;
+}
+footer p {
+  text-align: center;
+  color: var(--lblack);
+  font-weight: bold;
+  font-style: italic;
+  padding: 15px;
+}
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
+  html, body {
+    max-width: 1440px;
+  }
+  section.portfolio div.portfolio-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  section.presentation-board {
+    width: 305px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.presentation-board div.me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.presentation-board div.me figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.presentation-board div.me figure img.picture {
+    width: 150px;
+    height: 150px;
+    border-radius: var(--circle);
+    object-fit: cover;
+  }
+  section.presentation-board div.me figure figcaption {
+    font-weight: bolder;
+    margin-top: 30px;
+    font-size: 20px;
+  }
   div.main-container {
     display: flex;
-    justify-content: space-between; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+    justify-content: space-between;
+  }
+  div.main-container div.hero {
+    width: 100%;
+    height: 100%;
+  }
+  div.main-container section.portfolio div.portfolio-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  section.menu .menu-fixed .menu-options {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  section.menu ul {
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  section.menu ul li {
+    display: flex;
+    align-items: center;
+  }
+  section.menu ul li a {
+    display: contents;
+  }
+  section.menu ul li a span.circle {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   #root {
-    --fz:25px; }
+    --fz:25px;
+  }
   div.main-container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
   section.presentation-board {
     font-size: var(--fz);
     width: 98%;
@@ -630,417 +824,483 @@ footer {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 5%;
-    align-items: center; }
-    section.presentation-board > div {
-      border-bottom: none; }
-    section.presentation-board div.me {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      section.presentation-board div.me figure {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        section.presentation-board div.me figure img.picture {
-          width: 100%;
-          border-radius: 50%;
-          object-fit: cover; }
-        section.presentation-board div.me figure figcaption {
-          font-weight: bolder;
-          margin-top: 30px; }
-      section.presentation-board div.me div.social-network ul {
-        display: flex;
-        align-items: center;
-        margin-top: 10px;
-        margin-bottom: 10px; }
-      section.presentation-board div.me div.social-network li {
-        transform: scale(2);
-        font-size: 22px; }
-    section.presentation-board div.my-languages, section.presentation-board div.systems, section.presentation-board div.skills {
-      font-size: 34px; }
-    section.presentation-board div.skills {
-      border-top: 1px solid var(--mgrey);
-      border-bottom: 1px solid var(--mgrey); }
-    section.presentation-board button.download-cv {
-      width: 100%;
-      font-size: larger;
-      border-radius: 5px; }
-      section.presentation-board button.download-cv span {
-        font-size: larger; }
-    section.presentation-board div.skills, section.presentation-board button.download-cv {
-      grid-column-start: 1;
-      grid-column-end: span 2; }
+    align-items: center;
+  }
+  section.presentation-board > div {
+    border-bottom: none;
+  }
+  section.presentation-board div.me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.presentation-board div.me figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.presentation-board div.me figure img.picture {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  section.presentation-board div.me figure figcaption {
+    font-weight: bolder;
+    margin-top: 30px;
+  }
+  section.presentation-board div.me div.social-network ul {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  section.presentation-board div.me div.social-network li {
+    transform: scale(2);
+    font-size: 22px;
+  }
+  section.presentation-board div.my-languages, section.presentation-board div.systems, section.presentation-board div.skills {
+    font-size: 34px;
+  }
+  section.presentation-board div.skills {
+    border-top: 1px solid var(--mgrey);
+    border-bottom: 1px solid var(--mgrey);
+  }
+  section.presentation-board button.download-cv {
+    width: 100%;
+    font-size: larger;
+    border-radius: 5px;
+  }
+  section.presentation-board button.download-cv span {
+    font-size: larger;
+  }
+  section.presentation-board div.skills, section.presentation-board button.download-cv {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+  }
   main {
-    width: 100%; }
-    main section {
-      font-size: var(--fz); }
-      main section > p {
-        margin-left: 10px;
-        margin-right: 10px;
-        width: fit-content;
-        text-align: justify;
-        letter-spacing: 3px;
-        word-spacing: none; }
-    main div.hero {
-      display: none; }
-    main section.services {
-      margin-top: 100px;
-      width: 100%;
-      text-align: center; }
-      main section.services div.services-container {
-        grid-template-columns: 1fr 1fr; }
-        main section.services div.services-container div.service {
-          height: 400px; }
-          main section.services div.services-container div.service div.sprite {
-            transform: scale(2); }
-    main section.freelance-prices div.price-container {
-      font-size: var(--fz);
-      width: auto;
-      flex-direction: column; }
-      main section.freelance-prices div.price-container div.price-per-antity {
-        width: inherit; }
-        main section.freelance-prices div.price-container div.price-per-antity div span.bold-price {
-          font-size: var(--fz); }
-        main section.freelance-prices div.price-container div.price-per-antity div p.options {
-          margin: auto;
-          width: max-content; }
-          main section.freelance-prices div.price-container div.price-per-antity div p.options span.line-option {
-            width: max-content; }
-    main section.formations div.formations-container div.formation,
-    main section.formations div.formations-container div.experience,
-    main section.formations div.experiences-container div.formation,
-    main section.formations div.experiences-container div.experience,
-    main section.experiences div.formations-container div.formation,
-    main section.experiences div.formations-container div.experience,
-    main section.experiences div.experiences-container div.formation,
-    main section.experiences div.experiences-container div.experience {
-      flex-direction: column; }
-      main section.formations div.formations-container div.formation div.degre-date span.date,
-      main section.formations div.formations-container div.formation div.experience-date span.date,
-      main section.formations div.formations-container div.experience div.degre-date span.date,
-      main section.formations div.formations-container div.experience div.experience-date span.date,
-      main section.formations div.experiences-container div.formation div.degre-date span.date,
-      main section.formations div.experiences-container div.formation div.experience-date span.date,
-      main section.formations div.experiences-container div.experience div.degre-date span.date,
-      main section.formations div.experiences-container div.experience div.experience-date span.date,
-      main section.experiences div.formations-container div.formation div.degre-date span.date,
-      main section.experiences div.formations-container div.formation div.experience-date span.date,
-      main section.experiences div.formations-container div.experience div.degre-date span.date,
-      main section.experiences div.formations-container div.experience div.experience-date span.date,
-      main section.experiences div.experiences-container div.formation div.degre-date span.date,
-      main section.experiences div.experiences-container div.formation div.experience-date span.date,
-      main section.experiences div.experiences-container div.experience div.degre-date span.date,
-      main section.experiences div.experiences-container div.experience div.experience-date span.date {
-        font-size: var(--fz); }
-      main section.formations div.formations-container div.formation div.degre-date p, main section.formations div.formations-container div.formation div.degre-date span.technos,
-      main section.formations div.formations-container div.formation div.experience-date p,
-      main section.formations div.formations-container div.formation div.experience-date span.technos,
-      main section.formations div.formations-container div.experience div.degre-date p,
-      main section.formations div.formations-container div.experience div.degre-date span.technos,
-      main section.formations div.formations-container div.experience div.experience-date p,
-      main section.formations div.formations-container div.experience div.experience-date span.technos,
-      main section.formations div.experiences-container div.formation div.degre-date p,
-      main section.formations div.experiences-container div.formation div.degre-date span.technos,
-      main section.formations div.experiences-container div.formation div.experience-date p,
-      main section.formations div.experiences-container div.formation div.experience-date span.technos,
-      main section.formations div.experiences-container div.experience div.degre-date p,
-      main section.formations div.experiences-container div.experience div.degre-date span.technos,
-      main section.formations div.experiences-container div.experience div.experience-date p,
-      main section.formations div.experiences-container div.experience div.experience-date span.technos,
-      main section.experiences div.formations-container div.formation div.degre-date p,
-      main section.experiences div.formations-container div.formation div.degre-date span.technos,
-      main section.experiences div.formations-container div.formation div.experience-date p,
-      main section.experiences div.formations-container div.formation div.experience-date span.technos,
-      main section.experiences div.formations-container div.experience div.degre-date p,
-      main section.experiences div.formations-container div.experience div.degre-date span.technos,
-      main section.experiences div.formations-container div.experience div.experience-date p,
-      main section.experiences div.formations-container div.experience div.experience-date span.technos,
-      main section.experiences div.experiences-container div.formation div.degre-date p,
-      main section.experiences div.experiences-container div.formation div.degre-date span.technos,
-      main section.experiences div.experiences-container div.formation div.experience-date p,
-      main section.experiences div.experiences-container div.formation div.experience-date span.technos,
-      main section.experiences div.experiences-container div.experience div.degre-date p,
-      main section.experiences div.experiences-container div.experience div.degre-date span.technos,
-      main section.experiences div.experiences-container div.experience div.experience-date p,
-      main section.experiences div.experiences-container div.experience div.experience-date span.technos {
-        line-height: 60px; }
-      main section.formations div.formations-container div.formation div.degre-date,
-      main section.formations div.formations-container div.formation div.experience-date,
-      main section.formations div.formations-container div.formation aside,
-      main section.formations div.formations-container div.experience div.degre-date,
-      main section.formations div.formations-container div.experience div.experience-date,
-      main section.formations div.formations-container div.experience aside,
-      main section.formations div.experiences-container div.formation div.degre-date,
-      main section.formations div.experiences-container div.formation div.experience-date,
-      main section.formations div.experiences-container div.formation aside,
-      main section.formations div.experiences-container div.experience div.degre-date,
-      main section.formations div.experiences-container div.experience div.experience-date,
-      main section.formations div.experiences-container div.experience aside,
-      main section.experiences div.formations-container div.formation div.degre-date,
-      main section.experiences div.formations-container div.formation div.experience-date,
-      main section.experiences div.formations-container div.formation aside,
-      main section.experiences div.formations-container div.experience div.degre-date,
-      main section.experiences div.formations-container div.experience div.experience-date,
-      main section.experiences div.formations-container div.experience aside,
-      main section.experiences div.experiences-container div.formation div.degre-date,
-      main section.experiences div.experiences-container div.formation div.experience-date,
-      main section.experiences div.experiences-container div.formation aside,
-      main section.experiences div.experiences-container div.experience div.degre-date,
-      main section.experiences div.experiences-container div.experience div.experience-date,
-      main section.experiences div.experiences-container div.experience aside {
-        font-size: var(--fz);
-        width: auto; }
-      main section.formations div.formations-container div.formation aside,
-      main section.formations div.formations-container div.experience aside,
-      main section.formations div.experiences-container div.formation aside,
-      main section.formations div.experiences-container div.experience aside,
-      main section.experiences div.formations-container div.formation aside,
-      main section.experiences div.formations-container div.experience aside,
-      main section.experiences div.experiences-container div.formation aside,
-      main section.experiences div.experiences-container div.experience aside {
-        margin-top: 20px; }
-        main section.formations div.formations-container div.formation aside h3,
-        main section.formations div.formations-container div.experience aside h3,
-        main section.formations div.experiences-container div.formation aside h3,
-        main section.formations div.experiences-container div.experience aside h3,
-        main section.experiences div.formations-container div.formation aside h3,
-        main section.experiences div.formations-container div.experience aside h3,
-        main section.experiences div.experiences-container div.formation aside h3,
-        main section.experiences div.experiences-container div.experience aside h3 {
-          display: none; }
-    main section.portfolio {
-      margin-top: 100px;
-      width: 100%;
-      text-align: center; }
-      main section.portfolio div.portfolio-container {
-        flex: 1 1 auto;
-        overflow-y: auto;
-        grid-template-columns: 1fr 1fr; }
-        main section.portfolio div.portfolio-container figure {
-          height: 250px; }
-    main section.contact div.info-container {
-      grid-template-columns: auto auto;
-      height: 485px; }
-      main section.contact div.info-container div.info {
-        width: 45%; } }
-
+    width: 100%;
+  }
+  main section {
+    font-size: var(--fz);
+  }
+  main section > p {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: fit-content;
+    text-align: justify;
+    letter-spacing: 3px;
+    word-spacing: none;
+  }
+  main div.hero {
+    display: none;
+  }
+  main section.services {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  main section.services div.services-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  main section.services div.services-container div.service {
+    height: 400px;
+  }
+  main section.services div.services-container div.service div.sprite {
+    transform: scale(2);
+  }
+  main section.freelance-prices div.price-container {
+    font-size: var(--fz);
+    width: auto;
+    flex-direction: column;
+  }
+  main section.freelance-prices div.price-container div.price-per-antity {
+    width: inherit;
+  }
+  main section.freelance-prices div.price-container div.price-per-antity div span.bold-price {
+    font-size: var(--fz);
+  }
+  main section.freelance-prices div.price-container div.price-per-antity div p.options {
+    margin: auto;
+    width: max-content;
+  }
+  main section.freelance-prices div.price-container div.price-per-antity div p.options span.line-option {
+    width: max-content;
+  }
+  main section.formations div.formations-container div.formation,
+  main section.formations div.formations-container div.experience,
+  main section.formations div.experiences-container div.formation,
+  main section.formations div.experiences-container div.experience,
+  main section.experiences div.formations-container div.formation,
+  main section.experiences div.formations-container div.experience,
+  main section.experiences div.experiences-container div.formation,
+  main section.experiences div.experiences-container div.experience {
+    flex-direction: column;
+  }
+  main section.formations div.formations-container div.formation div.degre-date span.date,
+  main section.formations div.formations-container div.formation div.experience-date span.date,
+  main section.formations div.formations-container div.experience div.degre-date span.date,
+  main section.formations div.formations-container div.experience div.experience-date span.date,
+  main section.formations div.experiences-container div.formation div.degre-date span.date,
+  main section.formations div.experiences-container div.formation div.experience-date span.date,
+  main section.formations div.experiences-container div.experience div.degre-date span.date,
+  main section.formations div.experiences-container div.experience div.experience-date span.date,
+  main section.experiences div.formations-container div.formation div.degre-date span.date,
+  main section.experiences div.formations-container div.formation div.experience-date span.date,
+  main section.experiences div.formations-container div.experience div.degre-date span.date,
+  main section.experiences div.formations-container div.experience div.experience-date span.date,
+  main section.experiences div.experiences-container div.formation div.degre-date span.date,
+  main section.experiences div.experiences-container div.formation div.experience-date span.date,
+  main section.experiences div.experiences-container div.experience div.degre-date span.date,
+  main section.experiences div.experiences-container div.experience div.experience-date span.date {
+    font-size: var(--fz);
+  }
+  main section.formations div.formations-container div.formation div.degre-date p, main section.formations div.formations-container div.formation div.degre-date span.technos,
+  main section.formations div.formations-container div.formation div.experience-date p,
+  main section.formations div.formations-container div.formation div.experience-date span.technos,
+  main section.formations div.formations-container div.experience div.degre-date p,
+  main section.formations div.formations-container div.experience div.degre-date span.technos,
+  main section.formations div.formations-container div.experience div.experience-date p,
+  main section.formations div.formations-container div.experience div.experience-date span.technos,
+  main section.formations div.experiences-container div.formation div.degre-date p,
+  main section.formations div.experiences-container div.formation div.degre-date span.technos,
+  main section.formations div.experiences-container div.formation div.experience-date p,
+  main section.formations div.experiences-container div.formation div.experience-date span.technos,
+  main section.formations div.experiences-container div.experience div.degre-date p,
+  main section.formations div.experiences-container div.experience div.degre-date span.technos,
+  main section.formations div.experiences-container div.experience div.experience-date p,
+  main section.formations div.experiences-container div.experience div.experience-date span.technos,
+  main section.experiences div.formations-container div.formation div.degre-date p,
+  main section.experiences div.formations-container div.formation div.degre-date span.technos,
+  main section.experiences div.formations-container div.formation div.experience-date p,
+  main section.experiences div.formations-container div.formation div.experience-date span.technos,
+  main section.experiences div.formations-container div.experience div.degre-date p,
+  main section.experiences div.formations-container div.experience div.degre-date span.technos,
+  main section.experiences div.formations-container div.experience div.experience-date p,
+  main section.experiences div.formations-container div.experience div.experience-date span.technos,
+  main section.experiences div.experiences-container div.formation div.degre-date p,
+  main section.experiences div.experiences-container div.formation div.degre-date span.technos,
+  main section.experiences div.experiences-container div.formation div.experience-date p,
+  main section.experiences div.experiences-container div.formation div.experience-date span.technos,
+  main section.experiences div.experiences-container div.experience div.degre-date p,
+  main section.experiences div.experiences-container div.experience div.degre-date span.technos,
+  main section.experiences div.experiences-container div.experience div.experience-date p,
+  main section.experiences div.experiences-container div.experience div.experience-date span.technos {
+    line-height: 60px;
+  }
+  main section.formations div.formations-container div.formation div.degre-date,
+  main section.formations div.formations-container div.formation div.experience-date,
+  main section.formations div.formations-container div.formation aside,
+  main section.formations div.formations-container div.experience div.degre-date,
+  main section.formations div.formations-container div.experience div.experience-date,
+  main section.formations div.formations-container div.experience aside,
+  main section.formations div.experiences-container div.formation div.degre-date,
+  main section.formations div.experiences-container div.formation div.experience-date,
+  main section.formations div.experiences-container div.formation aside,
+  main section.formations div.experiences-container div.experience div.degre-date,
+  main section.formations div.experiences-container div.experience div.experience-date,
+  main section.formations div.experiences-container div.experience aside,
+  main section.experiences div.formations-container div.formation div.degre-date,
+  main section.experiences div.formations-container div.formation div.experience-date,
+  main section.experiences div.formations-container div.formation aside,
+  main section.experiences div.formations-container div.experience div.degre-date,
+  main section.experiences div.formations-container div.experience div.experience-date,
+  main section.experiences div.formations-container div.experience aside,
+  main section.experiences div.experiences-container div.formation div.degre-date,
+  main section.experiences div.experiences-container div.formation div.experience-date,
+  main section.experiences div.experiences-container div.formation aside,
+  main section.experiences div.experiences-container div.experience div.degre-date,
+  main section.experiences div.experiences-container div.experience div.experience-date,
+  main section.experiences div.experiences-container div.experience aside {
+    font-size: var(--fz);
+    width: auto;
+  }
+  main section.formations div.formations-container div.formation aside,
+  main section.formations div.formations-container div.experience aside,
+  main section.formations div.experiences-container div.formation aside,
+  main section.formations div.experiences-container div.experience aside,
+  main section.experiences div.formations-container div.formation aside,
+  main section.experiences div.formations-container div.experience aside,
+  main section.experiences div.experiences-container div.formation aside,
+  main section.experiences div.experiences-container div.experience aside {
+    margin-top: 20px;
+  }
+  main section.formations div.formations-container div.formation aside h3,
+  main section.formations div.formations-container div.experience aside h3,
+  main section.formations div.experiences-container div.formation aside h3,
+  main section.formations div.experiences-container div.experience aside h3,
+  main section.experiences div.formations-container div.formation aside h3,
+  main section.experiences div.formations-container div.experience aside h3,
+  main section.experiences div.experiences-container div.formation aside h3,
+  main section.experiences div.experiences-container div.experience aside h3 {
+    display: none;
+  }
+  main section.portfolio {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  main section.portfolio div.portfolio-container {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  main section.portfolio div.portfolio-container figure {
+    height: 250px;
+  }
+  main section.contact div.info-container {
+    grid-template-columns: auto auto;
+    height: 485px;
+  }
+  main section.contact div.info-container div.info {
+    width: 45%;
+  }
+}
 @media screen and (min-width: 375px) and (max-width: 767px) {
   #root {
-    --fz:25px; }
+    --fz:25px;
+  }
   div.main-container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
   section.presentation-board {
     font-size: var(--fz);
     height: fit-content;
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    section.presentation-board div.me {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      section.presentation-board div.me figure {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        section.presentation-board div.me figure img.picture {
-          width: 90%;
-          margin: auto;
-          border-radius: var(--circle);
-          object-fit: cover; }
-        section.presentation-board div.me figure figcaption {
-          font-weight: bolder;
-          margin-top: 30px; }
-      section.presentation-board div.me div.social-network h4.what-am-i {
-        margin-top: 20px; }
-      section.presentation-board div.me div.social-network ul {
-        display: flex;
-        align-items: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        height: 100px; }
-      section.presentation-board div.me div.social-network li {
-        transform: scale(2.5);
-        font-size: 22px; }
-    section.presentation-board div.my-languages, section.presentation-board div.systems, section.presentation-board div.skills {
-      font-size: var(--fz); }
-    section.presentation-board button.download-cv {
-      width: 90%;
-      font-size: larger;
-      border-radius: 5px; }
-      section.presentation-board button.download-cv span {
-        font-size: larger; }
-  main {
-    width: 100%; }
-    main section > p {
-      margin-left: 10px;
-      margin-right: 10px;
-      width: fit-content;
-      text-align: justify;
-      letter-spacing: 3px;
-      word-spacing: none; }
-    main div.hero {
-      display: none; }
-    main section.services {
-      margin-top: 100px;
-      width: 100%;
-      text-align: center; }
-      main section.services div.services-container {
-        grid-template-columns: 1fr; }
-        main section.services div.services-container div.service {
-          width: 100%;
-          height: 420px; }
-          main section.services div.services-container div.service div.sprite {
-            transform: scale(2.7); }
-    main section.freelance-prices div.price-container {
-      font-size: var(--fz);
-      width: auto;
-      flex-direction: column; }
-      main section.freelance-prices div.price-container div.price-per-antity {
-        width: inherit; }
-        main section.freelance-prices div.price-container div.price-per-antity div span.bold-price {
-          font-size: var(--fz); }
-        main section.freelance-prices div.price-container div.price-per-antity div p.options {
-          margin: auto;
-          width: max-content; }
-          main section.freelance-prices div.price-container div.price-per-antity div p.options span.line-option {
-            width: max-content; }
-    main section.formations div.formations-container div.formation,
-    main section.formations div.formations-container div.experience,
-    main section.formations div.experiences-container div.formation,
-    main section.formations div.experiences-container div.experience,
-    main section.experiences div.formations-container div.formation,
-    main section.experiences div.formations-container div.experience,
-    main section.experiences div.experiences-container div.formation,
-    main section.experiences div.experiences-container div.experience {
-      flex-direction: column; }
-      main section.formations div.formations-container div.formation div.degre-date span.date,
-      main section.formations div.formations-container div.formation div.experience-date span.date,
-      main section.formations div.formations-container div.experience div.degre-date span.date,
-      main section.formations div.formations-container div.experience div.experience-date span.date,
-      main section.formations div.experiences-container div.formation div.degre-date span.date,
-      main section.formations div.experiences-container div.formation div.experience-date span.date,
-      main section.formations div.experiences-container div.experience div.degre-date span.date,
-      main section.formations div.experiences-container div.experience div.experience-date span.date,
-      main section.experiences div.formations-container div.formation div.degre-date span.date,
-      main section.experiences div.formations-container div.formation div.experience-date span.date,
-      main section.experiences div.formations-container div.experience div.degre-date span.date,
-      main section.experiences div.formations-container div.experience div.experience-date span.date,
-      main section.experiences div.experiences-container div.formation div.degre-date span.date,
-      main section.experiences div.experiences-container div.formation div.experience-date span.date,
-      main section.experiences div.experiences-container div.experience div.degre-date span.date,
-      main section.experiences div.experiences-container div.experience div.experience-date span.date {
-        font-size: var(--fz); }
-      main section.formations div.formations-container div.formation div.degre-date p, main section.formations div.formations-container div.formation div.degre-date span.technos,
-      main section.formations div.formations-container div.formation div.experience-date p,
-      main section.formations div.formations-container div.formation div.experience-date span.technos,
-      main section.formations div.formations-container div.experience div.degre-date p,
-      main section.formations div.formations-container div.experience div.degre-date span.technos,
-      main section.formations div.formations-container div.experience div.experience-date p,
-      main section.formations div.formations-container div.experience div.experience-date span.technos,
-      main section.formations div.experiences-container div.formation div.degre-date p,
-      main section.formations div.experiences-container div.formation div.degre-date span.technos,
-      main section.formations div.experiences-container div.formation div.experience-date p,
-      main section.formations div.experiences-container div.formation div.experience-date span.technos,
-      main section.formations div.experiences-container div.experience div.degre-date p,
-      main section.formations div.experiences-container div.experience div.degre-date span.technos,
-      main section.formations div.experiences-container div.experience div.experience-date p,
-      main section.formations div.experiences-container div.experience div.experience-date span.technos,
-      main section.experiences div.formations-container div.formation div.degre-date p,
-      main section.experiences div.formations-container div.formation div.degre-date span.technos,
-      main section.experiences div.formations-container div.formation div.experience-date p,
-      main section.experiences div.formations-container div.formation div.experience-date span.technos,
-      main section.experiences div.formations-container div.experience div.degre-date p,
-      main section.experiences div.formations-container div.experience div.degre-date span.technos,
-      main section.experiences div.formations-container div.experience div.experience-date p,
-      main section.experiences div.formations-container div.experience div.experience-date span.technos,
-      main section.experiences div.experiences-container div.formation div.degre-date p,
-      main section.experiences div.experiences-container div.formation div.degre-date span.technos,
-      main section.experiences div.experiences-container div.formation div.experience-date p,
-      main section.experiences div.experiences-container div.formation div.experience-date span.technos,
-      main section.experiences div.experiences-container div.experience div.degre-date p,
-      main section.experiences div.experiences-container div.experience div.degre-date span.technos,
-      main section.experiences div.experiences-container div.experience div.experience-date p,
-      main section.experiences div.experiences-container div.experience div.experience-date span.technos {
-        line-height: 60px; }
-      main section.formations div.formations-container div.formation div.degre-date,
-      main section.formations div.formations-container div.formation div.experience-date,
-      main section.formations div.formations-container div.formation aside,
-      main section.formations div.formations-container div.experience div.degre-date,
-      main section.formations div.formations-container div.experience div.experience-date,
-      main section.formations div.formations-container div.experience aside,
-      main section.formations div.experiences-container div.formation div.degre-date,
-      main section.formations div.experiences-container div.formation div.experience-date,
-      main section.formations div.experiences-container div.formation aside,
-      main section.formations div.experiences-container div.experience div.degre-date,
-      main section.formations div.experiences-container div.experience div.experience-date,
-      main section.formations div.experiences-container div.experience aside,
-      main section.experiences div.formations-container div.formation div.degre-date,
-      main section.experiences div.formations-container div.formation div.experience-date,
-      main section.experiences div.formations-container div.formation aside,
-      main section.experiences div.formations-container div.experience div.degre-date,
-      main section.experiences div.formations-container div.experience div.experience-date,
-      main section.experiences div.formations-container div.experience aside,
-      main section.experiences div.experiences-container div.formation div.degre-date,
-      main section.experiences div.experiences-container div.formation div.experience-date,
-      main section.experiences div.experiences-container div.formation aside,
-      main section.experiences div.experiences-container div.experience div.degre-date,
-      main section.experiences div.experiences-container div.experience div.experience-date,
-      main section.experiences div.experiences-container div.experience aside {
-        font-size: var(--fz);
-        width: auto; }
-      main section.formations div.formations-container div.formation aside,
-      main section.formations div.formations-container div.experience aside,
-      main section.formations div.experiences-container div.formation aside,
-      main section.formations div.experiences-container div.experience aside,
-      main section.experiences div.formations-container div.formation aside,
-      main section.experiences div.formations-container div.experience aside,
-      main section.experiences div.experiences-container div.formation aside,
-      main section.experiences div.experiences-container div.experience aside {
-        margin-top: 20px; }
-        main section.formations div.formations-container div.formation aside h3,
-        main section.formations div.formations-container div.experience aside h3,
-        main section.formations div.experiences-container div.formation aside h3,
-        main section.formations div.experiences-container div.experience aside h3,
-        main section.experiences div.formations-container div.formation aside h3,
-        main section.experiences div.formations-container div.experience aside h3,
-        main section.experiences div.experiences-container div.formation aside h3,
-        main section.experiences div.experiences-container div.experience aside h3 {
-          display: none; }
-    main section.portfolio {
-      margin-top: 100px;
-      width: 100%;
-      text-align: center; }
-      main section.portfolio div.portfolio-container {
-        flex: 1 1 auto;
-        overflow-y: auto;
-        grid-template-columns: 1fr; }
-        main section.portfolio div.portfolio-container a {
-          width: 95%;
-          margin: auto;
-          display: flex;
-          justify-content: center; }
-          main section.portfolio div.portfolio-container a figure {
-            height: fit-content; }
-    main section.contact div.info-container {
-      grid-template-columns: auto; }
-  section.menu {
+    align-items: center;
+  }
+  section.presentation-board div.me {
     display: flex;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.presentation-board div.me figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.presentation-board div.me figure img.picture {
+    width: 90%;
+    margin: auto;
+    border-radius: var(--circle);
+    object-fit: cover;
+  }
+  section.presentation-board div.me figure figcaption {
+    font-weight: bolder;
+    margin-top: 30px;
+  }
+  section.presentation-board div.me div.social-network h4.what-am-i {
+    margin-top: 20px;
+  }
+  section.presentation-board div.me div.social-network ul {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+  }
+  section.presentation-board div.me div.social-network li {
+    transform: scale(2.5);
+    font-size: 22px;
+  }
+  section.presentation-board div.my-languages, section.presentation-board div.systems, section.presentation-board div.skills {
+    font-size: var(--fz);
+  }
+  section.presentation-board button.download-cv {
+    width: 90%;
+    font-size: larger;
+    border-radius: 5px;
+  }
+  section.presentation-board button.download-cv span {
+    font-size: larger;
+  }
+  main {
+    width: 100%;
+  }
+  main section > p {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: fit-content;
+    text-align: justify;
+    letter-spacing: 3px;
+    word-spacing: none;
+  }
+  main div.hero {
+    display: none;
+  }
+  main section.services {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  main section.services div.services-container {
+    grid-template-columns: 1fr;
+  }
+  main section.services div.services-container div.service {
+    width: 100%;
+    height: 420px;
+  }
+  main section.services div.services-container div.service div.sprite {
+    transform: scale(2.7);
+  }
+  main section.freelance-prices div.price-container {
+    font-size: var(--fz);
+    width: auto;
+    flex-direction: column;
+  }
+  main section.freelance-prices div.price-container div.price-per-antity {
+    width: inherit;
+  }
+  main section.freelance-prices div.price-container div.price-per-antity div span.bold-price {
+    font-size: var(--fz);
+  }
+  main section.freelance-prices div.price-container div.price-per-antity div p.options {
+    margin: auto;
+    width: max-content;
+  }
+  main section.freelance-prices div.price-container div.price-per-antity div p.options span.line-option {
+    width: max-content;
+  }
+  main section.formations div.formations-container div.formation,
+  main section.formations div.formations-container div.experience,
+  main section.formations div.experiences-container div.formation,
+  main section.formations div.experiences-container div.experience,
+  main section.experiences div.formations-container div.formation,
+  main section.experiences div.formations-container div.experience,
+  main section.experiences div.experiences-container div.formation,
+  main section.experiences div.experiences-container div.experience {
+    flex-direction: column;
+  }
+  main section.formations div.formations-container div.formation div.degre-date span.date,
+  main section.formations div.formations-container div.formation div.experience-date span.date,
+  main section.formations div.formations-container div.experience div.degre-date span.date,
+  main section.formations div.formations-container div.experience div.experience-date span.date,
+  main section.formations div.experiences-container div.formation div.degre-date span.date,
+  main section.formations div.experiences-container div.formation div.experience-date span.date,
+  main section.formations div.experiences-container div.experience div.degre-date span.date,
+  main section.formations div.experiences-container div.experience div.experience-date span.date,
+  main section.experiences div.formations-container div.formation div.degre-date span.date,
+  main section.experiences div.formations-container div.formation div.experience-date span.date,
+  main section.experiences div.formations-container div.experience div.degre-date span.date,
+  main section.experiences div.formations-container div.experience div.experience-date span.date,
+  main section.experiences div.experiences-container div.formation div.degre-date span.date,
+  main section.experiences div.experiences-container div.formation div.experience-date span.date,
+  main section.experiences div.experiences-container div.experience div.degre-date span.date,
+  main section.experiences div.experiences-container div.experience div.experience-date span.date {
+    font-size: var(--fz);
+  }
+  main section.formations div.formations-container div.formation div.degre-date p, main section.formations div.formations-container div.formation div.degre-date span.technos,
+  main section.formations div.formations-container div.formation div.experience-date p,
+  main section.formations div.formations-container div.formation div.experience-date span.technos,
+  main section.formations div.formations-container div.experience div.degre-date p,
+  main section.formations div.formations-container div.experience div.degre-date span.technos,
+  main section.formations div.formations-container div.experience div.experience-date p,
+  main section.formations div.formations-container div.experience div.experience-date span.technos,
+  main section.formations div.experiences-container div.formation div.degre-date p,
+  main section.formations div.experiences-container div.formation div.degre-date span.technos,
+  main section.formations div.experiences-container div.formation div.experience-date p,
+  main section.formations div.experiences-container div.formation div.experience-date span.technos,
+  main section.formations div.experiences-container div.experience div.degre-date p,
+  main section.formations div.experiences-container div.experience div.degre-date span.technos,
+  main section.formations div.experiences-container div.experience div.experience-date p,
+  main section.formations div.experiences-container div.experience div.experience-date span.technos,
+  main section.experiences div.formations-container div.formation div.degre-date p,
+  main section.experiences div.formations-container div.formation div.degre-date span.technos,
+  main section.experiences div.formations-container div.formation div.experience-date p,
+  main section.experiences div.formations-container div.formation div.experience-date span.technos,
+  main section.experiences div.formations-container div.experience div.degre-date p,
+  main section.experiences div.formations-container div.experience div.degre-date span.technos,
+  main section.experiences div.formations-container div.experience div.experience-date p,
+  main section.experiences div.formations-container div.experience div.experience-date span.technos,
+  main section.experiences div.experiences-container div.formation div.degre-date p,
+  main section.experiences div.experiences-container div.formation div.degre-date span.technos,
+  main section.experiences div.experiences-container div.formation div.experience-date p,
+  main section.experiences div.experiences-container div.formation div.experience-date span.technos,
+  main section.experiences div.experiences-container div.experience div.degre-date p,
+  main section.experiences div.experiences-container div.experience div.degre-date span.technos,
+  main section.experiences div.experiences-container div.experience div.experience-date p,
+  main section.experiences div.experiences-container div.experience div.experience-date span.technos {
+    line-height: 60px;
+  }
+  main section.formations div.formations-container div.formation div.degre-date,
+  main section.formations div.formations-container div.formation div.experience-date,
+  main section.formations div.formations-container div.formation aside,
+  main section.formations div.formations-container div.experience div.degre-date,
+  main section.formations div.formations-container div.experience div.experience-date,
+  main section.formations div.formations-container div.experience aside,
+  main section.formations div.experiences-container div.formation div.degre-date,
+  main section.formations div.experiences-container div.formation div.experience-date,
+  main section.formations div.experiences-container div.formation aside,
+  main section.formations div.experiences-container div.experience div.degre-date,
+  main section.formations div.experiences-container div.experience div.experience-date,
+  main section.formations div.experiences-container div.experience aside,
+  main section.experiences div.formations-container div.formation div.degre-date,
+  main section.experiences div.formations-container div.formation div.experience-date,
+  main section.experiences div.formations-container div.formation aside,
+  main section.experiences div.formations-container div.experience div.degre-date,
+  main section.experiences div.formations-container div.experience div.experience-date,
+  main section.experiences div.formations-container div.experience aside,
+  main section.experiences div.experiences-container div.formation div.degre-date,
+  main section.experiences div.experiences-container div.formation div.experience-date,
+  main section.experiences div.experiences-container div.formation aside,
+  main section.experiences div.experiences-container div.experience div.degre-date,
+  main section.experiences div.experiences-container div.experience div.experience-date,
+  main section.experiences div.experiences-container div.experience aside {
+    font-size: var(--fz);
+    width: auto;
+  }
+  main section.formations div.formations-container div.formation aside,
+  main section.formations div.formations-container div.experience aside,
+  main section.formations div.experiences-container div.formation aside,
+  main section.formations div.experiences-container div.experience aside,
+  main section.experiences div.formations-container div.formation aside,
+  main section.experiences div.formations-container div.experience aside,
+  main section.experiences div.experiences-container div.formation aside,
+  main section.experiences div.experiences-container div.experience aside {
+    margin-top: 20px;
+  }
+  main section.formations div.formations-container div.formation aside h3,
+  main section.formations div.formations-container div.experience aside h3,
+  main section.formations div.experiences-container div.formation aside h3,
+  main section.formations div.experiences-container div.experience aside h3,
+  main section.experiences div.formations-container div.formation aside h3,
+  main section.experiences div.formations-container div.experience aside h3,
+  main section.experiences div.experiences-container div.formation aside h3,
+  main section.experiences div.experiences-container div.experience aside h3 {
+    display: none;
+  }
+  main section.portfolio {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  main section.portfolio div.portfolio-container {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    grid-template-columns: 1fr;
+  }
+  main section.portfolio div.portfolio-container a {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  main section.portfolio div.portfolio-container a figure {
     height: fit-content;
-    border: 1px solid red; } }
-
-@media screen and (min-width: 320px) and (max-width: 374px) {
+  }
+  main section.contact div.info-container {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 374px) {
   #root {
-    --fz:45px; }
+    --fz:45px;
+  }
   div.main-container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
   section.presentation-board {
     font-size: 45px;
     width: 98%;
@@ -1048,194 +1308,521 @@ footer {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    section.presentation-board div.me {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      section.presentation-board div.me figure {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        section.presentation-board div.me figure img.picture {
-          width: 100%;
-          border-radius: var(--circle);
-          object-fit: cover; }
-        section.presentation-board div.me figure figcaption {
-          font-weight: bolder;
-          margin-top: 30px; }
-      section.presentation-board div.me div.social-network h4.what-am-i {
-        margin-top: 40px; }
-      section.presentation-board div.me div.social-network ul {
-        display: flex;
-        align-items: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        height: 100px; }
-      section.presentation-board div.me div.social-network li {
-        transform: scale(5);
-        font-size: 22px; }
-    section.presentation-board div.my-languages, section.presentation-board div.systems, section.presentation-board div.skills {
-      font-size: 34px; }
-    section.presentation-board button.download-cv {
-      width: 90%;
-      font-size: larger;
-      border-radius: 5px; }
-      section.presentation-board button.download-cv span {
-        font-size: larger; }
+    align-items: center;
+  }
+  section.presentation-board div.me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.presentation-board div.me figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.presentation-board div.me figure img.picture {
+    width: 100%;
+    border-radius: var(--circle);
+    object-fit: cover;
+  }
+  section.presentation-board div.me figure figcaption {
+    font-weight: bolder;
+    margin-top: 30px;
+  }
+  section.presentation-board div.me div.social-network h4.what-am-i {
+    margin-top: 40px;
+  }
+  section.presentation-board div.me div.social-network ul {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 100px;
+  }
+  section.presentation-board div.me div.social-network li {
+    transform: scale(5);
+    font-size: 22px;
+  }
+  section.presentation-board div.my-languages, section.presentation-board div.systems, section.presentation-board div.skills {
+    font-size: 34px;
+  }
+  section.presentation-board button.download-cv {
+    width: 90%;
+    font-size: larger;
+    border-radius: 5px;
+  }
+  section.presentation-board button.download-cv span {
+    font-size: larger;
+  }
   main {
-    width: 100%; }
-    main section {
-      font-size: 35px; }
-      main section > p {
-        margin-left: 10px;
-        margin-right: 10px;
-        width: fit-content;
-        text-align: justify;
-        letter-spacing: 3px;
-        word-spacing: none; }
-    main div.hero {
-      display: none; }
-    main section.services {
-      margin-top: 100px;
-      width: 100%;
-      text-align: center; }
-      main section.services div.services-container {
-        grid-template-columns: 1fr; }
-        main section.services div.services-container div.service {
-          width: 100%;
-          height: 500px; }
-          main section.services div.services-container div.service div.sprite {
-            transform: scale(2.7); }
-    main section.freelance-prices div.price-container {
-      font-size: var(--fz);
-      width: auto;
-      flex-direction: column; }
-      main section.freelance-prices div.price-container div.price-per-antity {
-        width: inherit; }
-        main section.freelance-prices div.price-container div.price-per-antity div span.bold-price {
-          font-size: var(--fz); }
-        main section.freelance-prices div.price-container div.price-per-antity div p.options {
-          margin: auto;
-          width: max-content; }
-          main section.freelance-prices div.price-container div.price-per-antity div p.options span.line-option {
-            width: max-content; }
-    main section.formations div.formations-container div.formation,
-    main section.formations div.formations-container div.experience,
-    main section.formations div.experiences-container div.formation,
-    main section.formations div.experiences-container div.experience,
-    main section.experiences div.formations-container div.formation,
-    main section.experiences div.formations-container div.experience,
-    main section.experiences div.experiences-container div.formation,
-    main section.experiences div.experiences-container div.experience {
-      flex-direction: column; }
-      main section.formations div.formations-container div.formation div.degre-date span.date,
-      main section.formations div.formations-container div.formation div.experience-date span.date,
-      main section.formations div.formations-container div.experience div.degre-date span.date,
-      main section.formations div.formations-container div.experience div.experience-date span.date,
-      main section.formations div.experiences-container div.formation div.degre-date span.date,
-      main section.formations div.experiences-container div.formation div.experience-date span.date,
-      main section.formations div.experiences-container div.experience div.degre-date span.date,
-      main section.formations div.experiences-container div.experience div.experience-date span.date,
-      main section.experiences div.formations-container div.formation div.degre-date span.date,
-      main section.experiences div.formations-container div.formation div.experience-date span.date,
-      main section.experiences div.formations-container div.experience div.degre-date span.date,
-      main section.experiences div.formations-container div.experience div.experience-date span.date,
-      main section.experiences div.experiences-container div.formation div.degre-date span.date,
-      main section.experiences div.experiences-container div.formation div.experience-date span.date,
-      main section.experiences div.experiences-container div.experience div.degre-date span.date,
-      main section.experiences div.experiences-container div.experience div.experience-date span.date {
-        font-size: var(--fz); }
-      main section.formations div.formations-container div.formation div.degre-date p, main section.formations div.formations-container div.formation div.degre-date span.technos,
-      main section.formations div.formations-container div.formation div.experience-date p,
-      main section.formations div.formations-container div.formation div.experience-date span.technos,
-      main section.formations div.formations-container div.experience div.degre-date p,
-      main section.formations div.formations-container div.experience div.degre-date span.technos,
-      main section.formations div.formations-container div.experience div.experience-date p,
-      main section.formations div.formations-container div.experience div.experience-date span.technos,
-      main section.formations div.experiences-container div.formation div.degre-date p,
-      main section.formations div.experiences-container div.formation div.degre-date span.technos,
-      main section.formations div.experiences-container div.formation div.experience-date p,
-      main section.formations div.experiences-container div.formation div.experience-date span.technos,
-      main section.formations div.experiences-container div.experience div.degre-date p,
-      main section.formations div.experiences-container div.experience div.degre-date span.technos,
-      main section.formations div.experiences-container div.experience div.experience-date p,
-      main section.formations div.experiences-container div.experience div.experience-date span.technos,
-      main section.experiences div.formations-container div.formation div.degre-date p,
-      main section.experiences div.formations-container div.formation div.degre-date span.technos,
-      main section.experiences div.formations-container div.formation div.experience-date p,
-      main section.experiences div.formations-container div.formation div.experience-date span.technos,
-      main section.experiences div.formations-container div.experience div.degre-date p,
-      main section.experiences div.formations-container div.experience div.degre-date span.technos,
-      main section.experiences div.formations-container div.experience div.experience-date p,
-      main section.experiences div.formations-container div.experience div.experience-date span.technos,
-      main section.experiences div.experiences-container div.formation div.degre-date p,
-      main section.experiences div.experiences-container div.formation div.degre-date span.technos,
-      main section.experiences div.experiences-container div.formation div.experience-date p,
-      main section.experiences div.experiences-container div.formation div.experience-date span.technos,
-      main section.experiences div.experiences-container div.experience div.degre-date p,
-      main section.experiences div.experiences-container div.experience div.degre-date span.technos,
-      main section.experiences div.experiences-container div.experience div.experience-date p,
-      main section.experiences div.experiences-container div.experience div.experience-date span.technos {
-        line-height: 60px; }
-      main section.formations div.formations-container div.formation div.degre-date,
-      main section.formations div.formations-container div.formation div.experience-date,
-      main section.formations div.formations-container div.formation aside,
-      main section.formations div.formations-container div.experience div.degre-date,
-      main section.formations div.formations-container div.experience div.experience-date,
-      main section.formations div.formations-container div.experience aside,
-      main section.formations div.experiences-container div.formation div.degre-date,
-      main section.formations div.experiences-container div.formation div.experience-date,
-      main section.formations div.experiences-container div.formation aside,
-      main section.formations div.experiences-container div.experience div.degre-date,
-      main section.formations div.experiences-container div.experience div.experience-date,
-      main section.formations div.experiences-container div.experience aside,
-      main section.experiences div.formations-container div.formation div.degre-date,
-      main section.experiences div.formations-container div.formation div.experience-date,
-      main section.experiences div.formations-container div.formation aside,
-      main section.experiences div.formations-container div.experience div.degre-date,
-      main section.experiences div.formations-container div.experience div.experience-date,
-      main section.experiences div.formations-container div.experience aside,
-      main section.experiences div.experiences-container div.formation div.degre-date,
-      main section.experiences div.experiences-container div.formation div.experience-date,
-      main section.experiences div.experiences-container div.formation aside,
-      main section.experiences div.experiences-container div.experience div.degre-date,
-      main section.experiences div.experiences-container div.experience div.experience-date,
-      main section.experiences div.experiences-container div.experience aside {
-        font-size: var(--fz);
-        width: auto; }
-      main section.formations div.formations-container div.formation aside,
-      main section.formations div.formations-container div.experience aside,
-      main section.formations div.experiences-container div.formation aside,
-      main section.formations div.experiences-container div.experience aside,
-      main section.experiences div.formations-container div.formation aside,
-      main section.experiences div.formations-container div.experience aside,
-      main section.experiences div.experiences-container div.formation aside,
-      main section.experiences div.experiences-container div.experience aside {
-        margin-top: 20px; }
-        main section.formations div.formations-container div.formation aside h3,
-        main section.formations div.formations-container div.experience aside h3,
-        main section.formations div.experiences-container div.formation aside h3,
-        main section.formations div.experiences-container div.experience aside h3,
-        main section.experiences div.formations-container div.formation aside h3,
-        main section.experiences div.formations-container div.experience aside h3,
-        main section.experiences div.experiences-container div.formation aside h3,
-        main section.experiences div.experiences-container div.experience aside h3 {
-          display: none; }
-    main section.portfolio {
-      margin-top: 100px;
-      width: 100%;
-      text-align: center; }
-      main section.portfolio div.portfolio-container {
-        flex: 1 1 auto;
-        overflow-y: auto;
-        grid-template-columns: 1fr; }
-        main section.portfolio div.portfolio-container figure {
-          height: 450px; }
-    main section.contact div.info-container {
-      grid-template-columns: auto; }
-      main section.contact div.info-container div.info p.content-text > span:nth-of-type(2) {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 70%; } }
+    width: 100%;
+  }
+  main section {
+    font-size: 35px;
+  }
+  main section > p {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: fit-content;
+    text-align: justify;
+    letter-spacing: 3px;
+    word-spacing: none;
+  }
+  main div.hero {
+    display: none;
+  }
+  main section.services {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  main section.services div.services-container {
+    grid-template-columns: 1fr;
+  }
+  main section.services div.services-container div.service {
+    width: 100%;
+    height: 500px;
+  }
+  main section.services div.services-container div.service div.sprite {
+    transform: scale(2.7);
+  }
+  main section.freelance-prices div.price-container {
+    font-size: var(--fz);
+    width: auto;
+    flex-direction: column;
+  }
+  main section.freelance-prices div.price-container div.price-per-antity {
+    width: inherit;
+  }
+  main section.freelance-prices div.price-container div.price-per-antity div span.bold-price {
+    font-size: var(--fz);
+  }
+  main section.freelance-prices div.price-container div.price-per-antity div p.options {
+    margin: auto;
+    width: max-content;
+  }
+  main section.freelance-prices div.price-container div.price-per-antity div p.options span.line-option {
+    width: max-content;
+  }
+  main section.formations div.formations-container div.formation,
+  main section.formations div.formations-container div.experience,
+  main section.formations div.experiences-container div.formation,
+  main section.formations div.experiences-container div.experience,
+  main section.experiences div.formations-container div.formation,
+  main section.experiences div.formations-container div.experience,
+  main section.experiences div.experiences-container div.formation,
+  main section.experiences div.experiences-container div.experience {
+    flex-direction: column;
+  }
+  main section.formations div.formations-container div.formation div.degre-date span.date,
+  main section.formations div.formations-container div.formation div.experience-date span.date,
+  main section.formations div.formations-container div.experience div.degre-date span.date,
+  main section.formations div.formations-container div.experience div.experience-date span.date,
+  main section.formations div.experiences-container div.formation div.degre-date span.date,
+  main section.formations div.experiences-container div.formation div.experience-date span.date,
+  main section.formations div.experiences-container div.experience div.degre-date span.date,
+  main section.formations div.experiences-container div.experience div.experience-date span.date,
+  main section.experiences div.formations-container div.formation div.degre-date span.date,
+  main section.experiences div.formations-container div.formation div.experience-date span.date,
+  main section.experiences div.formations-container div.experience div.degre-date span.date,
+  main section.experiences div.formations-container div.experience div.experience-date span.date,
+  main section.experiences div.experiences-container div.formation div.degre-date span.date,
+  main section.experiences div.experiences-container div.formation div.experience-date span.date,
+  main section.experiences div.experiences-container div.experience div.degre-date span.date,
+  main section.experiences div.experiences-container div.experience div.experience-date span.date {
+    font-size: var(--fz);
+  }
+  main section.formations div.formations-container div.formation div.degre-date p, main section.formations div.formations-container div.formation div.degre-date span.technos,
+  main section.formations div.formations-container div.formation div.experience-date p,
+  main section.formations div.formations-container div.formation div.experience-date span.technos,
+  main section.formations div.formations-container div.experience div.degre-date p,
+  main section.formations div.formations-container div.experience div.degre-date span.technos,
+  main section.formations div.formations-container div.experience div.experience-date p,
+  main section.formations div.formations-container div.experience div.experience-date span.technos,
+  main section.formations div.experiences-container div.formation div.degre-date p,
+  main section.formations div.experiences-container div.formation div.degre-date span.technos,
+  main section.formations div.experiences-container div.formation div.experience-date p,
+  main section.formations div.experiences-container div.formation div.experience-date span.technos,
+  main section.formations div.experiences-container div.experience div.degre-date p,
+  main section.formations div.experiences-container div.experience div.degre-date span.technos,
+  main section.formations div.experiences-container div.experience div.experience-date p,
+  main section.formations div.experiences-container div.experience div.experience-date span.technos,
+  main section.experiences div.formations-container div.formation div.degre-date p,
+  main section.experiences div.formations-container div.formation div.degre-date span.technos,
+  main section.experiences div.formations-container div.formation div.experience-date p,
+  main section.experiences div.formations-container div.formation div.experience-date span.technos,
+  main section.experiences div.formations-container div.experience div.degre-date p,
+  main section.experiences div.formations-container div.experience div.degre-date span.technos,
+  main section.experiences div.formations-container div.experience div.experience-date p,
+  main section.experiences div.formations-container div.experience div.experience-date span.technos,
+  main section.experiences div.experiences-container div.formation div.degre-date p,
+  main section.experiences div.experiences-container div.formation div.degre-date span.technos,
+  main section.experiences div.experiences-container div.formation div.experience-date p,
+  main section.experiences div.experiences-container div.formation div.experience-date span.technos,
+  main section.experiences div.experiences-container div.experience div.degre-date p,
+  main section.experiences div.experiences-container div.experience div.degre-date span.technos,
+  main section.experiences div.experiences-container div.experience div.experience-date p,
+  main section.experiences div.experiences-container div.experience div.experience-date span.technos {
+    line-height: 60px;
+  }
+  main section.formations div.formations-container div.formation div.degre-date,
+  main section.formations div.formations-container div.formation div.experience-date,
+  main section.formations div.formations-container div.formation aside,
+  main section.formations div.formations-container div.experience div.degre-date,
+  main section.formations div.formations-container div.experience div.experience-date,
+  main section.formations div.formations-container div.experience aside,
+  main section.formations div.experiences-container div.formation div.degre-date,
+  main section.formations div.experiences-container div.formation div.experience-date,
+  main section.formations div.experiences-container div.formation aside,
+  main section.formations div.experiences-container div.experience div.degre-date,
+  main section.formations div.experiences-container div.experience div.experience-date,
+  main section.formations div.experiences-container div.experience aside,
+  main section.experiences div.formations-container div.formation div.degre-date,
+  main section.experiences div.formations-container div.formation div.experience-date,
+  main section.experiences div.formations-container div.formation aside,
+  main section.experiences div.formations-container div.experience div.degre-date,
+  main section.experiences div.formations-container div.experience div.experience-date,
+  main section.experiences div.formations-container div.experience aside,
+  main section.experiences div.experiences-container div.formation div.degre-date,
+  main section.experiences div.experiences-container div.formation div.experience-date,
+  main section.experiences div.experiences-container div.formation aside,
+  main section.experiences div.experiences-container div.experience div.degre-date,
+  main section.experiences div.experiences-container div.experience div.experience-date,
+  main section.experiences div.experiences-container div.experience aside {
+    font-size: var(--fz);
+    width: auto;
+  }
+  main section.formations div.formations-container div.formation aside,
+  main section.formations div.formations-container div.experience aside,
+  main section.formations div.experiences-container div.formation aside,
+  main section.formations div.experiences-container div.experience aside,
+  main section.experiences div.formations-container div.formation aside,
+  main section.experiences div.formations-container div.experience aside,
+  main section.experiences div.experiences-container div.formation aside,
+  main section.experiences div.experiences-container div.experience aside {
+    margin-top: 20px;
+  }
+  main section.formations div.formations-container div.formation aside h3,
+  main section.formations div.formations-container div.experience aside h3,
+  main section.formations div.experiences-container div.formation aside h3,
+  main section.formations div.experiences-container div.experience aside h3,
+  main section.experiences div.formations-container div.formation aside h3,
+  main section.experiences div.formations-container div.experience aside h3,
+  main section.experiences div.experiences-container div.formation aside h3,
+  main section.experiences div.experiences-container div.experience aside h3 {
+    display: none;
+  }
+  main section.portfolio {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  main section.portfolio div.portfolio-container {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    grid-template-columns: 1fr;
+  }
+  main section.portfolio div.portfolio-container figure {
+    height: 450px;
+  }
+  main section.contact div.info-container {
+    grid-template-columns: auto;
+  }
+  main section.contact div.info-container div.info p.content-text > span:nth-of-type(2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  #root {
+    width: fit-content;
+  }
+  div.main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  section.presentation-board {
+    font-size: 70px;
+    width: 100%;
+    padding: 1%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.presentation-board div.me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.presentation-board div.me figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.presentation-board div.me figure img.picture {
+    width: 100%;
+    border-radius: var(--circle);
+    object-fit: cover;
+  }
+  section.presentation-board div.me figure figcaption {
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 30px;
+  }
+  section.presentation-board div.me div.social-network h4.what-am-i {
+    margin-top: 40px;
+    font-size: x-large;
+  }
+  section.presentation-board div.me div.social-network ul {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 100px;
+  }
+  section.presentation-board div.me div.social-network li {
+    transform: scale(3);
+    font-size: 22px;
+  }
+  section.presentation-board div.about-me h3, section.presentation-board div.about-me p {
+    font-size: x-large;
+  }
+  section.presentation-board div.my-languages, section.presentation-board div.systems, section.presentation-board div.skills {
+    font-size: 17px;
+  }
+  section.presentation-board button.download-cv {
+    width: 90%;
+    font-size: x-large;
+    border-radius: 5px;
+  }
+  section.presentation-board button.download-cv span {
+    font-size: larger;
+  }
+  .main-container > main {
+    width: 100%;
+  }
+  .main-container > main section > p {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: fit-content;
+    text-align: justify;
+    letter-spacing: 3px;
+    word-spacing: none;
+  }
+  .main-container > main div.hero {
+    display: none;
+  }
+  .main-container > main section.services {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  .main-container > main section.services div.services-container {
+    grid-template-columns: 1fr;
+  }
+  .main-container > main section.services div.services-container div.service {
+    width: 100%;
+    height: 500px;
+  }
+  .main-container > main section.services div.services-container div.service div.sprite {
+    transform: scale(2.7);
+  }
+  .main-container > main section.freelance-prices div.price-container {
+    font-size: var(--fz);
+    width: auto;
+    flex-direction: column;
+  }
+  .main-container > main section.freelance-prices div.price-container div.price-per-antity {
+    width: inherit;
+  }
+  .main-container > main section.freelance-prices div.price-container div.price-per-antity div span.bold-price {
+    font-size: var(--fz);
+  }
+  .main-container > main section.freelance-prices div.price-container div.price-per-antity div p.options {
+    margin: auto;
+    width: max-content;
+  }
+  .main-container > main section.freelance-prices div.price-container div.price-per-antity div p.options span.line-option {
+    width: max-content;
+  }
+  .main-container > main section.formations div.formations-container div.formation,
+  .main-container > main section.formations div.formations-container div.experience,
+  .main-container > main section.formations div.experiences-container div.formation,
+  .main-container > main section.formations div.experiences-container div.experience,
+  .main-container > main section.experiences div.formations-container div.formation,
+  .main-container > main section.experiences div.formations-container div.experience,
+  .main-container > main section.experiences div.experiences-container div.formation,
+  .main-container > main section.experiences div.experiences-container div.experience {
+    flex-direction: column;
+  }
+  .main-container > main section.formations div.formations-container div.formation div.degre-date span.date,
+  .main-container > main section.formations div.formations-container div.formation div.experience-date span.date,
+  .main-container > main section.formations div.formations-container div.experience div.degre-date span.date,
+  .main-container > main section.formations div.formations-container div.experience div.experience-date span.date,
+  .main-container > main section.formations div.experiences-container div.formation div.degre-date span.date,
+  .main-container > main section.formations div.experiences-container div.formation div.experience-date span.date,
+  .main-container > main section.formations div.experiences-container div.experience div.degre-date span.date,
+  .main-container > main section.formations div.experiences-container div.experience div.experience-date span.date,
+  .main-container > main section.experiences div.formations-container div.formation div.degre-date span.date,
+  .main-container > main section.experiences div.formations-container div.formation div.experience-date span.date,
+  .main-container > main section.experiences div.formations-container div.experience div.degre-date span.date,
+  .main-container > main section.experiences div.formations-container div.experience div.experience-date span.date,
+  .main-container > main section.experiences div.experiences-container div.formation div.degre-date span.date,
+  .main-container > main section.experiences div.experiences-container div.formation div.experience-date span.date,
+  .main-container > main section.experiences div.experiences-container div.experience div.degre-date span.date,
+  .main-container > main section.experiences div.experiences-container div.experience div.experience-date span.date {
+    font-size: var(--fz);
+  }
+  .main-container > main section.formations div.formations-container div.formation div.degre-date p, .main-container > main section.formations div.formations-container div.formation div.degre-date span.technos,
+  .main-container > main section.formations div.formations-container div.formation div.experience-date p,
+  .main-container > main section.formations div.formations-container div.formation div.experience-date span.technos,
+  .main-container > main section.formations div.formations-container div.experience div.degre-date p,
+  .main-container > main section.formations div.formations-container div.experience div.degre-date span.technos,
+  .main-container > main section.formations div.formations-container div.experience div.experience-date p,
+  .main-container > main section.formations div.formations-container div.experience div.experience-date span.technos,
+  .main-container > main section.formations div.experiences-container div.formation div.degre-date p,
+  .main-container > main section.formations div.experiences-container div.formation div.degre-date span.technos,
+  .main-container > main section.formations div.experiences-container div.formation div.experience-date p,
+  .main-container > main section.formations div.experiences-container div.formation div.experience-date span.technos,
+  .main-container > main section.formations div.experiences-container div.experience div.degre-date p,
+  .main-container > main section.formations div.experiences-container div.experience div.degre-date span.technos,
+  .main-container > main section.formations div.experiences-container div.experience div.experience-date p,
+  .main-container > main section.formations div.experiences-container div.experience div.experience-date span.technos,
+  .main-container > main section.experiences div.formations-container div.formation div.degre-date p,
+  .main-container > main section.experiences div.formations-container div.formation div.degre-date span.technos,
+  .main-container > main section.experiences div.formations-container div.formation div.experience-date p,
+  .main-container > main section.experiences div.formations-container div.formation div.experience-date span.technos,
+  .main-container > main section.experiences div.formations-container div.experience div.degre-date p,
+  .main-container > main section.experiences div.formations-container div.experience div.degre-date span.technos,
+  .main-container > main section.experiences div.formations-container div.experience div.experience-date p,
+  .main-container > main section.experiences div.formations-container div.experience div.experience-date span.technos,
+  .main-container > main section.experiences div.experiences-container div.formation div.degre-date p,
+  .main-container > main section.experiences div.experiences-container div.formation div.degre-date span.technos,
+  .main-container > main section.experiences div.experiences-container div.formation div.experience-date p,
+  .main-container > main section.experiences div.experiences-container div.formation div.experience-date span.technos,
+  .main-container > main section.experiences div.experiences-container div.experience div.degre-date p,
+  .main-container > main section.experiences div.experiences-container div.experience div.degre-date span.technos,
+  .main-container > main section.experiences div.experiences-container div.experience div.experience-date p,
+  .main-container > main section.experiences div.experiences-container div.experience div.experience-date span.technos {
+    line-height: 60px;
+  }
+  .main-container > main section.formations div.formations-container div.formation div.degre-date,
+  .main-container > main section.formations div.formations-container div.formation div.experience-date,
+  .main-container > main section.formations div.formations-container div.formation aside,
+  .main-container > main section.formations div.formations-container div.experience div.degre-date,
+  .main-container > main section.formations div.formations-container div.experience div.experience-date,
+  .main-container > main section.formations div.formations-container div.experience aside,
+  .main-container > main section.formations div.experiences-container div.formation div.degre-date,
+  .main-container > main section.formations div.experiences-container div.formation div.experience-date,
+  .main-container > main section.formations div.experiences-container div.formation aside,
+  .main-container > main section.formations div.experiences-container div.experience div.degre-date,
+  .main-container > main section.formations div.experiences-container div.experience div.experience-date,
+  .main-container > main section.formations div.experiences-container div.experience aside,
+  .main-container > main section.experiences div.formations-container div.formation div.degre-date,
+  .main-container > main section.experiences div.formations-container div.formation div.experience-date,
+  .main-container > main section.experiences div.formations-container div.formation aside,
+  .main-container > main section.experiences div.formations-container div.experience div.degre-date,
+  .main-container > main section.experiences div.formations-container div.experience div.experience-date,
+  .main-container > main section.experiences div.formations-container div.experience aside,
+  .main-container > main section.experiences div.experiences-container div.formation div.degre-date,
+  .main-container > main section.experiences div.experiences-container div.formation div.experience-date,
+  .main-container > main section.experiences div.experiences-container div.formation aside,
+  .main-container > main section.experiences div.experiences-container div.experience div.degre-date,
+  .main-container > main section.experiences div.experiences-container div.experience div.experience-date,
+  .main-container > main section.experiences div.experiences-container div.experience aside {
+    font-size: var(--fz);
+    width: auto;
+  }
+  .main-container > main section.formations div.formations-container div.formation aside,
+  .main-container > main section.formations div.formations-container div.experience aside,
+  .main-container > main section.formations div.experiences-container div.formation aside,
+  .main-container > main section.formations div.experiences-container div.experience aside,
+  .main-container > main section.experiences div.formations-container div.formation aside,
+  .main-container > main section.experiences div.formations-container div.experience aside,
+  .main-container > main section.experiences div.experiences-container div.formation aside,
+  .main-container > main section.experiences div.experiences-container div.experience aside {
+    margin-top: 20px;
+  }
+  .main-container > main section.formations div.formations-container div.formation aside h3,
+  .main-container > main section.formations div.formations-container div.experience aside h3,
+  .main-container > main section.formations div.experiences-container div.formation aside h3,
+  .main-container > main section.formations div.experiences-container div.experience aside h3,
+  .main-container > main section.experiences div.formations-container div.formation aside h3,
+  .main-container > main section.experiences div.formations-container div.experience aside h3,
+  .main-container > main section.experiences div.experiences-container div.formation aside h3,
+  .main-container > main section.experiences div.experiences-container div.experience aside h3 {
+    display: none;
+  }
+  .main-container > main section.portfolio {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  .main-container > main section.portfolio ul.portfolio-menu {
+    width: 100%;
+  }
+  .main-container > main section.portfolio ul.portfolio-menu > li {
+    font-size: smaller;
+  }
+  .main-container > main section.portfolio div.portfolio-container {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    grid-template-columns: 1fr;
+  }
+  .main-container > main section.portfolio div.portfolio-container figure {
+    height: 213px;
+  }
+  .main-container > main section.contact div.info-container {
+    grid-template-columns: auto;
+  }
+  .main-container > main section.contact div.info-container div.info p.content-text > span:nth-of-type(2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.menu {
+    background: none;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 55px;
+    height: 80%;
+  }
+  section.menu div.menu-fixed {
+    background-color: white;
+    box-shadow: -1px -1px 5px lightgrey;
+    border-radius: 15px;
+    padding: 0;
+  }
+  section.menu div.menu-fixed span.circle {
+    margin: auto;
+  }
+  section.menu div.menu-fixed .menu-options {
+    padding: 5px 5px;
+  }
+  section.menu div.menu-fixed > ul.normal-menu li.roll {
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  section.menu div.menu-fixed > ul.normal-menu li.roll a {
+    display: flex;
+    align-items: center;
+  }
+  section.menu div.menu-fixed > ul.normal-menu li.roll a :nth-of-type(2) {
+    margin-left: 10px;
+    display: none;
+  }
+  section.menu div.menu-fixed > ul.smartphone a:nth-of-type(2) {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
-@media screen and (min-width:321px) and (max-width:374px){
+@media screen and (max-width:320px) {
   #root{
-    // width:fit-content;
-    --fz :45px; 
+    width:fit-content;
+    // --fz :45px; 
   }
 
   div.main-container {
@@ -10,8 +10,8 @@
   }
 
   section.presentation-board {
-    font-size: 45px;
-    width: 98%;
+    font-size: 70px;
+    width: 100%;
     padding:1%;
     height:fit-content;
     display: flex;
@@ -31,6 +31,7 @@
           object-fit: cover;
         }
         figcaption{
+          font-size: x-large;
           font-weight:bolder;
           margin-top: 30px;
         }
@@ -39,6 +40,7 @@
       div.social-network{
         h4.what-am-i{
           margin-top: 40px;
+          font-size: x-large;
         }
         ul{
           display: flex;
@@ -48,19 +50,25 @@
           height: 100px;
         }
         li {
-          transform: scale(5);
+          transform: scale(3);
           font-size: 22px;
         }
       }
     }
 
+    div.about-me{
+      h3, p{
+        font-size: x-large;
+      }
+    }
+
     div.my-languages, div.systems,div.skills{
-      font-size: 34px;
+      font-size: 17px;
     }
 
     button.download-cv{
       width: 90%;
-      font-size: larger;
+      font-size: x-large;
       span{
         font-size: larger;
       }
@@ -68,10 +76,9 @@
     }
   }
 
-  main{
+  .main-container > main{
     width: 100%;
     section { 
-      font-size: 35px;
       & > p {
         margin-left: 10px;
         margin-right: 10px;
@@ -155,12 +162,18 @@
       margin-top: 100px;
       width:100%;
       text-align: center;
+      ul.portfolio-menu{
+        width: 100%;
+        & > li {
+          font-size: smaller;
+        }
+      }
       div.portfolio-container{
         flex: 1 1 auto;
         overflow-y: auto;
         grid-template-columns: 1fr;
         figure{
-          height: 450px;
+          height: 213px;
         }
       }
     }
@@ -181,4 +194,5 @@
       }
     }
   }
+
 }
