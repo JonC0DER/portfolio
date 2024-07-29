@@ -1,4 +1,3 @@
-import { spawn } from 'child_process';
 import React from 'react';
 import { JaugeAdds, PresentationType } from '../interfacesTypes';
 // import myPicId from '../../assets'
