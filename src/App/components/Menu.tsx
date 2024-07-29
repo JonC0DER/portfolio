@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 
 export default function Menu() {
   const [isToggle, setIsToggle] = useState(false);
-  const smallScreen = 'screen and (min-width: 315px) and (max-width: 767px)';
-  const isSmallScreen = () => window.matchMedia(smallScreen).matches;
 
   const toggleClicked = () => {
     setIsToggle(!isToggle);
@@ -32,7 +30,7 @@ export default function Menu() {
           </div>
           <ul className={`normal-menu ${isToggle ? '' : 'smartphone'}`}>
             <li className="roll">
-              <a href={`${isSmallScreen() ? '#presentation-board' : '#hero'}`}>
+              <a href="#presentation-board">
                 <span className="circle">
                   <span className="material-symbols-outlined">home</span>
                 </span>
