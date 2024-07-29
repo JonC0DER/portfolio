@@ -1,10 +1,104 @@
 @media screen and (min-width:1440px){ 
   html, body{
-    max-width: 1440px;
+    width: 100%;
   }
-  section.portfolio{
-    div.portfolio-container{
-      grid-template-columns: 1fr 1fr 1fr;
+  
+  div#root{    
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  div.main-container{
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+
+    section.presentation-board{
+      width: 20%;
+      height: fit-content;
+      padding: 15px;
+      div.me{
+        figure{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img{
+            width: 90%;
+            border-radius: 50%;
+          }
+
+          figcaption{
+            margin-top: 30px;
+          }
+        }
+
+        div.social-network{
+          h4.what-am-i{
+            text-align: center;
+          }
+        }
+      }
+
+      button.download-cv{
+        margin: auto;
+        margin-top: 10px;
+      }
+    }
+
+    main{
+      width: 60%;
+
+      div.hero{
+        overflow: hidden;
+        height: 100%;
+      }
+      
+      section.services{
+        div.services-container{
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+      
+      section.portfolio{
+        div.portfolio-container{
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+      
+      section.contact{
+        div.info-container{
+          grid-template-columns:auto auto;
+          div.info{
+            width: 310px;
+          }
+        }
+      }
+
+    }
+
+    section.menu{
+      width: 15%;
+      background: none;
+
+      div.menu-fixed {
+        background: white;
+        ul.normal-menu {
+          margin-top: 40px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 400px;
+          
+          li.roll {
+            a {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+            }
+          }
+        }
+      }
     }
   }
+
 }
