@@ -1,7 +1,7 @@
 @media screen and (min-width:321px) and (max-width:374px){
   #root{
     // width:fit-content;
-    --fz :45px; 
+    --fz :x-large; 
   }
 
   div.main-container {
@@ -33,12 +33,14 @@
         figcaption{
           font-weight:bolder;
           margin-top: 30px;
+          font-size: x-large;
         }
       }
 
       div.social-network{
         h4.what-am-i{
           margin-top: 40px;
+          font-size: x-large;
         }
         ul{
           display: flex;
@@ -48,9 +50,18 @@
           height: 100px;
         }
         li {
-          transform: scale(5);
+          transform: scale(3);
           font-size: 22px;
         }
+      }
+    }
+
+    div.about-me {
+      h3 {
+        font-size: xx-large;
+      }
+      p{ 
+        font-size: x-large;
       }
     }
 
@@ -61,10 +72,10 @@
     button.download-cv{
       width: 90%;
       font-size: larger;
+      border-radius: 5px;
       span{
         font-size: larger;
       }
-      border-radius: 5px;
     }
   }
 
@@ -144,8 +155,8 @@
             width: auto; 
           }
           aside{
-            h3{ display:none; }
             margin-top: 20px;
+            h3{ display:none; }
           }
         }
       }

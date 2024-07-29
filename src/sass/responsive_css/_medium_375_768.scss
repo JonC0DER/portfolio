@@ -60,10 +60,10 @@
     button.download-cv{
       width: 90%;
       font-size: larger;
+      border-radius: 5px;
       span{
         font-size: larger;
       }
-      border-radius: 5px;
     }
   }
 
@@ -143,8 +143,8 @@
             width: auto; 
           }
           aside{
-            h3{ display:none; }
             margin-top: 20px;
+            h3{ display:none; }
           }
         }
       }

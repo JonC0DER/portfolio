@@ -1,4 +1,8 @@
-@media screen and (min-width:1024px) and (max-width:1439px){
+@media screen and (min-width:1024px) and (max-width:1440px){
+  main{
+    width: 60vw;
+  }
+  
   section.presentation-board {
     width: 305px;
     height:fit-content;
@@ -41,6 +45,12 @@
       height: 100%;
     }
     
+    section.services{
+      div.services-container{
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
     // section.portfolio{
     //   margin-top: 100px;
     //   width:100%;
